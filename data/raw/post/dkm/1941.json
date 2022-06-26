@@ -1,0 +1,4692 @@
+[
+    {
+        "info": {
+            "lastnames": [
+                "K\u00fcblcr"
+            ],
+            "firstnames": [
+                "Arnold"
+            ],
+            "abbr_firstnames": [],
+            "occupations": [
+                "Chefredaktor"
+            ],
+            "titles": [],
+            "address": [],
+            "others": []
+        },
+        "pageNames": "dkm-001_1941_001_0420.txt",
+        "pageNo": 0,
+        "sentenceNo": 0,
+        "positions": [
+            "345,459,76,17:main",
+            "432,459,84,22:main",
+            "432,459,84,22:rpunc",
+            "532,459,154,19:main"
+        ],
+        "type": "PER",
+        "articles": []
+    },
+    {
+        "info": {
+            "lastnames": [
+                "Witz"
+            ],
+            "firstnames": [
+                "Friedrich"
+            ],
+            "abbr_firstnames": [],
+            "occupations": [
+                "Dr."
+            ],
+            "titles": [],
+            "address": [],
+            "others": []
+        },
+        "pageNames": "dkm-001_1941_001_0420.txt",
+        "pageNo": 0,
+        "sentenceNo": 1,
+        "positions": [
+            "701,460,34,17:main",
+            "743,459,102,18:main",
+            "852,460,59,22:main"
+        ],
+        "type": "PER",
+        "articles": []
+    },
+    {
+        "info": {
+            "lastnames": [
+                "Marfurt"
+            ],
+            "firstnames": [],
+            "abbr_firstnames": [
+                "A.",
+                "M."
+            ],
+            "occupations": [],
+            "titles": [],
+            "address": [],
+            "others": []
+        },
+        "pageNames": "dkm-001_1941_001_0420.txt",
+        "pageNo": 0,
+        "sentenceNo": 1,
+        "positions": [
+            "195,487,23,16:main",
+            "232,486,26,17:main",
+            "269,485,93,18:main"
+        ],
+        "type": "PER",
+        "articles": []
+    },
+    {
+        "info": {
+            "lastnames": [
+                "Weber"
+            ],
+            "firstnames": [
+                "Charlotte"
+            ],
+            "abbr_firstnames": [],
+            "occupations": [
+                "Frl."
+            ],
+            "titles": [],
+            "address": [],
+            "others": []
+        },
+        "pageNames": "dkm-001_1941_001_0420.txt",
+        "pageNo": 0,
+        "sentenceNo": 2,
+        "positions": [
+            "514,485,39,18:main",
+            "566,485,105,18:main",
+            "680,487,79,16:main"
+        ],
+        "type": "PER",
+        "articles": []
+    },
+    {
+        "info": {
+            "lastnames": [
+                "Schulthess"
+            ],
+            "firstnames": [],
+            "abbr_firstnames": [],
+            "occupations": [],
+            "titles": [],
+            "address": [],
+            "others": []
+        },
+        "pageNames": "dkm-001_1941_001_0420.txt",
+        "pageNo": 0,
+        "sentenceNo": 3,
+        "positions": [
+            "397,512,124,17:main"
+        ],
+        "type": "PER",
+        "articles": []
+    },
+    {
+        "info": {
+            "lastnames": [
+                "Staub"
+            ],
+            "firstnames": [],
+            "abbr_firstnames": [
+                "Hs."
+            ],
+            "occupations": [],
+            "titles": [],
+            "address": [],
+            "others": []
+        },
+        "pageNames": "dkm-001_1941_001_0420.txt",
+        "pageNo": 0,
+        "sentenceNo": 5,
+        "positions": [
+            "649,566,34,17:main",
+            "693,566,62,17:main"
+        ],
+        "type": "PER",
+        "articles": []
+    },
+    {
+        "info": {
+            "lastnames": [
+                "Senn"
+            ],
+            "firstnames": [],
+            "abbr_firstnames": [
+                "P."
+            ],
+            "occupations": [],
+            "titles": [],
+            "address": [],
+            "others": []
+        },
+        "pageNames": "dkm-001_1941_001_0420.txt",
+        "pageNo": 0,
+        "sentenceNo": 5,
+        "positions": [
+            "820,566,21,17:main",
+            "851,566,60,17:main"
+        ],
+        "type": "PER",
+        "articles": []
+    },
+    {
+        "info": {
+            "lastnames": [],
+            "firstnames": [],
+            "abbr_firstnames": [
+                "A.",
+                "T.",
+                "P."
+            ],
+            "occupations": [],
+            "titles": [],
+            "address": [],
+            "others": []
+        },
+        "pageNames": "dkm-001_1941_001_0420.txt",
+        "pageNo": 0,
+        "sentenceNo": 6,
+        "positions": [
+            "415,593,23,17:main",
+            "445,593,21,17:main",
+            "474,593,29,21:main"
+        ],
+        "type": "PER",
+        "articles": []
+    },
+    {
+        "info": {
+            "lastnames": [
+                "Frey"
+            ],
+            "firstnames": [],
+            "abbr_firstnames": [
+                "Th."
+            ],
+            "occupations": [],
+            "titles": [],
+            "address": [],
+            "others": []
+        },
+        "pageNames": "dkm-001_1941_001_0420.txt",
+        "pageNo": 0,
+        "sentenceNo": 6,
+        "positions": [
+            "510,593,36,17:main",
+            "554,593,56,21:main"
+        ],
+        "type": "PER",
+        "articles": []
+    },
+    {
+        "info": {
+            "lastnames": [
+                "Kretin"
+            ],
+            "firstnames": [],
+            "abbr_firstnames": [
+                "A."
+            ],
+            "occupations": [],
+            "titles": [],
+            "address": [],
+            "others": []
+        },
+        "pageNames": "dkm-001_1941_001_0420.txt",
+        "pageNo": 0,
+        "sentenceNo": 6,
+        "positions": [
+            "619,593,22,17:main",
+            "649,592,77,22:main"
+        ],
+        "type": "PER",
+        "articles": []
+    },
+    {
+        "info": {
+            "lastnames": [
+                "Schildknecht"
+            ],
+            "firstnames": [],
+            "abbr_firstnames": [
+                "C."
+            ],
+            "occupations": [],
+            "titles": [],
+            "address": [],
+            "others": []
+        },
+        "pageNames": "dkm-001_1941_001_0420.txt",
+        "pageNo": 0,
+        "sentenceNo": 6,
+        "positions": [
+            "732,593,20,17:main",
+            "759,593,152,17:main"
+        ],
+        "type": "PER",
+        "articles": []
+    },
+    {
+        "info": {
+            "lastnames": [
+                "Gonzett"
+            ],
+            "firstnames": [],
+            "abbr_firstnames": [],
+            "occupations": [],
+            "titles": [],
+            "address": [],
+            "others": []
+        },
+        "pageNames": "dkm-001_1941_001_0420.txt",
+        "pageNo": 0,
+        "sentenceNo": 8,
+        "positions": [
+            "396,638,84,17:main"
+        ],
+        "type": "PER",
+        "articles": []
+    },
+    {
+        "info": {
+            "lastnames": [
+                "Huber"
+            ],
+            "firstnames": [],
+            "abbr_firstnames": [],
+            "occupations": [],
+            "titles": [],
+            "address": [],
+            "others": []
+        },
+        "pageNames": "dkm-001_1941_001_0420.txt",
+        "pageNo": 0,
+        "sentenceNo": 8,
+        "positions": [
+            "518,638,76,22:main"
+        ],
+        "type": "PER",
+        "articles": []
+    },
+    {
+        "info": {
+            "lastnames": [
+                "Sinniger"
+            ],
+            "firstnames": [
+                "Werner"
+            ],
+            "abbr_firstnames": [],
+            "occupations": [],
+            "titles": [],
+            "address": [],
+            "others": []
+        },
+        "pageNames": "dkm-001_1941_001_0420.txt",
+        "pageNo": 0,
+        "sentenceNo": 13,
+        "positions": [
+            "829,771,84,17:main",
+            "195,798,98,22:main"
+        ],
+        "type": "PER",
+        "articles": []
+    },
+    {
+        "info": {
+            "lastnames": [
+                "K\u00fchler"
+            ],
+            "firstnames": [
+                "Arnold"
+            ],
+            "abbr_firstnames": [],
+            "occupations": [
+                "Chefredaktor"
+            ],
+            "titles": [],
+            "address": [],
+            "others": []
+        },
+        "pageNames": "dkm-001_1941_001_0420.txt",
+        "pageNo": 0,
+        "sentenceNo": 19,
+        "positions": [
+            "375,1706,173,23:main",
+            "559,1707,90,22:main",
+            "664,1708,90,21:main"
+        ],
+        "type": "PER",
+        "articles": []
+    },
+    {
+        "info": {
+            "lastnames": [
+                "Bernoulli"
+            ],
+            "firstnames": [
+                "Christoph"
+            ],
+            "abbr_firstnames": [],
+            "occupations": [],
+            "titles": [],
+            "address": [],
+            "others": []
+        },
+        "pageNames": "dkm-001_1941_001_0420.txt",
+        "pageNo": 0,
+        "sentenceNo": 19,
+        "positions": [
+            "226,1827,128,29:main",
+            "365,1827,121,22:main"
+        ],
+        "type": "PER",
+        "articles": []
+    },
+    {
+        "info": {
+            "lastnames": [
+                "Laur"
+            ],
+            "firstnames": [
+                "Ernst"
+            ],
+            "abbr_firstnames": [],
+            "occupations": [
+                "Dr."
+            ],
+            "titles": [],
+            "address": [],
+            "others": []
+        },
+        "pageNames": "dkm-001_1941_001_0420.txt",
+        "pageNo": 0,
+        "sentenceNo": 19,
+        "positions": [
+            "560,1828,40,21:main",
+            "616,1828,72,21:main",
+            "698,1828,62,21:main"
+        ],
+        "type": "PER",
+        "articles": []
+    },
+    {
+        "info": {
+            "lastnames": [
+                "Famer-Hasler"
+            ],
+            "firstnames": [
+                "Agnes"
+            ],
+            "abbr_firstnames": [],
+            "occupations": [],
+            "titles": [],
+            "address": [],
+            "others": []
+        },
+        "pageNames": "dkm-001_1941_001_0420.txt",
+        "pageNo": 0,
+        "sentenceNo": 20,
+        "positions": [
+            "729,1908,76,28:main",
+            "224,1948,184,26:main"
+        ],
+        "type": "PER",
+        "articles": []
+    },
+    {
+        "info": {
+            "lastnames": [
+                "Laemmel"
+            ],
+            "firstnames": [],
+            "abbr_firstnames": [
+                "Hs."
+            ],
+            "occupations": [],
+            "titles": [],
+            "address": [],
+            "others": []
+        },
+        "pageNames": "dkm-001_1941_001_0420.txt",
+        "pageNo": 0,
+        "sentenceNo": 20,
+        "positions": [
+            "635,1988,41,22:main",
+            "686,1989,120,21:main"
+        ],
+        "type": "PER",
+        "articles": []
+    },
+    {
+        "info": {
+            "lastnames": [
+                "Dietrich"
+            ],
+            "firstnames": [
+                "Adolf"
+            ],
+            "abbr_firstnames": [],
+            "occupations": [
+                "Maler"
+            ],
+            "titles": [],
+            "address": [],
+            "others": []
+        },
+        "pageNames": "dkm-001_1941_001_0420.txt",
+        "pageNo": 0,
+        "sentenceNo": 20,
+        "positions": [
+            "259,2029,75,21:main",
+            "348,2028,72,22:main",
+            "437,2029,113,25:main"
+        ],
+        "type": "PER",
+        "articles": []
+    },
+    {
+        "info": {
+            "lastnames": [
+                "Welti"
+            ],
+            "firstnames": [
+                "Albert",
+                "Jakob"
+            ],
+            "abbr_firstnames": [],
+            "occupations": [],
+            "titles": [],
+            "address": [],
+            "others": []
+        },
+        "pageNames": "dkm-001_1941_001_0420.txt",
+        "pageNo": 0,
+        "sentenceNo": 20,
+        "positions": [
+            "285,2148,84,21:main",
+            "383,2148,80,22:main",
+            "476,2148,72,22:main"
+        ],
+        "type": "PER",
+        "articles": []
+    },
+    {
+        "info": {
+            "lastnames": [
+                "Huggenberger"
+            ],
+            "firstnames": [
+                "Alfred"
+            ],
+            "abbr_firstnames": [],
+            "occupations": [],
+            "titles": [],
+            "address": [],
+            "others": []
+        },
+        "pageNames": "dkm-001_1941_001_0420.txt",
+        "pageNo": 0,
+        "sentenceNo": 20,
+        "positions": [
+            "490,2188,82,22:main",
+            "586,2189,185,28:main"
+        ],
+        "type": "PER",
+        "articles": []
+    },
+    {
+        "info": {
+            "lastnames": [
+                "Hillbruiiner"
+            ],
+            "firstnames": [
+                "Hermann"
+            ],
+            "abbr_firstnames": [],
+            "occupations": [],
+            "titles": [],
+            "address": [],
+            "others": []
+        },
+        "pageNames": "dkm-001_1941_001_0420.txt",
+        "pageNo": 0,
+        "sentenceNo": 20,
+        "positions": [
+            "452,2269,125,21:main",
+            "590,2268,158,22:main"
+        ],
+        "type": "PER",
+        "articles": []
+    },
+    {
+        "info": {
+            "lastnames": [
+                "Diebold"
+            ],
+            "firstnames": [
+                "Bernhard"
+            ],
+            "abbr_firstnames": [],
+            "occupations": [],
+            "titles": [],
+            "address": [],
+            "others": []
+        },
+        "pageNames": "dkm-001_1941_001_0420.txt",
+        "pageNo": 0,
+        "sentenceNo": 20,
+        "positions": [
+            "579,2309,121,21:main",
+            "708,2309,98,21:main"
+        ],
+        "type": "PER",
+        "articles": []
+    },
+    {
+        "info": {
+            "lastnames": [
+                "Sonderegger"
+            ],
+            "firstnames": [],
+            "abbr_firstnames": [
+                "H.",
+                "K."
+            ],
+            "occupations": [],
+            "titles": [],
+            "address": [],
+            "others": []
+        },
+        "pageNames": "dkm-001_1941_001_0420.txt",
+        "pageNo": 0,
+        "sentenceNo": 20,
+        "positions": [
+            "568,2389,30,21:main",
+            "607,2389,29,21:main",
+            "646,2388,162,28:main"
+        ],
+        "type": "PER",
+        "articles": []
+    },
+    {
+        "info": {
+            "lastnames": [
+                "Huggenberger"
+            ],
+            "firstnames": [
+                "Alfred"
+            ],
+            "abbr_firstnames": [],
+            "occupations": [],
+            "titles": [],
+            "address": [],
+            "others": []
+        },
+        "pageNames": "dkm-001_1941_001_0420.txt",
+        "pageNo": 0,
+        "sentenceNo": 20,
+        "positions": [
+            "527,2469,82,21:main",
+            "624,2469,185,28:main"
+        ],
+        "type": "PER",
+        "articles": []
+    },
+    {
+        "info": {
+            "lastnames": [
+                "Steinmann"
+            ],
+            "firstnames": [
+                "August"
+            ],
+            "abbr_firstnames": [],
+            "occupations": [],
+            "titles": [],
+            "address": [],
+            "others": []
+        },
+        "pageNames": "dkm-001_1941_001_0420.txt",
+        "pageNo": 0,
+        "sentenceNo": 20,
+        "positions": [
+            "286,2549,95,27:main",
+            "395,2548,143,22:main"
+        ],
+        "type": "PER",
+        "articles": []
+    },
+    {
+        "info": {
+            "lastnames": [
+                "Barth"
+            ],
+            "firstnames": [],
+            "abbr_firstnames": [
+                "Ed."
+            ],
+            "occupations": [],
+            "titles": [],
+            "address": [],
+            "others": []
+        },
+        "pageNames": "dkm-001_1941_001_0420.txt",
+        "pageNo": 0,
+        "sentenceNo": 24,
+        "positions": [
+            "1502,2462,36,18:main",
+            "1554,2461,70,21:main"
+        ],
+        "type": "PER",
+        "articles": []
+    },
+    {
+        "info": {
+            "lastnames": [
+                "T\u00fcrler"
+            ],
+            "firstnames": [],
+            "abbr_firstnames": [
+                "A."
+            ],
+            "occupations": [],
+            "titles": [],
+            "address": [],
+            "others": []
+        },
+        "pageNames": "dkm-001_1941_001_0420.txt",
+        "pageNo": 0,
+        "sentenceNo": 25,
+        "positions": [
+            "1501,2485,25,18:main",
+            "1538,2485,74,18:main"
+        ],
+        "type": "PER",
+        "articles": []
+    },
+    {
+        "info": {
+            "lastnames": [
+                "T\u00fcrler"
+            ],
+            "firstnames": [],
+            "abbr_firstnames": [
+                "A."
+            ],
+            "occupations": [],
+            "titles": [],
+            "address": [],
+            "others": []
+        },
+        "pageNames": "dkm-001_1941_001_0420.txt",
+        "pageNo": 0,
+        "sentenceNo": 25,
+        "positions": [
+            "1501,2542,24,17:main",
+            "1538,2541,75,18:main"
+        ],
+        "type": "PER",
+        "articles": []
+    },
+    {
+        "info": {
+            "lastnames": [
+                "Laurin"
+            ],
+            "firstnames": [],
+            "abbr_firstnames": [
+                "R."
+            ],
+            "occupations": [],
+            "titles": [],
+            "address": [],
+            "others": []
+        },
+        "pageNames": "dkm-001_1941_001_0420.txt",
+        "pageNo": 0,
+        "sentenceNo": 25,
+        "positions": [
+            "1505,2576,22,17:main",
+            "1543,2574,84,21:main"
+        ],
+        "type": "PER",
+        "articles": []
+    },
+    {
+        "info": {
+            "lastnames": [
+                "Sauter"
+            ],
+            "firstnames": [],
+            "abbr_firstnames": [
+                "U."
+            ],
+            "occupations": [],
+            "titles": [],
+            "address": [],
+            "others": []
+        },
+        "pageNames": "dkm-001_1941_001_0420.txt",
+        "pageNo": 0,
+        "sentenceNo": 26,
+        "positions": [
+            "1503,2598,24,18:main",
+            "1542,2598,79,18:main"
+        ],
+        "type": "PER",
+        "articles": []
+    },
+    {
+        "info": {
+            "lastnames": [
+                "Ahrens"
+            ],
+            "firstnames": [],
+            "abbr_firstnames": [
+                "O."
+            ],
+            "occupations": [],
+            "titles": [],
+            "address": [],
+            "others": []
+        },
+        "pageNames": "dkm-001_1941_001_0420.txt",
+        "pageNo": 0,
+        "sentenceNo": 26,
+        "positions": [
+            "1505,2632,25,18:main",
+            "1544,2632,94,20:main"
+        ],
+        "type": "PER",
+        "articles": []
+    },
+    {
+        "info": {
+            "lastnames": [],
+            "firstnames": [
+                "Nicole"
+            ],
+            "abbr_firstnames": [],
+            "occupations": [],
+            "titles": [],
+            "address": [],
+            "others": [
+                "S."
+            ]
+        },
+        "pageNames": "dkm-001_1941_001_0420.txt",
+        "pageNo": 0,
+        "sentenceNo": 26,
+        "positions": [
+            "1505,2666,24,19:main",
+            "1544,2665,81,21:main"
+        ],
+        "type": "PER",
+        "articles": []
+    },
+    {
+        "info": {
+            "lastnames": [],
+            "firstnames": [],
+            "abbr_firstnames": [],
+            "occupations": [],
+            "titles": [],
+            "address": [],
+            "others": [
+                "Herr",
+                "von",
+                "Oldenburg-J",
+                "a"
+            ]
+        },
+        "pageNames": "dkm-001_1941_001_0421.txt",
+        "pageNo": 0,
+        "sentenceNo": 13,
+        "positions": [
+            "1250,1736,69,26:main",
+            "1330,1746,55,16:main",
+            "1396,1737,192,33:main",
+            "1593,1746,15,16:main"
+        ],
+        "type": "PER",
+        "articles": []
+    },
+    {
+        "info": {
+            "lastnames": [
+                "HEIM"
+            ],
+            "firstnames": [
+                "FRANZ",
+                "ANTON"
+            ],
+            "abbr_firstnames": [],
+            "occupations": [],
+            "titles": [],
+            "address": [],
+            "others": []
+        },
+        "pageNames": "dkm-001_1941_001_0424.txt",
+        "pageNo": 0,
+        "sentenceNo": 0,
+        "positions": [
+            "937,1883,115,21:main",
+            "1063,1883,118,21:main",
+            "1193,1883,94,21:main"
+        ],
+        "type": "PER",
+        "articles": []
+    },
+    {
+        "info": {
+            "lastnames": [],
+            "firstnames": [
+                "Gottes"
+            ],
+            "abbr_firstnames": [],
+            "occupations": [],
+            "titles": [],
+            "address": [],
+            "others": []
+        },
+        "pageNames": "dkm-001_1941_001_0424.txt",
+        "pageNo": 0,
+        "sentenceNo": 1,
+        "positions": [
+            "357,1996,85,22:main"
+        ],
+        "type": "PER",
+        "articles": []
+    },
+    {
+        "info": {
+            "lastnames": [
+                "IIEUSCHER"
+            ],
+            "firstnames": [
+                "JOHANN",
+                "JACOB"
+            ],
+            "abbr_firstnames": [],
+            "occupations": [],
+            "titles": [],
+            "address": [],
+            "others": []
+        },
+        "pageNames": "dkm-001_1941_001_0427.txt",
+        "pageNo": 0,
+        "sentenceNo": 9,
+        "positions": [
+            "159,2279,137,21:main",
+            "315,2278,104,22:main",
+            "437,2279,184,21:main"
+        ],
+        "type": "PER",
+        "articles": []
+    },
+    {
+        "info": {
+            "lastnames": [
+                "ZOLLE"
+            ],
+            "firstnames": [
+                "JOHANNES"
+            ],
+            "abbr_firstnames": [],
+            "occupations": [],
+            "titles": [],
+            "address": [],
+            "others": []
+        },
+        "pageNames": "dkm-001_1941_001_0427.txt",
+        "pageNo": 0,
+        "sentenceNo": 17,
+        "positions": [
+            "1599,1715,184,22:main",
+            "1801,1710,110,26:main"
+        ],
+        "type": "PER",
+        "articles": []
+    },
+    {
+        "info": {
+            "lastnames": [
+                "Heuscher"
+            ],
+            "firstnames": [],
+            "abbr_firstnames": [],
+            "occupations": [],
+            "titles": [],
+            "address": [],
+            "others": []
+        },
+        "pageNames": "dkm-001_1941_001_0427.txt",
+        "pageNo": 0,
+        "sentenceNo": 19,
+        "positions": [
+            "1941,2129,122,21:main"
+        ],
+        "type": "PER",
+        "articles": []
+    },
+    {
+        "info": {
+            "lastnames": [],
+            "firstnames": [],
+            "abbr_firstnames": [],
+            "occupations": [],
+            "titles": [],
+            "address": [],
+            "others": [
+                "Hieroshige"
+            ]
+        },
+        "pageNames": "dkm-001_1941_001_0427.txt",
+        "pageNo": 0,
+        "sentenceNo": 20,
+        "positions": [
+            "1803,2281,145,28:main"
+        ],
+        "type": "PER",
+        "articles": []
+    },
+    {
+        "info": {
+            "lastnames": [
+                "Bernoulli"
+            ],
+            "firstnames": [
+                "Christoph"
+            ],
+            "abbr_firstnames": [],
+            "occupations": [],
+            "titles": [],
+            "address": [],
+            "others": []
+        },
+        "pageNames": "dkm-001_1941_001_0428.txt",
+        "pageNo": 0,
+        "sentenceNo": 2,
+        "positions": [
+            "1304,2108,123,29:main",
+            "1440,2108,119,22:main"
+        ],
+        "type": "PER",
+        "articles": []
+    },
+    {
+        "info": {
+            "lastnames": [
+                "Zeller"
+            ],
+            "firstnames": [
+                "Johann",
+                "Baptist"
+            ],
+            "abbr_firstnames": [],
+            "occupations": [],
+            "titles": [],
+            "address": [],
+            "others": []
+        },
+        "pageNames": "dkm-001_1941_001_0429.txt",
+        "pageNo": 0,
+        "sentenceNo": 0,
+        "positions": [
+            "1041,295,99,23:main",
+            "1154,296,96,28:main",
+            "1264,296,81,22:main"
+        ],
+        "type": "PER",
+        "articles": []
+    },
+    {
+        "info": {
+            "lastnames": [],
+            "firstnames": [],
+            "abbr_firstnames": [],
+            "occupations": [],
+            "titles": [],
+            "address": [],
+            "others": [
+                "Retteli"
+            ]
+        },
+        "pageNames": "dkm-001_1941_001_0429.txt",
+        "pageNo": 0,
+        "sentenceNo": 5,
+        "positions": [
+            "1418,484,92,22:main"
+        ],
+        "type": "PER",
+        "articles": []
+    },
+    {
+        "info": {
+            "lastnames": [
+                "Breitenmoser"
+            ],
+            "firstnames": [
+                "Appenzellem"
+            ],
+            "abbr_firstnames": [],
+            "occupations": [],
+            "titles": [],
+            "address": [],
+            "others": []
+        },
+        "pageNames": "dkm-001_1941_001_0431.txt",
+        "pageNo": 0,
+        "sentenceNo": 7,
+        "positions": [
+            "1081,2309,168,29:main",
+            "1267,2309,182,25:main"
+        ],
+        "type": "PER",
+        "articles": []
+    },
+    {
+        "info": {
+            "lastnames": [
+                "L\u00e4mmler"
+            ],
+            "firstnames": [
+                "Bartholome"
+            ],
+            "abbr_firstnames": [],
+            "occupations": [],
+            "titles": [],
+            "address": [],
+            "others": []
+        },
+        "pageNames": "dkm-001_1941_001_0431.txt",
+        "pageNo": 0,
+        "sentenceNo": 15,
+        "positions": [
+            "1019,2740,158,21:main",
+            "1189,2739,120,23:main"
+        ],
+        "type": "PER",
+        "articles": []
+    },
+    {
+        "info": {
+            "lastnames": [
+                "M\u00fcller"
+            ],
+            "firstnames": [
+                "Johannes"
+            ],
+            "abbr_firstnames": [],
+            "occupations": [],
+            "titles": [],
+            "address": [],
+            "others": [
+                "von"
+            ]
+        },
+        "pageNames": "dkm-001_1941_001_0431.txt",
+        "pageNo": 0,
+        "sentenceNo": 15,
+        "positions": [
+            "624,2775,123,21:main",
+            "760,2775,84,21:main",
+            "856,2783,48,14:main"
+        ],
+        "type": "PER",
+        "articles": []
+    },
+    {
+        "info": {
+            "lastnames": [
+                "Kn\u00f6pfel"
+            ],
+            "firstnames": [
+                "Johann",
+                "Jacob"
+            ],
+            "abbr_firstnames": [],
+            "occupations": [],
+            "titles": [],
+            "address": [],
+            "others": []
+        },
+        "pageNames": "dkm-001_1941_001_0433.txt",
+        "pageNo": 0,
+        "sentenceNo": 3,
+        "positions": [
+            "1828,880,97,21:main",
+            "1347,915,75,22:main",
+            "1436,915,105,28:main"
+        ],
+        "type": "PER",
+        "articles": []
+    },
+    {
+        "info": {
+            "lastnames": [
+                "Law"
+            ],
+            "firstnames": [
+                "Ernst"
+            ],
+            "abbr_firstnames": [],
+            "occupations": [
+                "Dr."
+            ],
+            "titles": [],
+            "address": [],
+            "others": []
+        },
+        "pageNames": "dkm-001_1941_001_0434.txt",
+        "pageNo": 0,
+        "sentenceNo": 18,
+        "positions": [
+            "1377,1731,41,22:main",
+            "1431,1732,71,21:main",
+            "1512,1732,64,21:main"
+        ],
+        "type": "PER",
+        "articles": []
+    },
+    {
+        "info": {
+            "lastnames": [
+                "Haemmerli-Schindler"
+            ],
+            "firstnames": [
+                "Gertrud"
+            ],
+            "abbr_firstnames": [],
+            "occupations": [
+                "Pr\u00e4sidentin"
+            ],
+            "titles": [],
+            "address": [],
+            "others": []
+        },
+        "pageNames": "dkm-001_1941_001_0436.txt",
+        "pageNo": 0,
+        "sentenceNo": 2,
+        "positions": [
+            "1203,475,82,17:main",
+            "1294,473,237,23:main",
+            "1294,473,237,23:rpunc",
+            "1539,474,130,17:main"
+        ],
+        "type": "PER",
+        "articles": []
+    },
+    {
+        "info": {
+            "lastnames": [
+                "Farner-Hasler"
+            ],
+            "firstnames": [
+                "Agnes"
+            ],
+            "abbr_firstnames": [],
+            "occupations": [],
+            "titles": [],
+            "address": [],
+            "others": []
+        },
+        "pageNames": "dkm-001_1941_001_0437.txt",
+        "pageNo": 0,
+        "sentenceNo": 19,
+        "positions": [
+            "246,2760,66,22:main",
+            "323,2761,165,21:main"
+        ],
+        "type": "PER",
+        "articles": []
+    },
+    {
+        "info": {
+            "lastnames": [],
+            "firstnames": [],
+            "abbr_firstnames": [],
+            "occupations": [],
+            "titles": [],
+            "address": [],
+            "others": [
+                "Frau",
+                "M."
+            ]
+        },
+        "pageNames": "dkm-001_1941_001_0437.txt",
+        "pageNo": 0,
+        "sentenceNo": 21,
+        "positions": [
+            "1530,1743,52,17:main",
+            "1597,1744,26,16:main"
+        ],
+        "type": "PER",
+        "articles": []
+    },
+    {
+        "info": {
+            "lastnames": [
+                "Gottlob"
+            ],
+            "firstnames": [],
+            "abbr_firstnames": [],
+            "occupations": [],
+            "titles": [],
+            "address": [],
+            "others": []
+        },
+        "pageNames": "dkm-001_1941_001_0437.txt",
+        "pageNo": 0,
+        "sentenceNo": 24,
+        "positions": [
+            "1468,1799,92,21:main"
+        ],
+        "type": "PER",
+        "articles": []
+    },
+    {
+        "info": {
+            "lastnames": [
+                "Jaberg"
+            ],
+            "firstnames": [],
+            "abbr_firstnames": [
+                "P."
+            ],
+            "occupations": [],
+            "titles": [],
+            "address": [
+                "Frau"
+            ],
+            "others": []
+        },
+        "pageNames": "dkm-001_1941_001_0437.txt",
+        "pageNo": 0,
+        "sentenceNo": 25,
+        "positions": [
+            "879,2072,62,21:main",
+            "950,2072,25,21:main",
+            "984,2072,96,28:main"
+        ],
+        "type": "PER",
+        "articles": []
+    },
+    {
+        "info": {
+            "lastnames": [],
+            "firstnames": [],
+            "abbr_firstnames": [],
+            "occupations": [],
+            "titles": [],
+            "address": [],
+            "others": []
+        },
+        "pageNames": "dkm-001_1941_001_0437.txt",
+        "pageNo": 0,
+        "sentenceNo": 25,
+        "positions": [
+            "984,2072,96,28:rpunc"
+        ],
+        "type": "PER",
+        "articles": []
+    },
+    {
+        "info": {
+            "lastnames": [],
+            "firstnames": [],
+            "abbr_firstnames": [],
+            "occupations": [
+                "Mitarbeiterin"
+            ],
+            "titles": [],
+            "address": [],
+            "others": []
+        },
+        "pageNames": "dkm-001_1941_001_0437.txt",
+        "pageNo": 0,
+        "sentenceNo": 25,
+        "positions": [
+            "1088,2072,174,21:main"
+        ],
+        "type": "PER",
+        "articles": []
+    },
+    {
+        "info": {
+            "lastnames": [],
+            "firstnames": [
+                "Ruth"
+            ],
+            "abbr_firstnames": [
+                "H."
+            ],
+            "occupations": [],
+            "titles": [],
+            "address": [],
+            "others": []
+        },
+        "pageNames": "dkm-001_1941_001_0438.txt",
+        "pageNo": 0,
+        "sentenceNo": 22,
+        "positions": [
+            "516,1197,56,16:main",
+            "589,1197,25,16:main"
+        ],
+        "type": "PER",
+        "articles": []
+    },
+    {
+        "info": {
+            "lastnames": [
+                "Gottlob"
+            ],
+            "firstnames": [],
+            "abbr_firstnames": [],
+            "occupations": [],
+            "titles": [],
+            "address": [],
+            "others": []
+        },
+        "pageNames": "dkm-001_1941_001_0438.txt",
+        "pageNo": 0,
+        "sentenceNo": 41,
+        "positions": [
+            "1542,1288,99,21:main"
+        ],
+        "type": "PER",
+        "articles": []
+    },
+    {
+        "info": {
+            "lastnames": [],
+            "firstnames": [],
+            "abbr_firstnames": [],
+            "occupations": [],
+            "titles": [],
+            "address": [],
+            "others": [
+                "Fr\u00e4ulein",
+                "S."
+            ]
+        },
+        "pageNames": "dkm-001_1941_001_0439.txt",
+        "pageNo": 0,
+        "sentenceNo": 10,
+        "positions": [
+            "913,1772,110,21:main",
+            "1039,1771,23,22:main"
+        ],
+        "type": "PER",
+        "articles": []
+    },
+    {
+        "info": {
+            "lastnames": [],
+            "firstnames": [],
+            "abbr_firstnames": [],
+            "occupations": [],
+            "titles": [],
+            "address": [],
+            "others": [
+                "Burechindli"
+            ]
+        },
+        "pageNames": "dkm-001_1941_001_0439.txt",
+        "pageNo": 0,
+        "sentenceNo": 33,
+        "positions": [
+            "1679,2344,152,22:main"
+        ],
+        "type": "PER",
+        "articles": []
+    },
+    {
+        "info": {
+            "lastnames": [
+                "Nievergelt"
+            ],
+            "firstnames": [
+                "Olga"
+            ],
+            "abbr_firstnames": [],
+            "occupations": [],
+            "titles": [],
+            "address": [],
+            "others": []
+        },
+        "pageNames": "dkm-001_1941_001_0439.txt",
+        "pageNo": 0,
+        "sentenceNo": 33,
+        "positions": [
+            "1925,2745,49,23:main",
+            "1982,2746,109,22:main"
+        ],
+        "type": "PER",
+        "articles": []
+    },
+    {
+        "info": {
+            "lastnames": [
+                "Andres-Schurter"
+            ],
+            "firstnames": [],
+            "abbr_firstnames": [
+                "C."
+            ],
+            "occupations": [],
+            "titles": [],
+            "address": [
+                "Frau"
+            ],
+            "others": []
+        },
+        "pageNames": "dkm-001_1941_001_0440.txt",
+        "pageNo": 0,
+        "sentenceNo": 4,
+        "positions": [
+            "156,677,62,22:main",
+            "228,677,23,22:main",
+            "261,676,226,27:main"
+        ],
+        "type": "PER",
+        "articles": []
+    },
+    {
+        "info": {
+            "lastnames": [
+                "Nievergelt"
+            ],
+            "firstnames": [
+                "Olga"
+            ],
+            "abbr_firstnames": [],
+            "occupations": [],
+            "titles": [],
+            "address": [
+                "Frau"
+            ],
+            "others": []
+        },
+        "pageNames": "dkm-001_1941_001_0440.txt",
+        "pageNo": 0,
+        "sentenceNo": 4,
+        "positions": [
+            "669,750,61,20:main",
+            "126,785,59,27:main",
+            "207,784,143,28:main"
+        ],
+        "type": "PER",
+        "articles": []
+    },
+    {
+        "info": {
+            "lastnames": [],
+            "firstnames": [
+                "Andres"
+            ],
+            "abbr_firstnames": [],
+            "occupations": [],
+            "titles": [],
+            "address": [
+                "Frau"
+            ],
+            "others": []
+        },
+        "pageNames": "dkm-001_1941_001_0440.txt",
+        "pageNo": 0,
+        "sentenceNo": 5,
+        "positions": [
+            "478,857,71,28:main",
+            "563,857,91,21:main"
+        ],
+        "type": "PER",
+        "articles": []
+    },
+    {
+        "info": {
+            "lastnames": [],
+            "firstnames": [
+                "Willi"
+            ],
+            "abbr_firstnames": [],
+            "occupations": [],
+            "titles": [],
+            "address": [],
+            "others": []
+        },
+        "pageNames": "dkm-001_1941_001_0441.txt",
+        "pageNo": 0,
+        "sentenceNo": 25,
+        "positions": [
+            "249,2127,62,21:main"
+        ],
+        "type": "PER",
+        "articles": []
+    },
+    {
+        "info": {
+            "lastnames": [],
+            "firstnames": [
+                "Elfeli"
+            ],
+            "abbr_firstnames": [],
+            "occupations": [],
+            "titles": [],
+            "address": [],
+            "others": []
+        },
+        "pageNames": "dkm-001_1941_001_0441.txt",
+        "pageNo": 0,
+        "sentenceNo": 25,
+        "positions": [
+            "386,2127,68,22:main"
+        ],
+        "type": "PER",
+        "articles": []
+    },
+    {
+        "info": {
+            "lastnames": [
+                "Wei\u00df"
+            ],
+            "firstnames": [
+                "Manfred"
+            ],
+            "abbr_firstnames": [],
+            "occupations": [],
+            "titles": [],
+            "address": [],
+            "others": []
+        },
+        "pageNames": "dkm-001_1941_001_0441.txt",
+        "pageNo": 0,
+        "sentenceNo": 52,
+        "positions": [
+            "1936,2773,96,21:main",
+            "2040,2774,59,20:main"
+        ],
+        "type": "PER",
+        "articles": []
+    },
+    {
+        "info": {
+            "lastnames": [
+                "Sutter"
+            ],
+            "firstnames": [
+                "Marie"
+            ],
+            "abbr_firstnames": [],
+            "occupations": [],
+            "titles": [],
+            "address": [],
+            "others": []
+        },
+        "pageNames": "dkm-001_1941_001_0442.txt",
+        "pageNo": 0,
+        "sentenceNo": 4,
+        "positions": [
+            "205,554,73,22:main",
+            "294,554,89,27:main"
+        ],
+        "type": "PER",
+        "articles": []
+    },
+    {
+        "info": {
+            "lastnames": [],
+            "firstnames": [
+                "Marie"
+            ],
+            "abbr_firstnames": [],
+            "occupations": [],
+            "titles": [],
+            "address": [],
+            "others": []
+        },
+        "pageNames": "dkm-001_1941_001_0442.txt",
+        "pageNo": 0,
+        "sentenceNo": 25,
+        "positions": [
+            "713,2066,72,21:main"
+        ],
+        "type": "PER",
+        "articles": []
+    },
+    {
+        "info": {
+            "lastnames": [
+                "D\u00f6rig"
+            ],
+            "firstnames": [],
+            "abbr_firstnames": [],
+            "occupations": [],
+            "titles": [],
+            "address": [],
+            "others": []
+        },
+        "pageNames": "dkm-001_1941_001_0442.txt",
+        "pageNo": 0,
+        "sentenceNo": 28,
+        "positions": [
+            "351,2480,79,28:main"
+        ],
+        "type": "PER",
+        "articles": []
+    },
+    {
+        "info": {
+            "lastnames": [
+                "D\u00f6rig"
+            ],
+            "firstnames": [
+                "Boger"
+            ],
+            "abbr_firstnames": [],
+            "occupations": [],
+            "titles": [],
+            "address": [],
+            "others": []
+        },
+        "pageNames": "dkm-001_1941_001_0442.txt",
+        "pageNo": 0,
+        "sentenceNo": 28,
+        "positions": [
+            "445,2480,88,29:main",
+            "544,2482,86,27:main"
+        ],
+        "type": "PER",
+        "articles": []
+    },
+    {
+        "info": {
+            "lastnames": [
+                "D\u00f6rig"
+            ],
+            "firstnames": [],
+            "abbr_firstnames": [],
+            "occupations": [
+                "Boger"
+            ],
+            "titles": [],
+            "address": [],
+            "others": []
+        },
+        "pageNames": "dkm-001_1941_001_0442.txt",
+        "pageNo": 0,
+        "sentenceNo": 29,
+        "positions": [
+            "280,2629,76,28:main",
+            "374,2630,73,27:main"
+        ],
+        "type": "PER",
+        "articles": []
+    },
+    {
+        "info": {
+            "lastnames": [
+                "D\u00f6rig"
+            ],
+            "firstnames": [],
+            "abbr_firstnames": [],
+            "occupations": [],
+            "titles": [],
+            "address": [],
+            "others": []
+        },
+        "pageNames": "dkm-001_1941_001_0442.txt",
+        "pageNo": 0,
+        "sentenceNo": 40,
+        "positions": [
+            "1625,808,79,28:main"
+        ],
+        "type": "PER",
+        "articles": []
+    },
+    {
+        "info": {
+            "lastnames": [
+                "Broger"
+            ],
+            "firstnames": [
+                "Armin"
+            ],
+            "abbr_firstnames": [],
+            "occupations": [],
+            "titles": [],
+            "address": [],
+            "others": []
+        },
+        "pageNames": "dkm-001_1941_001_0442.txt",
+        "pageNo": 0,
+        "sentenceNo": 43,
+        "positions": [
+            "1240,1162,82,21:main",
+            "1342,1162,95,28:main"
+        ],
+        "type": "PER",
+        "articles": []
+    },
+    {
+        "info": {
+            "lastnames": [
+                "Broger"
+            ],
+            "firstnames": [
+                "Armin"
+            ],
+            "abbr_firstnames": [],
+            "occupations": [],
+            "titles": [],
+            "address": [],
+            "others": []
+        },
+        "pageNames": "dkm-001_1941_001_0442.txt",
+        "pageNo": 0,
+        "sentenceNo": 45,
+        "positions": [
+            "1240,1234,83,21:main",
+            "1353,1234,95,28:main"
+        ],
+        "type": "PER",
+        "articles": []
+    },
+    {
+        "info": {
+            "lastnames": [
+                "Mock"
+            ],
+            "firstnames": [
+                "Hast\u00f6ni"
+            ],
+            "abbr_firstnames": [],
+            "occupations": [],
+            "titles": [],
+            "address": [],
+            "others": []
+        },
+        "pageNames": "dkm-001_1941_001_0442.txt",
+        "pageNo": 0,
+        "sentenceNo": 45,
+        "positions": [
+            "1241,1270,103,21:main",
+            "1362,1270,69,21:main"
+        ],
+        "type": "PER",
+        "articles": []
+    },
+    {
+        "info": {
+            "lastnames": [
+                "Mocks"
+            ],
+            "firstnames": [],
+            "abbr_firstnames": [],
+            "occupations": [],
+            "titles": [],
+            "address": [],
+            "others": []
+        },
+        "pageNames": "dkm-001_1941_001_0442.txt",
+        "pageNo": 0,
+        "sentenceNo": 46,
+        "positions": [
+            "1432,1306,79,21:main"
+        ],
+        "type": "PER",
+        "articles": []
+    },
+    {
+        "info": {
+            "lastnames": [
+                "Broger"
+            ],
+            "firstnames": [
+                "Armin"
+            ],
+            "abbr_firstnames": [],
+            "occupations": [],
+            "titles": [],
+            "address": [],
+            "others": []
+        },
+        "pageNames": "dkm-001_1941_001_0442.txt",
+        "pageNo": 0,
+        "sentenceNo": 49,
+        "positions": [
+            "1329,1485,84,21:main",
+            "1435,1485,88,28:main"
+        ],
+        "type": "PER",
+        "articles": []
+    },
+    {
+        "info": {
+            "lastnames": [
+                "Mock"
+            ],
+            "firstnames": [
+                "Hast\u00f6ni"
+            ],
+            "abbr_firstnames": [],
+            "occupations": [],
+            "titles": [],
+            "address": [],
+            "others": []
+        },
+        "pageNames": "dkm-001_1941_001_0442.txt",
+        "pageNo": 0,
+        "sentenceNo": 56,
+        "positions": [
+            "1480,2095,102,20:main",
+            "1603,2094,68,21:main"
+        ],
+        "type": "PER",
+        "articles": []
+    },
+    {
+        "info": {
+            "lastnames": [
+                "Mock"
+            ],
+            "firstnames": [],
+            "abbr_firstnames": [],
+            "occupations": [],
+            "titles": [],
+            "address": [],
+            "others": []
+        },
+        "pageNames": "dkm-001_1941_001_0442.txt",
+        "pageNo": 0,
+        "sentenceNo": 56,
+        "positions": [
+            "1944,2129,68,21:main"
+        ],
+        "type": "PER",
+        "articles": []
+    },
+    {
+        "info": {
+            "lastnames": [
+                "Broger"
+            ],
+            "firstnames": [
+                "Armin"
+            ],
+            "abbr_firstnames": [],
+            "occupations": [],
+            "titles": [],
+            "address": [],
+            "others": []
+        },
+        "pageNames": "dkm-001_1941_001_0442.txt",
+        "pageNo": 0,
+        "sentenceNo": 57,
+        "positions": [
+            "1915,2164,83,21:main",
+            "2033,2164,88,26:main"
+        ],
+        "type": "PER",
+        "articles": []
+    },
+    {
+        "info": {
+            "lastnames": [
+                "Sutter"
+            ],
+            "firstnames": [
+                "Marie"
+            ],
+            "abbr_firstnames": [],
+            "occupations": [],
+            "titles": [],
+            "address": [],
+            "others": []
+        },
+        "pageNames": "dkm-001_1941_001_0442.txt",
+        "pageNo": 0,
+        "sentenceNo": 57,
+        "positions": [
+            "1753,2200,72,21:main",
+            "1847,2199,88,26:main"
+        ],
+        "type": "PER",
+        "articles": []
+    },
+    {
+        "info": {
+            "lastnames": [
+                "Laemmel"
+            ],
+            "firstnames": [
+                "Hans"
+            ],
+            "abbr_firstnames": [],
+            "occupations": [],
+            "titles": [],
+            "address": [],
+            "others": []
+        },
+        "pageNames": "dkm-001_1941_001_0442.txt",
+        "pageNo": 0,
+        "sentenceNo": 62,
+        "positions": [
+            "1901,2771,69,21:main",
+            "1981,2770,116,21:main"
+        ],
+        "type": "PER",
+        "articles": []
+    },
+    {
+        "info": {
+            "lastnames": [
+                "Sutter"
+            ],
+            "firstnames": [
+                "Marie"
+            ],
+            "abbr_firstnames": [],
+            "occupations": [],
+            "titles": [],
+            "address": [],
+            "others": []
+        },
+        "pageNames": "dkm-001_1941_001_0443.txt",
+        "pageNo": 0,
+        "sentenceNo": 0,
+        "positions": [
+            "945,2338,72,22:main",
+            "1030,2338,90,22:main"
+        ],
+        "type": "PER",
+        "articles": []
+    },
+    {
+        "info": {
+            "lastnames": [],
+            "firstnames": [
+                "Marie"
+            ],
+            "abbr_firstnames": [],
+            "occupations": [],
+            "titles": [],
+            "address": [],
+            "others": []
+        },
+        "pageNames": "dkm-001_1941_001_0443.txt",
+        "pageNo": 0,
+        "sentenceNo": 1,
+        "positions": [
+            "907,2373,72,22:main"
+        ],
+        "type": "PER",
+        "articles": []
+    },
+    {
+        "info": {
+            "lastnames": [],
+            "firstnames": [
+                "Marie"
+            ],
+            "abbr_firstnames": [],
+            "occupations": [],
+            "titles": [],
+            "address": [],
+            "others": []
+        },
+        "pageNames": "dkm-001_1941_001_0443.txt",
+        "pageNo": 0,
+        "sentenceNo": 1,
+        "positions": [
+            "905,2410,72,21:main"
+        ],
+        "type": "PER",
+        "articles": []
+    },
+    {
+        "info": {
+            "lastnames": [
+                "DIETRICH"
+            ],
+            "firstnames": [
+                "ADOLF"
+            ],
+            "abbr_firstnames": [],
+            "occupations": [],
+            "titles": [],
+            "address": [],
+            "others": []
+        },
+        "pageNames": "dkm-001_1941_001_0444.txt",
+        "pageNo": 0,
+        "sentenceNo": 0,
+        "positions": [
+            "119,2805,131,23:main",
+            "274,2806,212,24:main"
+        ],
+        "type": "PER",
+        "articles": []
+    },
+    {
+        "info": {
+            "lastnames": [
+                "DIETRICH"
+            ],
+            "firstnames": [
+                "ADOLF"
+            ],
+            "abbr_firstnames": [],
+            "occupations": [],
+            "titles": [],
+            "address": [],
+            "others": []
+        },
+        "pageNames": "dkm-001_1941_001_0445.txt",
+        "pageNo": 0,
+        "sentenceNo": 0,
+        "positions": [
+            "450,420,327,61:main",
+            "887,422,532,61:main"
+        ],
+        "type": "PER",
+        "articles": []
+    },
+    {
+        "info": {
+            "lastnames": [
+                "Dietrich"
+            ],
+            "firstnames": [
+                "Adolf"
+            ],
+            "abbr_firstnames": [],
+            "occupations": [
+                "Maler"
+            ],
+            "titles": [],
+            "address": [],
+            "others": []
+        },
+        "pageNames": "dkm-001_1941_001_0445.txt",
+        "pageNo": 0,
+        "sentenceNo": 0,
+        "positions": [
+            "911,810,86,27:main",
+            "1015,811,85,26:main",
+            "1119,810,125,27:main"
+        ],
+        "type": "PER",
+        "articles": []
+    },
+    {
+        "info": {
+            "lastnames": [
+                "Beauchant"
+            ],
+            "firstnames": [],
+            "abbr_firstnames": [],
+            "occupations": [],
+            "titles": [],
+            "address": [],
+            "others": []
+        },
+        "pageNames": "dkm-001_1941_001_0445.txt",
+        "pageNo": 0,
+        "sentenceNo": 3,
+        "positions": [
+            "765,1322,173,33:main"
+        ],
+        "type": "PER",
+        "articles": []
+    },
+    {
+        "info": {
+            "lastnames": [
+                "Bombois"
+            ],
+            "firstnames": [],
+            "abbr_firstnames": [],
+            "occupations": [],
+            "titles": [],
+            "address": [],
+            "others": []
+        },
+        "pageNames": "dkm-001_1941_001_0445.txt",
+        "pageNo": 0,
+        "sentenceNo": 3,
+        "positions": [
+            "958,1322,142,34:main"
+        ],
+        "type": "PER",
+        "articles": []
+    },
+    {
+        "info": {
+            "lastnames": [
+                "Vivin"
+            ],
+            "firstnames": [],
+            "abbr_firstnames": [],
+            "occupations": [],
+            "titles": [],
+            "address": [],
+            "others": []
+        },
+        "pageNames": "dkm-001_1941_001_0445.txt",
+        "pageNo": 0,
+        "sentenceNo": 3,
+        "positions": [
+            "1118,1322,84,28:main"
+        ],
+        "type": "PER",
+        "articles": []
+    },
+    {
+        "info": {
+            "lastnames": [],
+            "firstnames": [
+                "Dietrich"
+            ],
+            "abbr_firstnames": [],
+            "occupations": [],
+            "titles": [],
+            "address": [],
+            "others": []
+        },
+        "pageNames": "dkm-001_1941_001_0445.txt",
+        "pageNo": 0,
+        "sentenceNo": 4,
+        "positions": [
+            "1844,1322,124,26:main"
+        ],
+        "type": "PER",
+        "articles": []
+    },
+    {
+        "info": {
+            "lastnames": [
+                "Dietrichs"
+            ],
+            "firstnames": [],
+            "abbr_firstnames": [],
+            "occupations": [],
+            "titles": [],
+            "address": [],
+            "others": []
+        },
+        "pageNames": "dkm-001_1941_001_0445.txt",
+        "pageNo": 0,
+        "sentenceNo": 8,
+        "positions": [
+            "1047,1833,137,27:main"
+        ],
+        "type": "PER",
+        "articles": []
+    },
+    {
+        "info": {
+            "lastnames": [],
+            "firstnames": [
+                "Dietrich"
+            ],
+            "abbr_firstnames": [],
+            "occupations": [],
+            "titles": [],
+            "address": [],
+            "others": []
+        },
+        "pageNames": "dkm-001_1941_001_0445.txt",
+        "pageNo": 0,
+        "sentenceNo": 10,
+        "positions": [
+            "1457,2060,124,26:main"
+        ],
+        "type": "PER",
+        "articles": []
+    },
+    {
+        "info": {
+            "lastnames": [],
+            "firstnames": [
+                "Dietrich"
+            ],
+            "abbr_firstnames": [],
+            "occupations": [],
+            "titles": [],
+            "address": [],
+            "others": []
+        },
+        "pageNames": "dkm-001_1941_001_0445.txt",
+        "pageNo": 0,
+        "sentenceNo": 11,
+        "positions": [
+            "1037,2117,125,27:main"
+        ],
+        "type": "PER",
+        "articles": []
+    },
+    {
+        "info": {
+            "lastnames": [],
+            "firstnames": [
+                "Dietrich"
+            ],
+            "abbr_firstnames": [],
+            "occupations": [],
+            "titles": [],
+            "address": [],
+            "others": []
+        },
+        "pageNames": "dkm-001_1941_001_0445.txt",
+        "pageNo": 0,
+        "sentenceNo": 13,
+        "positions": [
+            "1496,2287,125,27:main"
+        ],
+        "type": "PER",
+        "articles": []
+    },
+    {
+        "info": {
+            "lastnames": [],
+            "firstnames": [
+                "Dietrich"
+            ],
+            "abbr_firstnames": [],
+            "occupations": [],
+            "titles": [],
+            "address": [],
+            "others": []
+        },
+        "pageNames": "dkm-001_1941_001_0445.txt",
+        "pageNo": 0,
+        "sentenceNo": 14,
+        "positions": [
+            "953,2571,125,27:main"
+        ],
+        "type": "PER",
+        "articles": []
+    },
+    {
+        "info": {
+            "lastnames": [
+                "DIETRICH"
+            ],
+            "firstnames": [
+                "ADOLF"
+            ],
+            "abbr_firstnames": [],
+            "occupations": [],
+            "titles": [],
+            "address": [],
+            "others": []
+        },
+        "pageNames": "dkm-001_1941_001_0446.txt",
+        "pageNo": 0,
+        "sentenceNo": 2,
+        "positions": [
+            "375,2216,108,18:main",
+            "508,2217,183,18:main"
+        ],
+        "type": "PER",
+        "articles": []
+    },
+    {
+        "info": {
+            "lastnames": [
+                "Gasser"
+            ],
+            "firstnames": [
+                "Hans",
+                "Ulrich"
+            ],
+            "abbr_firstnames": [],
+            "occupations": [],
+            "titles": [],
+            "address": [],
+            "others": []
+        },
+        "pageNames": "dkm-001_1941_001_0446.txt",
+        "pageNo": 0,
+        "sentenceNo": 6,
+        "positions": [
+            "1152,2768,67,23:main",
+            "1232,2768,81,22:main",
+            "1328,2768,85,22:main"
+        ],
+        "type": "PER",
+        "articles": []
+    },
+    {
+        "info": {
+            "lastnames": [
+                "Welti"
+            ],
+            "firstnames": [
+                "Albert",
+                "Jakob"
+            ],
+            "abbr_firstnames": [],
+            "occupations": [],
+            "titles": [],
+            "address": [],
+            "others": []
+        },
+        "pageNames": "dkm-001_1941_001_0447.txt",
+        "pageNo": 0,
+        "sentenceNo": 0,
+        "positions": [
+            "1001,747,201,26:main",
+            "1240,747,165,32:main",
+            "1447,747,168,24:main"
+        ],
+        "type": "PER",
+        "articles": []
+    },
+    {
+        "info": {
+            "lastnames": [],
+            "firstnames": [
+                "Erna"
+            ],
+            "abbr_firstnames": [],
+            "occupations": [],
+            "titles": [],
+            "address": [],
+            "others": []
+        },
+        "pageNames": "dkm-001_1941_001_0447.txt",
+        "pageNo": 0,
+        "sentenceNo": 37,
+        "positions": [
+            "1270,2476,44,15:main"
+        ],
+        "type": "PER",
+        "articles": []
+    },
+    {
+        "info": {
+            "lastnames": [],
+            "firstnames": [
+                "Erna"
+            ],
+            "abbr_firstnames": [],
+            "occupations": [],
+            "titles": [],
+            "address": [],
+            "others": []
+        },
+        "pageNames": "dkm-001_1941_001_0447.txt",
+        "pageNo": 0,
+        "sentenceNo": 39,
+        "positions": [
+            "1500,2527,43,16:main"
+        ],
+        "type": "PER",
+        "articles": []
+    },
+    {
+        "info": {
+            "lastnames": [],
+            "firstnames": [
+                "Barbara"
+            ],
+            "abbr_firstnames": [],
+            "occupations": [],
+            "titles": [],
+            "address": [],
+            "others": []
+        },
+        "pageNames": "dkm-001_1941_001_0447.txt",
+        "pageNo": 0,
+        "sentenceNo": 42,
+        "positions": [
+            "1270,2687,70,16:main"
+        ],
+        "type": "PER",
+        "articles": []
+    },
+    {
+        "info": {
+            "lastnames": [],
+            "firstnames": [],
+            "abbr_firstnames": [],
+            "occupations": [],
+            "titles": [],
+            "address": [],
+            "others": [
+                "Dorette"
+            ]
+        },
+        "pageNames": "dkm-001_1941_001_0447.txt",
+        "pageNo": 0,
+        "sentenceNo": 45,
+        "positions": [
+            "1825,2791,70,15:main"
+        ],
+        "type": "PER",
+        "articles": []
+    },
+    {
+        "info": {
+            "lastnames": [],
+            "firstnames": [],
+            "abbr_firstnames": [],
+            "occupations": [],
+            "titles": [],
+            "address": [],
+            "others": [
+                "Mangeois"
+            ]
+        },
+        "pageNames": "dkm-001_1941_001_0448.txt",
+        "pageNo": 0,
+        "sentenceNo": 17,
+        "positions": [
+            "168,1302,138,32:main"
+        ],
+        "type": "PER",
+        "articles": []
+    },
+    {
+        "info": {
+            "lastnames": [
+                "Mangeois"
+            ],
+            "firstnames": [
+                "Ulisse"
+            ],
+            "abbr_firstnames": [],
+            "occupations": [
+                "Syndic"
+            ],
+            "titles": [],
+            "address": [],
+            "others": []
+        },
+        "pageNames": "dkm-001_1941_001_0448.txt",
+        "pageNo": 0,
+        "sentenceNo": 29,
+        "positions": [
+            "454,2019,95,33:main",
+            "557,2020,85,25:main",
+            "650,2021,137,33:main"
+        ],
+        "type": "PER",
+        "articles": []
+    },
+    {
+        "info": {
+            "lastnames": [
+                "Mangeois"
+            ],
+            "firstnames": [],
+            "abbr_firstnames": [],
+            "occupations": [],
+            "titles": [],
+            "address": [],
+            "others": []
+        },
+        "pageNames": "dkm-001_1941_001_0448.txt",
+        "pageNo": 0,
+        "sentenceNo": 44,
+        "positions": [
+            "1373,736,138,33:main"
+        ],
+        "type": "PER",
+        "articles": []
+    },
+    {
+        "info": {
+            "lastnames": [],
+            "firstnames": [
+                "Margrit"
+            ],
+            "abbr_firstnames": [],
+            "occupations": [],
+            "titles": [],
+            "address": [],
+            "others": []
+        },
+        "pageNames": "dkm-001_1941_001_0448.txt",
+        "pageNo": 0,
+        "sentenceNo": 46,
+        "positions": [
+            "1204,850,112,33:main"
+        ],
+        "type": "PER",
+        "articles": []
+    },
+    {
+        "info": {
+            "lastnames": [
+                "Studley"
+            ],
+            "firstnames": [
+                "Florence"
+            ],
+            "abbr_firstnames": [],
+            "occupations": [],
+            "titles": [],
+            "address": [],
+            "others": []
+        },
+        "pageNames": "dkm-001_1941_001_0448.txt",
+        "pageNo": 0,
+        "sentenceNo": 47,
+        "positions": [
+            "1321,887,124,25:main",
+            "1462,886,114,33:main"
+        ],
+        "type": "PER",
+        "articles": []
+    },
+    {
+        "info": {
+            "lastnames": [
+                "St\u00f6bermann"
+            ],
+            "firstnames": [
+                "Hilde"
+            ],
+            "abbr_firstnames": [],
+            "occupations": [],
+            "titles": [],
+            "address": [],
+            "others": []
+        },
+        "pageNames": "dkm-001_1941_001_0448.txt",
+        "pageNo": 0,
+        "sentenceNo": 48,
+        "positions": [
+            "2077,922,79,25:main",
+            "1207,963,181,24:main"
+        ],
+        "type": "PER",
+        "articles": []
+    },
+    {
+        "info": {
+            "lastnames": [],
+            "firstnames": [
+                "Margrit"
+            ],
+            "abbr_firstnames": [],
+            "occupations": [],
+            "titles": [],
+            "address": [],
+            "others": []
+        },
+        "pageNames": "dkm-001_1941_001_0448.txt",
+        "pageNo": 0,
+        "sentenceNo": 51,
+        "positions": [
+            "1349,1190,111,33:main"
+        ],
+        "type": "PER",
+        "articles": []
+    },
+    {
+        "info": {
+            "lastnames": [
+                "Peristil"
+            ],
+            "firstnames": [
+                "Mathilde"
+            ],
+            "abbr_firstnames": [],
+            "occupations": [],
+            "titles": [],
+            "address": [],
+            "others": []
+        },
+        "pageNames": "dkm-001_1941_001_0448.txt",
+        "pageNo": 0,
+        "sentenceNo": 51,
+        "positions": [
+            "1700,1188,128,25:main",
+            "1842,1188,100,25:main"
+        ],
+        "type": "PER",
+        "articles": []
+    },
+    {
+        "info": {
+            "lastnames": [
+                "Gn\u00e4gi"
+            ],
+            "firstnames": [
+                "Colette"
+            ],
+            "abbr_firstnames": [],
+            "occupations": [],
+            "titles": [],
+            "address": [],
+            "others": []
+        },
+        "pageNames": "dkm-001_1941_001_0448.txt",
+        "pageNo": 0,
+        "sentenceNo": 52,
+        "positions": [
+            "1306,1378,101,25:main",
+            "1422,1378,88,33:main"
+        ],
+        "type": "PER",
+        "articles": []
+    },
+    {
+        "info": {
+            "lastnames": [
+                "Peristil"
+            ],
+            "firstnames": [
+                "Mathilde"
+            ],
+            "abbr_firstnames": [],
+            "occupations": [],
+            "titles": [],
+            "address": [],
+            "others": []
+        },
+        "pageNames": "dkm-001_1941_001_0448.txt",
+        "pageNo": 0,
+        "sentenceNo": 1,
+        "positions": [
+            "1748,1453,127,24:main",
+            "1904,1453,100,24:main"
+        ],
+        "type": "PER",
+        "articles": []
+    },
+    {
+        "info": {
+            "lastnames": [
+                "Gn\u00e4gi"
+            ],
+            "firstnames": [
+                "Colette"
+            ],
+            "abbr_firstnames": [],
+            "occupations": [],
+            "titles": [],
+            "address": [],
+            "others": []
+        },
+        "pageNames": "dkm-001_1941_001_0448.txt",
+        "pageNo": 0,
+        "sentenceNo": 3,
+        "positions": [
+            "1353,1680,101,25:main",
+            "1472,1680,87,34:main"
+        ],
+        "type": "PER",
+        "articles": []
+    },
+    {
+        "info": {
+            "lastnames": [],
+            "firstnames": [
+                "Mathilde"
+            ],
+            "abbr_firstnames": [],
+            "occupations": [],
+            "titles": [],
+            "address": [],
+            "others": []
+        },
+        "pageNames": "dkm-001_1941_001_0448.txt",
+        "pageNo": 0,
+        "sentenceNo": 3,
+        "positions": [
+            "1945,1679,136,30:main"
+        ],
+        "type": "PER",
+        "articles": []
+    },
+    {
+        "info": {
+            "lastnames": [],
+            "firstnames": [
+                "Mathildes"
+            ],
+            "abbr_firstnames": [],
+            "occupations": [],
+            "titles": [],
+            "address": [],
+            "others": []
+        },
+        "pageNames": "dkm-001_1941_001_0448.txt",
+        "pageNo": 0,
+        "sentenceNo": 7,
+        "positions": [
+            "1208,1908,141,24:main"
+        ],
+        "type": "PER",
+        "articles": []
+    },
+    {
+        "info": {
+            "lastnames": [],
+            "firstnames": [],
+            "abbr_firstnames": [],
+            "occupations": [],
+            "titles": [],
+            "address": [],
+            "others": [
+                "Colettens"
+            ]
+        },
+        "pageNames": "dkm-001_1941_001_0448.txt",
+        "pageNo": 0,
+        "sentenceNo": 9,
+        "positions": [
+            "1210,2058,134,25:main"
+        ],
+        "type": "PER",
+        "articles": []
+    },
+    {
+        "info": {
+            "lastnames": [],
+            "firstnames": [
+                "Mathilde"
+            ],
+            "abbr_firstnames": [],
+            "occupations": [],
+            "titles": [],
+            "address": [],
+            "others": []
+        },
+        "pageNames": "dkm-001_1941_001_0448.txt",
+        "pageNo": 0,
+        "sentenceNo": 11,
+        "positions": [
+            "1471,2171,128,25:main"
+        ],
+        "type": "PER",
+        "articles": []
+    },
+    {
+        "info": {
+            "lastnames": [],
+            "firstnames": [
+                "Colette"
+            ],
+            "abbr_firstnames": [],
+            "occupations": [],
+            "titles": [],
+            "address": [],
+            "others": []
+        },
+        "pageNames": "dkm-001_1941_001_0448.txt",
+        "pageNo": 0,
+        "sentenceNo": 11,
+        "positions": [
+            "1374,2209,101,25:main"
+        ],
+        "type": "PER",
+        "articles": []
+    },
+    {
+        "info": {
+            "lastnames": [],
+            "firstnames": [
+                "Mathildes"
+            ],
+            "abbr_firstnames": [],
+            "occupations": [],
+            "titles": [],
+            "address": [],
+            "others": []
+        },
+        "pageNames": "dkm-001_1941_001_0448.txt",
+        "pageNo": 0,
+        "sentenceNo": 14,
+        "positions": [
+            "1263,2439,140,25:main"
+        ],
+        "type": "PER",
+        "articles": []
+    },
+    {
+        "info": {
+            "lastnames": [
+                "Mangeois"
+            ],
+            "firstnames": [],
+            "abbr_firstnames": [],
+            "occupations": [],
+            "titles": [],
+            "address": [],
+            "others": []
+        },
+        "pageNames": "dkm-001_1941_001_0448.txt",
+        "pageNo": 0,
+        "sentenceNo": 14,
+        "positions": [
+            "1628,2477,147,33:main"
+        ],
+        "type": "PER",
+        "articles": []
+    },
+    {
+        "info": {
+            "lastnames": [
+                "Pohnetramp"
+            ],
+            "firstnames": [
+                "Nina"
+            ],
+            "abbr_firstnames": [],
+            "occupations": [],
+            "titles": [],
+            "address": [],
+            "others": []
+        },
+        "pageNames": "dkm-001_1941_001_0448.txt",
+        "pageNo": 0,
+        "sentenceNo": 15,
+        "positions": [
+            "1527,2589,70,26:main",
+            "1612,2589,175,34:main"
+        ],
+        "type": "PER",
+        "articles": []
+    },
+    {
+        "info": {
+            "lastnames": [],
+            "firstnames": [
+                "Nina"
+            ],
+            "abbr_firstnames": [],
+            "occupations": [],
+            "titles": [],
+            "address": [],
+            "others": []
+        },
+        "pageNames": "dkm-001_1941_001_0448.txt",
+        "pageNo": 0,
+        "sentenceNo": 19,
+        "positions": [
+            "2007,2855,71,25:main"
+        ],
+        "type": "PER",
+        "articles": []
+    },
+    {
+        "info": {
+            "lastnames": [],
+            "firstnames": [
+                "Margrit"
+            ],
+            "abbr_firstnames": [],
+            "occupations": [],
+            "titles": [],
+            "address": [],
+            "others": []
+        },
+        "pageNames": "dkm-001_1941_001_0449.txt",
+        "pageNo": 0,
+        "sentenceNo": 3,
+        "positions": [
+            "126,335,111,33:main"
+        ],
+        "type": "PER",
+        "articles": []
+    },
+    {
+        "info": {
+            "lastnames": [],
+            "firstnames": [
+                "Mathilde"
+            ],
+            "abbr_firstnames": [],
+            "occupations": [],
+            "titles": [],
+            "address": [],
+            "others": []
+        },
+        "pageNames": "dkm-001_1941_001_0449.txt",
+        "pageNo": 0,
+        "sentenceNo": 4,
+        "positions": [
+            "775,376,128,25:main"
+        ],
+        "type": "PER",
+        "articles": []
+    },
+    {
+        "info": {
+            "lastnames": [
+                "Colettens"
+            ],
+            "firstnames": [],
+            "abbr_firstnames": [],
+            "occupations": [],
+            "titles": [],
+            "address": [],
+            "others": []
+        },
+        "pageNames": "dkm-001_1941_001_0449.txt",
+        "pageNo": 0,
+        "sentenceNo": 4,
+        "positions": [
+            "944,415,132,24:main"
+        ],
+        "type": "PER",
+        "articles": []
+    },
+    {
+        "info": {
+            "lastnames": [
+                "St\u00f6bermann"
+            ],
+            "firstnames": [
+                "Hilde"
+            ],
+            "abbr_firstnames": [],
+            "occupations": [],
+            "titles": [],
+            "address": [],
+            "others": []
+        },
+        "pageNames": "dkm-001_1941_001_0449.txt",
+        "pageNo": 0,
+        "sentenceNo": 4,
+        "positions": [
+            "554,450,79,25:main",
+            "643,450,174,26:main"
+        ],
+        "type": "PER",
+        "articles": []
+    },
+    {
+        "info": {
+            "lastnames": [
+                "Studley"
+            ],
+            "firstnames": [
+                "Florence"
+            ],
+            "abbr_firstnames": [],
+            "occupations": [],
+            "titles": [],
+            "address": [],
+            "others": []
+        },
+        "pageNames": "dkm-001_1941_001_0449.txt",
+        "pageNo": 0,
+        "sentenceNo": 4,
+        "positions": [
+            "267,487,124,24:main",
+            "403,487,107,34:main"
+        ],
+        "type": "PER",
+        "articles": []
+    },
+    {
+        "info": {
+            "lastnames": [
+                "Pohnetramp"
+            ],
+            "firstnames": [
+                "Nina"
+            ],
+            "abbr_firstnames": [],
+            "occupations": [],
+            "titles": [],
+            "address": [],
+            "others": []
+        },
+        "pageNames": "dkm-001_1941_001_0449.txt",
+        "pageNo": 0,
+        "sentenceNo": 4,
+        "positions": [
+            "594,489,71,24:main",
+            "675,489,184,34:main"
+        ],
+        "type": "PER",
+        "articles": []
+    },
+    {
+        "info": {
+            "lastnames": [],
+            "firstnames": [
+                "Margrit"
+            ],
+            "abbr_firstnames": [],
+            "occupations": [],
+            "titles": [],
+            "address": [],
+            "others": []
+        },
+        "pageNames": "dkm-001_1941_001_0449.txt",
+        "pageNo": 0,
+        "sentenceNo": 9,
+        "positions": [
+            "215,715,119,32:main"
+        ],
+        "type": "PER",
+        "articles": []
+    },
+    {
+        "info": {
+            "lastnames": [],
+            "firstnames": [
+                "Margrit"
+            ],
+            "abbr_firstnames": [],
+            "occupations": [],
+            "titles": [],
+            "address": [],
+            "others": []
+        },
+        "pageNames": "dkm-001_1941_001_0449.txt",
+        "pageNo": 0,
+        "sentenceNo": 15,
+        "positions": [
+            "768,906,112,33:main"
+        ],
+        "type": "PER",
+        "articles": []
+    },
+    {
+        "info": {
+            "lastnames": [
+                "Leeds"
+            ],
+            "firstnames": [],
+            "abbr_firstnames": [],
+            "occupations": [],
+            "titles": [],
+            "address": [],
+            "others": []
+        },
+        "pageNames": "dkm-001_1941_001_0449.txt",
+        "pageNo": 0,
+        "sentenceNo": 17,
+        "positions": [
+            "755,1132,82,25:main"
+        ],
+        "type": "PER",
+        "articles": []
+    },
+    {
+        "info": {
+            "lastnames": [
+                "Br\u00fcckmehl"
+            ],
+            "firstnames": [],
+            "abbr_firstnames": [],
+            "occupations": [],
+            "titles": [],
+            "address": [],
+            "others": []
+        },
+        "pageNames": "dkm-001_1941_001_0449.txt",
+        "pageNo": 0,
+        "sentenceNo": 17,
+        "positions": [
+            "166,1168,158,24:main"
+        ],
+        "type": "PER",
+        "articles": []
+    },
+    {
+        "info": {
+            "lastnames": [
+                "Pompapler"
+            ],
+            "firstnames": [],
+            "abbr_firstnames": [],
+            "occupations": [],
+            "titles": [],
+            "address": [],
+            "others": []
+        },
+        "pageNames": "dkm-001_1941_001_0449.txt",
+        "pageNo": 0,
+        "sentenceNo": 19,
+        "positions": [
+            "663,1321,157,33:main"
+        ],
+        "type": "PER",
+        "articles": []
+    },
+    {
+        "info": {
+            "lastnames": [],
+            "firstnames": [
+                "Madame"
+            ],
+            "abbr_firstnames": [],
+            "occupations": [],
+            "titles": [],
+            "address": [],
+            "others": []
+        },
+        "pageNames": "dkm-001_1941_001_0449.txt",
+        "pageNo": 0,
+        "sentenceNo": 22,
+        "positions": [
+            "953,1624,122,25:main"
+        ],
+        "type": "PER",
+        "articles": []
+    },
+    {
+        "info": {
+            "lastnames": [],
+            "firstnames": [],
+            "abbr_firstnames": [],
+            "occupations": [],
+            "titles": [],
+            "address": [],
+            "others": [
+                "Mangeois"
+            ]
+        },
+        "pageNames": "dkm-001_1941_001_0449.txt",
+        "pageNo": 0,
+        "sentenceNo": 25,
+        "positions": [
+            "689,1888,138,33:main"
+        ],
+        "type": "PER",
+        "articles": []
+    },
+    {
+        "info": {
+            "lastnames": [
+                "Mangeois"
+            ],
+            "firstnames": [
+                "Guy"
+            ],
+            "abbr_firstnames": [],
+            "occupations": [],
+            "titles": [],
+            "address": [],
+            "others": []
+        },
+        "pageNames": "dkm-001_1941_001_0449.txt",
+        "pageNo": 0,
+        "sentenceNo": 41,
+        "positions": [
+            "1483,417,62,33:main",
+            "1561,417,139,33:main"
+        ],
+        "type": "PER",
+        "articles": []
+    },
+    {
+        "info": {
+            "lastnames": [
+                "Peristil"
+            ],
+            "firstnames": [
+                "Mathilde"
+            ],
+            "abbr_firstnames": [],
+            "occupations": [],
+            "titles": [],
+            "address": [],
+            "others": []
+        },
+        "pageNames": "dkm-001_1941_001_0449.txt",
+        "pageNo": 0,
+        "sentenceNo": 42,
+        "positions": [
+            "1243,454,127,25:main",
+            "1383,455,108,30:main"
+        ],
+        "type": "PER",
+        "articles": []
+    },
+    {
+        "info": {
+            "lastnames": [],
+            "firstnames": [],
+            "abbr_firstnames": [],
+            "occupations": [],
+            "titles": [],
+            "address": [],
+            "others": [
+                "Madame"
+            ]
+        },
+        "pageNames": "dkm-001_1941_001_0449.txt",
+        "pageNo": 0,
+        "sentenceNo": 45,
+        "positions": [
+            "1543,682,121,25:main"
+        ],
+        "type": "PER",
+        "articles": []
+    },
+    {
+        "info": {
+            "lastnames": [
+                "Gn\u00e4gi"
+            ],
+            "firstnames": [
+                "Colette"
+            ],
+            "abbr_firstnames": [],
+            "occupations": [],
+            "titles": [],
+            "address": [],
+            "others": []
+        },
+        "pageNames": "dkm-001_1941_001_0449.txt",
+        "pageNo": 0,
+        "sentenceNo": 46,
+        "positions": [
+            "1664,720,100,24:main",
+            "1775,720,89,33:main"
+        ],
+        "type": "PER",
+        "articles": []
+    },
+    {
+        "info": {
+            "lastnames": [
+                "Mangeois"
+            ],
+            "firstnames": [
+                "Guy"
+            ],
+            "abbr_firstnames": [],
+            "occupations": [],
+            "titles": [],
+            "address": [],
+            "others": []
+        },
+        "pageNames": "dkm-001_1941_001_0449.txt",
+        "pageNo": 0,
+        "sentenceNo": 46,
+        "positions": [
+            "2055,758,62,32:main",
+            "1167,794,137,34:main"
+        ],
+        "type": "PER",
+        "articles": []
+    },
+    {
+        "info": {
+            "lastnames": [],
+            "firstnames": [
+                "Guy"
+            ],
+            "abbr_firstnames": [],
+            "occupations": [],
+            "titles": [],
+            "address": [],
+            "others": []
+        },
+        "pageNames": "dkm-001_1941_001_0449.txt",
+        "pageNo": 0,
+        "sentenceNo": 48,
+        "positions": [
+            "1815,912,62,33:main"
+        ],
+        "type": "PER",
+        "articles": []
+    },
+    {
+        "info": {
+            "lastnames": [
+                "Peristil"
+            ],
+            "firstnames": [
+                "Mathilde"
+            ],
+            "abbr_firstnames": [],
+            "occupations": [],
+            "titles": [],
+            "address": [],
+            "others": []
+        },
+        "pageNames": "dkm-001_1941_001_0449.txt",
+        "pageNo": 0,
+        "sentenceNo": 57,
+        "positions": [
+            "1985,1629,128,25:main",
+            "1165,1667,100,25:main"
+        ],
+        "type": "PER",
+        "articles": []
+    },
+    {
+        "info": {
+            "lastnames": [
+                "Debussy"
+            ],
+            "firstnames": [],
+            "abbr_firstnames": [],
+            "occupations": [],
+            "titles": [],
+            "address": [],
+            "others": []
+        },
+        "pageNames": "dkm-001_1941_001_0449.txt",
+        "pageNo": 0,
+        "sentenceNo": 57,
+        "positions": [
+            "1245,1705,122,34:main"
+        ],
+        "type": "PER",
+        "articles": []
+    },
+    {
+        "info": {
+            "lastnames": [
+                "Gn\u00e4gi"
+            ],
+            "firstnames": [
+                "Colette"
+            ],
+            "abbr_firstnames": [],
+            "occupations": [],
+            "titles": [],
+            "address": [],
+            "others": []
+        },
+        "pageNames": "dkm-001_1941_001_0449.txt",
+        "pageNo": 0,
+        "sentenceNo": 59,
+        "positions": [
+            "1821,1819,101,24:main",
+            "1939,1819,87,33:main"
+        ],
+        "type": "PER",
+        "articles": []
+    },
+    {
+        "info": {
+            "lastnames": [
+                "Colette"
+            ],
+            "firstnames": [],
+            "abbr_firstnames": [],
+            "occupations": [],
+            "titles": [],
+            "address": [],
+            "others": []
+        },
+        "pageNames": "dkm-001_1941_001_0449.txt",
+        "pageNo": 0,
+        "sentenceNo": 63,
+        "positions": [
+            "2011,2158,101,26:main"
+        ],
+        "type": "PER",
+        "articles": []
+    },
+    {
+        "info": {
+            "lastnames": [
+                "Studley"
+            ],
+            "firstnames": [],
+            "abbr_firstnames": [],
+            "occupations": [],
+            "titles": [],
+            "address": [],
+            "others": []
+        },
+        "pageNames": "dkm-001_1941_001_0449.txt",
+        "pageNo": 0,
+        "sentenceNo": 65,
+        "positions": [
+            "1754,2272,107,33:main"
+        ],
+        "type": "PER",
+        "articles": []
+    },
+    {
+        "info": {
+            "lastnames": [
+                "St\u00f6bermann"
+            ],
+            "firstnames": [
+                "Hilde"
+            ],
+            "abbr_firstnames": [],
+            "occupations": [],
+            "titles": [],
+            "address": [],
+            "others": []
+        },
+        "pageNames": "dkm-001_1941_001_0449.txt",
+        "pageNo": 0,
+        "sentenceNo": 66,
+        "positions": [
+            "1334,2347,79,25:main",
+            "1436,2348,173,24:main"
+        ],
+        "type": "PER",
+        "articles": []
+    },
+    {
+        "info": {
+            "lastnames": [
+                "Pohnetramp"
+            ],
+            "firstnames": [
+                "Nina"
+            ],
+            "abbr_firstnames": [],
+            "occupations": [],
+            "titles": [],
+            "address": [],
+            "others": []
+        },
+        "pageNames": "dkm-001_1941_001_0449.txt",
+        "pageNo": 0,
+        "sentenceNo": 66,
+        "positions": [
+            "1705,2348,70,24:main",
+            "1796,2347,175,34:main"
+        ],
+        "type": "PER",
+        "articles": []
+    },
+    {
+        "info": {
+            "lastnames": [
+                "Vieillebarbe"
+            ],
+            "firstnames": [],
+            "abbr_firstnames": [],
+            "occupations": [],
+            "titles": [],
+            "address": [
+                "Monsieur"
+            ],
+            "others": []
+        },
+        "pageNames": "dkm-001_1941_001_0449.txt",
+        "pageNo": 0,
+        "sentenceNo": 68,
+        "positions": [
+            "1786,2461,138,25:main",
+            "1938,2460,173,26:main"
+        ],
+        "type": "PER",
+        "articles": []
+    },
+    {
+        "info": {
+            "lastnames": [
+                "Rabelais"
+            ],
+            "firstnames": [],
+            "abbr_firstnames": [],
+            "occupations": [],
+            "titles": [],
+            "address": [],
+            "others": []
+        },
+        "pageNames": "dkm-001_1941_001_0449.txt",
+        "pageNo": 0,
+        "sentenceNo": 68,
+        "positions": [
+            "1722,2499,126,24:main"
+        ],
+        "type": "PER",
+        "articles": []
+    },
+    {
+        "info": {
+            "lastnames": [],
+            "firstnames": [
+                "Guy"
+            ],
+            "abbr_firstnames": [],
+            "occupations": [],
+            "titles": [],
+            "address": [],
+            "others": []
+        },
+        "pageNames": "dkm-001_1941_001_0449.txt",
+        "pageNo": 0,
+        "sentenceNo": 70,
+        "positions": [
+            "2049,2537,63,32:main"
+        ],
+        "type": "PER",
+        "articles": []
+    },
+    {
+        "info": {
+            "lastnames": [],
+            "firstnames": [
+                "Margrit"
+            ],
+            "abbr_firstnames": [],
+            "occupations": [],
+            "titles": [],
+            "address": [
+                "Fr\u00e4ulein"
+            ],
+            "others": []
+        },
+        "pageNames": "dkm-001_1941_001_0449.txt",
+        "pageNo": 0,
+        "sentenceNo": 72,
+        "positions": [
+            "1505,2687,119,26:main",
+            "1641,2687,147,34:main"
+        ],
+        "type": "PER",
+        "articles": []
+    },
+    {
+        "tokens": [
+            "COLOGNE"
+        ],
+        "type": "CIT",
+        "pageNames": "dkm-001_1941_001_0419.txt",
+        "pageNo": 0,
+        "sentenceNo": 0,
+        "positions": [
+            "891,2327,562,83:main"
+        ],
+        "articles": []
+    },
+    {
+        "tokens": [
+            "PARIS"
+        ],
+        "type": "CIT",
+        "pageNames": "dkm-001_1941_001_0419.txt",
+        "pageNo": 0,
+        "sentenceNo": 0,
+        "positions": [
+            "705,2729,209,35:main"
+        ],
+        "articles": []
+    },
+    {
+        "tokens": [
+            "Z\u00fcrich"
+        ],
+        "type": "CIT",
+        "pageNames": "dkm-001_1941_001_0420.txt",
+        "pageNo": 0,
+        "sentenceNo": 9,
+        "positions": [
+            "814,638,72,17:main"
+        ],
+        "articles": []
+    },
+    {
+        "tokens": [
+            "Z\u00fcrich"
+        ],
+        "type": "CIT",
+        "pageNames": "dkm-001_1941_001_0420.txt",
+        "pageNo": 0,
+        "sentenceNo": 13,
+        "positions": [
+            "303,798,68,17:main"
+        ],
+        "articles": []
+    },
+    {
+        "tokens": [
+            "St.",
+            "Gallen"
+        ],
+        "type": "CIT",
+        "pageNames": "dkm-001_1941_001_0420.txt",
+        "pageNo": 0,
+        "sentenceNo": 18,
+        "positions": [
+            "916,1397,28,17:main",
+            "955,1397,75,18:main"
+        ],
+        "articles": []
+    },
+    {
+        "tokens": [
+            "Z\u00fcrichsees"
+        ],
+        "type": "GEO",
+        "pageNames": "dkm-001_1941_001_0420.txt",
+        "pageNo": 0,
+        "sentenceNo": 20,
+        "positions": [
+            "522,2228,144,26:main"
+        ],
+        "articles": []
+    },
+    {
+        "tokens": [
+            "ZURICH"
+        ],
+        "type": "CIT",
+        "pageNames": "dkm-001_1941_001_0420.txt",
+        "pageNo": 0,
+        "sentenceNo": 24,
+        "positions": [
+            "2014,2360,62,20;1288,2464,123,18:main"
+        ],
+        "articles": []
+    },
+    {
+        "tokens": [
+            "BERN"
+        ],
+        "type": "CIT",
+        "pageNames": "dkm-001_1941_001_0420.txt",
+        "pageNo": 0,
+        "sentenceNo": 24,
+        "positions": [
+            "1289,2521,83,18:main"
+        ],
+        "articles": []
+    },
+    {
+        "tokens": [
+            "BASEL"
+        ],
+        "type": "CIT",
+        "pageNames": "dkm-001_1941_001_0420.txt",
+        "pageNo": 0,
+        "sentenceNo": 24,
+        "positions": [
+            "1289,2577,108,19:main"
+        ],
+        "articles": []
+    },
+    {
+        "tokens": [
+            "LUZERN"
+        ],
+        "type": "CIT",
+        "pageNames": "dkm-001_1941_001_0420.txt",
+        "pageNo": 0,
+        "sentenceNo": 24,
+        "positions": [
+            "1290,2634,129,19:main"
+        ],
+        "articles": []
+    },
+    {
+        "tokens": [
+            "LAUSANNE"
+        ],
+        "type": "CIT",
+        "pageNames": "dkm-001_1941_001_0420.txt",
+        "pageNo": 0,
+        "sentenceNo": 24,
+        "positions": [
+            "1290,2666,182,21:main"
+        ],
+        "articles": []
+    },
+    {
+        "tokens": [
+            "Bourg"
+        ],
+        "type": "CIT",
+        "pageNames": "dkm-001_1941_001_0420.txt",
+        "pageNo": 0,
+        "sentenceNo": 26,
+        "positions": [
+            "1742,2664,77,22:main"
+        ],
+        "articles": []
+    },
+    {
+        "tokens": [
+            "GENF"
+        ],
+        "type": "CIT",
+        "pageNames": "dkm-001_1941_001_0420.txt",
+        "pageNo": 0,
+        "sentenceNo": 27,
+        "positions": [
+            "1464,2751,162,41:main"
+        ],
+        "articles": []
+    },
+    {
+        "tokens": [
+            "Westafrikas"
+        ],
+        "type": "GEO",
+        "pageNames": "dkm-001_1941_001_0421.txt",
+        "pageNo": 0,
+        "sentenceNo": 3,
+        "positions": [
+            "1140,467,182,27:main"
+        ],
+        "articles": []
+    },
+    {
+        "tokens": [
+            "nusehau"
+        ],
+        "type": "CIT",
+        "pageNames": "dkm-001_1941_001_0421.txt",
+        "pageNo": 0,
+        "sentenceNo": 13,
+        "positions": [
+            "1614,1736,132,32:main"
+        ],
+        "articles": []
+    },
+    {
+        "tokens": [
+            "WILDHAUS"
+        ],
+        "type": "CIT",
+        "pageNames": "dkm-001_1941_001_0422.txt",
+        "pageNo": 0,
+        "sentenceNo": 3,
+        "positions": [
+            "387,2519,214,24:main"
+        ],
+        "articles": []
+    },
+    {
+        "tokens": [
+            "TOGGENBURG"
+        ],
+        "type": "GEO",
+        "pageNames": "dkm-001_1941_001_0422.txt",
+        "pageNo": 0,
+        "sentenceNo": 3,
+        "positions": [
+            "699,2521,276,24:main"
+        ],
+        "articles": []
+    },
+    {
+        "tokens": [
+            "Ostschweiz"
+        ],
+        "type": "GEO",
+        "pageNames": "dkm-001_1941_001_0423.txt",
+        "pageNo": 0,
+        "sentenceNo": 0,
+        "positions": [
+            "224,1131,169,26:main"
+        ],
+        "articles": []
+    },
+    {
+        "tokens": [
+            "Vereinigten",
+            "Staaten",
+            "von",
+            "Amerika"
+        ],
+        "type": "CTR",
+        "pageNames": "dkm-001_1941_001_0423.txt",
+        "pageNo": 0,
+        "sentenceNo": 10,
+        "positions": [
+            "1047,2178,176,34:main",
+            "1243,2178,117,26:main",
+            "1378,2188,55,16:main",
+            "1452,2178,138,26:main"
+        ],
+        "articles": []
+    },
+    {
+        "tokens": [
+            "St.",
+            "Gallen"
+        ],
+        "type": "CIT",
+        "pageNames": "dkm-001_1941_001_0423.txt",
+        "pageNo": 0,
+        "sentenceNo": 13,
+        "positions": [
+            "753,2406,39,26:main",
+            "805,2406,97,27:main"
+        ],
+        "articles": []
+    },
+    {
+        "tokens": [
+            "Schweiz"
+        ],
+        "type": "CTR",
+        "pageNames": "dkm-001_1941_001_0426.txt",
+        "pageNo": 0,
+        "sentenceNo": 0,
+        "positions": [
+            "451,283,122,27:main"
+        ],
+        "articles": []
+    },
+    {
+        "tokens": [
+            "Ostschweiz"
+        ],
+        "type": "GEO",
+        "pageNames": "dkm-001_1941_001_0426.txt",
+        "pageNo": 0,
+        "sentenceNo": 6,
+        "positions": [
+            "955,702,171,27:main"
+        ],
+        "articles": []
+    },
+    {
+        "tokens": [
+            "Waldstatt"
+        ],
+        "type": "CIT",
+        "pageNames": "dkm-001_1941_001_0427.txt",
+        "pageNo": 0,
+        "sentenceNo": 10,
+        "positions": [
+            "743,2355,134,22:main"
+        ],
+        "articles": []
+    },
+    {
+        "tokens": [
+            "Ostschweiz"
+        ],
+        "type": "GEO",
+        "pageNames": "dkm-001_1941_001_0427.txt",
+        "pageNo": 0,
+        "sentenceNo": 17,
+        "positions": [
+            "1599,1791,152,25:main"
+        ],
+        "articles": []
+    },
+    {
+        "tokens": [
+            "Appenzellerland"
+        ],
+        "type": "GEO",
+        "pageNames": "dkm-001_1941_001_0428.txt",
+        "pageNo": 0,
+        "sentenceNo": 7,
+        "positions": [
+            "1046,886,260,36:main"
+        ],
+        "articles": []
+    },
+    {
+        "tokens": [
+            "Welt"
+        ],
+        "type": "GEO",
+        "pageNames": "dkm-001_1941_001_0428.txt",
+        "pageNo": 0,
+        "sentenceNo": 8,
+        "positions": [
+            "1253,1000,74,26:main"
+        ],
+        "articles": []
+    },
+    {
+        "tokens": [
+            "Welt"
+        ],
+        "type": "GEO",
+        "pageNames": "dkm-001_1941_001_0428.txt",
+        "pageNo": 0,
+        "sentenceNo": 8,
+        "positions": [
+            "460,1057,73,26:main"
+        ],
+        "articles": []
+    },
+    {
+        "tokens": [
+            "Urn\u00e4sch"
+        ],
+        "type": "CIT",
+        "pageNames": "dkm-001_1941_001_0428.txt",
+        "pageNo": 0,
+        "sentenceNo": 9,
+        "positions": [
+            "324,1113,127,27:main"
+        ],
+        "articles": []
+    },
+    {
+        "tokens": [
+            "Reute"
+        ],
+        "type": "CIT",
+        "pageNames": "dkm-001_1941_001_0428.txt",
+        "pageNo": 0,
+        "sentenceNo": 10,
+        "positions": [
+            "730,1228,90,26:main"
+        ],
+        "articles": []
+    },
+    {
+        "tokens": [
+            "Heiden"
+        ],
+        "type": "CIT",
+        "pageNames": "dkm-001_1941_001_0428.txt",
+        "pageNo": 0,
+        "sentenceNo": 10,
+        "positions": [
+            "621,1284,109,26:main"
+        ],
+        "articles": []
+    },
+    {
+        "tokens": [
+            "Welt"
+        ],
+        "type": "GEO",
+        "pageNames": "dkm-001_1941_001_0428.txt",
+        "pageNo": 0,
+        "sentenceNo": 1,
+        "positions": [
+            "1276,2022,83,33:main"
+        ],
+        "articles": []
+    },
+    {
+        "tokens": [
+            "Appenzell"
+        ],
+        "type": "CTR",
+        "pageNames": "dkm-001_1941_001_0429.txt",
+        "pageNo": 0,
+        "sentenceNo": 0,
+        "positions": [
+            "864,257,129,28:main"
+        ],
+        "articles": []
+    },
+    {
+        "tokens": [
+            "B\u00f6deli"
+        ],
+        "type": "GEO",
+        "pageNames": "dkm-001_1941_001_0431.txt",
+        "pageNo": 0,
+        "sentenceNo": 9,
+        "positions": [
+            "646,2381,89,25:main"
+        ],
+        "articles": []
+    },
+    {
+        "tokens": [
+            "Hundwil"
+        ],
+        "type": "CIT",
+        "pageNames": "dkm-001_1941_001_0431.txt",
+        "pageNo": 0,
+        "sentenceNo": 15,
+        "positions": [
+            "917,2774,114,23:main"
+        ],
+        "articles": []
+    },
+    {
+        "tokens": [
+            "Ostschweiz"
+        ],
+        "type": "GEO",
+        "pageNames": "dkm-001_1941_001_0432.txt",
+        "pageNo": 0,
+        "sentenceNo": 1,
+        "positions": [
+            "1522,1021,62,26;152,1079,135,26:main"
+        ],
+        "articles": []
+    },
+    {
+        "tokens": [
+            "Appenzellerland"
+        ],
+        "type": "GEO",
+        "pageNames": "dkm-001_1941_001_0432.txt",
+        "pageNo": 0,
+        "sentenceNo": 5,
+        "positions": [
+            "657,1477,258,35:main"
+        ],
+        "articles": []
+    },
+    {
+        "tokens": [
+            "Toggenburg"
+        ],
+        "type": "GEO",
+        "pageNames": "dkm-001_1941_001_0432.txt",
+        "pageNo": 0,
+        "sentenceNo": 5,
+        "positions": [
+            "994,1477,184,35:main"
+        ],
+        "articles": []
+    },
+    {
+        "tokens": [
+            "Toggenburg"
+        ],
+        "type": "GEO",
+        "pageNames": "dkm-001_1941_001_0432.txt",
+        "pageNo": 0,
+        "sentenceNo": 7,
+        "positions": [
+            "560,1591,184,35:main"
+        ],
+        "articles": []
+    },
+    {
+        "tokens": [
+            "Urn\u00e4sch"
+        ],
+        "type": "CIT",
+        "pageNames": "dkm-001_1941_001_0433.txt",
+        "pageNo": 0,
+        "sentenceNo": 3,
+        "positions": [
+            "1614,916,106,22:main"
+        ],
+        "articles": []
+    },
+    {
+        "tokens": [
+            "Basel"
+        ],
+        "type": "CIT",
+        "pageNames": "dkm-001_1941_001_0434.txt",
+        "pageNo": 0,
+        "sentenceNo": 2,
+        "positions": [
+            "1271,411,81,27:main"
+        ],
+        "articles": []
+    },
+    {
+        "tokens": [
+            "Basel"
+        ],
+        "type": "CIT",
+        "pageNames": "dkm-001_1941_001_0434.txt",
+        "pageNo": 0,
+        "sentenceNo": 24,
+        "positions": [
+            "1361,2821,58,17:main"
+        ],
+        "articles": []
+    },
+    {
+        "tokens": [
+            "Z\u00fcrich"
+        ],
+        "type": "CTR",
+        "pageNames": "dkm-001_1941_001_0436.txt",
+        "pageNo": 0,
+        "sentenceNo": 2,
+        "positions": [
+            "2023,474,73,17:main"
+        ],
+        "articles": []
+    },
+    {
+        "tokens": [
+            "Z\u00fcrich"
+        ],
+        "type": "CIT",
+        "pageNames": "dkm-001_1941_001_0436.txt",
+        "pageNo": 0,
+        "sentenceNo": 3,
+        "positions": [
+            "521,825,84,21:main"
+        ],
+        "articles": []
+    },
+    {
+        "tokens": [
+            "Z\u00fcrich"
+        ],
+        "type": "CIT",
+        "pageNames": "dkm-001_1941_001_0436.txt",
+        "pageNo": 0,
+        "sentenceNo": 8,
+        "positions": [
+            "306,2193,86,21:main"
+        ],
+        "articles": []
+    },
+    {
+        "tokens": [
+            "Z\u00fcrich"
+        ],
+        "type": "CIT",
+        "pageNames": "dkm-001_1941_001_0436.txt",
+        "pageNo": 0,
+        "sentenceNo": 9,
+        "positions": [
+            "130,2441,85,22:main"
+        ],
+        "articles": []
+    },
+    {
+        "tokens": [
+            "Z\u00fcrich"
+        ],
+        "type": "CIT",
+        "pageNames": "dkm-001_1941_001_0436.txt",
+        "pageNo": 0,
+        "sentenceNo": 20,
+        "positions": [
+            "1332,1768,86,21:main"
+        ],
+        "articles": []
+    },
+    {
+        "tokens": [
+            "Z\u00fcrich"
+        ],
+        "type": "CIT",
+        "pageNames": "dkm-001_1941_001_0436.txt",
+        "pageNo": 0,
+        "sentenceNo": 23,
+        "positions": [
+            "808,2302,85,21:main"
+        ],
+        "articles": []
+    },
+    {
+        "tokens": [
+            "Turnegg"
+        ],
+        "type": "CIT",
+        "pageNames": "dkm-001_1941_001_0436.txt",
+        "pageNo": 0,
+        "sentenceNo": 24,
+        "positions": [
+            "1194,2373,116,28:main"
+        ],
+        "articles": []
+    },
+    {
+        "tokens": [
+            "Bern"
+        ],
+        "type": "CIT",
+        "pageNames": "dkm-001_1941_001_0436.txt",
+        "pageNo": 0,
+        "sentenceNo": 2,
+        "positions": [
+            "1819,2370,61,21:main"
+        ],
+        "articles": []
+    },
+    {
+        "tokens": [
+            "Turnegg"
+        ],
+        "type": "CIT",
+        "pageNames": "dkm-001_1941_001_0436.txt",
+        "pageNo": 0,
+        "sentenceNo": 2,
+        "positions": [
+            "1764,2511,117,27:main"
+        ],
+        "articles": []
+    },
+    {
+        "tokens": [
+            "Z\u00fcrich"
+        ],
+        "type": "CIT",
+        "pageNames": "dkm-001_1941_001_0436.txt",
+        "pageNo": 0,
+        "sentenceNo": 3,
+        "positions": [
+            "1901,2653,84,22:main"
+        ],
+        "articles": []
+    },
+    {
+        "tokens": [
+            "Turnegg"
+        ],
+        "type": "CIT",
+        "pageNames": "dkm-001_1941_001_0436.txt",
+        "pageNo": 0,
+        "sentenceNo": 3,
+        "positions": [
+            "1685,2725,117,28:main"
+        ],
+        "articles": []
+    },
+    {
+        "tokens": [
+            "Z\u00fcrich"
+        ],
+        "type": "CIT",
+        "pageNames": "dkm-001_1941_001_0437.txt",
+        "pageNo": 0,
+        "sentenceNo": 19,
+        "positions": [
+            "629,2761,73,17:main"
+        ],
+        "articles": []
+    },
+    {
+        "tokens": [
+            "Nordschweiz"
+        ],
+        "type": "GEO",
+        "pageNames": "dkm-001_1941_001_0437.txt",
+        "pageNo": 0,
+        "sentenceNo": 21,
+        "positions": [
+            "1876,1743,142,17:main"
+        ],
+        "articles": []
+    },
+    {
+        "tokens": [
+            "Z\u00fcrich"
+        ],
+        "type": "CIT",
+        "pageNames": "dkm-001_1941_001_0437.txt",
+        "pageNo": 0,
+        "sentenceNo": 26,
+        "positions": [
+            "1370,2219,85,22:main"
+        ],
+        "articles": []
+    },
+    {
+        "tokens": [
+            "Turnegg"
+        ],
+        "type": "CIT",
+        "pageNames": "dkm-001_1941_001_0437.txt",
+        "pageNo": 0,
+        "sentenceNo": 26,
+        "positions": [
+            "1165,2292,141,28:main"
+        ],
+        "articles": []
+    },
+    {
+        "tokens": [
+            "Hornergasse"
+        ],
+        "type": "GEO",
+        "pageNames": "dkm-001_1941_001_0437.txt",
+        "pageNo": 0,
+        "sentenceNo": 37,
+        "positions": [
+            "1820,2645,170,28:main"
+        ],
+        "articles": []
+    },
+    {
+        "tokens": [
+            "Z\u00fcrich"
+        ],
+        "type": "CIT",
+        "pageNames": "dkm-001_1941_001_0438.txt",
+        "pageNo": 0,
+        "sentenceNo": 22,
+        "positions": [
+            "409,1224,71,17:main"
+        ],
+        "articles": []
+    },
+    {
+        "tokens": [
+            "Z\u00fcrich"
+        ],
+        "type": "CIT",
+        "pageNames": "dkm-001_1941_001_0440.txt",
+        "pageNo": 0,
+        "sentenceNo": 2,
+        "positions": [
+            "159,426,92,26:main"
+        ],
+        "articles": []
+    },
+    {
+        "tokens": [
+            "Z\u00fcrich"
+        ],
+        "type": "CTR",
+        "pageNames": "dkm-001_1941_001_0440.txt",
+        "pageNo": 0,
+        "sentenceNo": 4,
+        "positions": [
+            "189,748,92,27:main"
+        ],
+        "articles": []
+    },
+    {
+        "tokens": [
+            "Z\u00fcrich"
+        ],
+        "type": "CIT",
+        "pageNames": "dkm-001_1941_001_0440.txt",
+        "pageNo": 0,
+        "sentenceNo": 57,
+        "positions": [
+            "2003,2440,86,21:main"
+        ],
+        "articles": []
+    },
+    {
+        "tokens": [
+            "Brugg"
+        ],
+        "type": "CIT",
+        "pageNames": "dkm-001_1941_001_0441.txt",
+        "pageNo": 0,
+        "sentenceNo": 23,
+        "positions": [
+            "353,2019,86,28:main"
+        ],
+        "articles": []
+    },
+    {
+        "tokens": [
+            "Appenzell"
+        ],
+        "type": "CTR",
+        "pageNames": "dkm-001_1941_001_0442.txt",
+        "pageNo": 0,
+        "sentenceNo": 5,
+        "positions": [
+            "578,844,137,28:main"
+        ],
+        "articles": []
+    },
+    {
+        "tokens": [
+            "London"
+        ],
+        "type": "CIT",
+        "pageNames": "dkm-001_1941_001_0442.txt",
+        "pageNo": 0,
+        "sentenceNo": 10,
+        "positions": [
+            "779,1168,100,21:main"
+        ],
+        "articles": []
+    },
+    {
+        "tokens": [
+            "Schweiz"
+        ],
+        "type": "CTR",
+        "pageNames": "dkm-001_1941_001_0442.txt",
+        "pageNo": 0,
+        "sentenceNo": 10,
+        "positions": [
+            "395,1232,103,22:main"
+        ],
+        "articles": []
+    },
+    {
+        "tokens": [
+            "Z\u00fcrich"
+        ],
+        "type": "CIT",
+        "pageNames": "dkm-001_1941_001_0442.txt",
+        "pageNo": 0,
+        "sentenceNo": 43,
+        "positions": [
+            "1788,1162,85,21:main"
+        ],
+        "articles": []
+    },
+    {
+        "tokens": [
+            "Appenzell"
+        ],
+        "type": "CTR",
+        "pageNames": "dkm-001_1941_001_0442.txt",
+        "pageNo": 0,
+        "sentenceNo": 46,
+        "positions": [
+            "1656,1305,129,29:main"
+        ],
+        "articles": []
+    },
+    {
+        "tokens": [
+            "Z\u00fcrich"
+        ],
+        "type": "CIT",
+        "pageNames": "dkm-001_1941_001_0442.txt",
+        "pageNo": 0,
+        "sentenceNo": 47,
+        "positions": [
+            "1373,1413,99,21:main"
+        ],
+        "articles": []
+    },
+    {
+        "tokens": [
+            "Berlingen"
+        ],
+        "type": "CIT",
+        "pageNames": "dkm-001_1941_001_0445.txt",
+        "pageNo": 0,
+        "sentenceNo": 0,
+        "positions": [
+            "1334,810,145,36:main"
+        ],
+        "articles": []
+    },
+    {
+        "tokens": [
+            "Untersee"
+        ],
+        "type": "GEO",
+        "pageNames": "dkm-001_1941_001_0445.txt",
+        "pageNo": 0,
+        "sentenceNo": 0,
+        "positions": [
+            "1564,811,134,26:main"
+        ],
+        "articles": []
+    },
+    {
+        "tokens": [
+            "New",
+            "York"
+        ],
+        "type": "CIT",
+        "pageNames": "dkm-001_1941_001_0445.txt",
+        "pageNo": 0,
+        "sentenceNo": 1,
+        "positions": [
+            "1256,1039,66,25:main",
+            "1337,1038,85,26:main"
+        ],
+        "articles": []
+    },
+    {
+        "tokens": [
+            "Z\u00fcrich"
+        ],
+        "type": "CIT",
+        "pageNames": "dkm-001_1941_001_0447.txt",
+        "pageNo": 0,
+        "sentenceNo": 0,
+        "positions": [
+            "722,993,60,16:main"
+        ],
+        "articles": []
+    },
+    {
+        "tokens": [
+            "Mont",
+            "Revard"
+        ],
+        "type": "GEO",
+        "pageNames": "dkm-001_1941_001_0448.txt",
+        "pageNo": 0,
+        "sentenceNo": 10,
+        "positions": [
+            "463,773,80,24:main",
+            "556,773,104,25:main"
+        ],
+        "articles": []
+    },
+    {
+        "tokens": [
+            "Mangeois"
+        ],
+        "type": "CIT",
+        "pageNames": "dkm-001_1941_001_0448.txt",
+        "pageNo": 0,
+        "sentenceNo": 43,
+        "positions": [
+            "1705,621,137,33:main"
+        ],
+        "articles": []
+    },
+    {
+        "tokens": [
+            "Kassel"
+        ],
+        "type": "CIT",
+        "pageNames": "dkm-001_1941_001_0448.txt",
+        "pageNo": 0,
+        "sentenceNo": 49,
+        "positions": [
+            "1592,962,100,30:main"
+        ],
+        "articles": []
+    },
+    {
+        "tokens": [
+            "Basel"
+        ],
+        "type": "CIT",
+        "pageNames": "dkm-001_1941_001_0448.txt",
+        "pageNo": 0,
+        "sentenceNo": 51,
+        "positions": [
+            "2017,1187,83,31:main"
+        ],
+        "articles": []
+    },
+    {
+        "tokens": [
+            "Agasul"
+        ],
+        "type": "CIT",
+        "pageNames": "dkm-001_1941_001_0448.txt",
+        "pageNo": 0,
+        "sentenceNo": 52,
+        "positions": [
+            "1582,1378,110,33:main"
+        ],
+        "articles": []
+    },
+    {
+        "tokens": [
+            "Mont",
+            "Revard"
+        ],
+        "type": "GEO",
+        "pageNames": "dkm-001_1941_001_0448.txt",
+        "pageNo": 0,
+        "sentenceNo": 16,
+        "positions": [
+            "1962,2667,79,24:main",
+            "2058,2665,104,26:main"
+        ],
+        "articles": []
+    },
+    {
+        "tokens": [
+            "Leeds"
+        ],
+        "type": "CIT",
+        "pageNames": "dkm-001_1941_001_0449.txt",
+        "pageNo": 0,
+        "sentenceNo": 20,
+        "positions": [
+            "925,1360,82,24:main"
+        ],
+        "articles": []
+    },
+    {
+        "tokens": [
+            "Pompaples"
+        ],
+        "type": "CIT",
+        "pageNames": "dkm-001_1941_001_0449.txt",
+        "pageNo": 0,
+        "sentenceNo": 55,
+        "positions": [
+            "1387,1554,155,34:main"
+        ],
+        "articles": []
+    },
+    {
+        "tokens": [
+            "Pompaples"
+        ],
+        "type": "CIT",
+        "pageNames": "dkm-001_1941_001_0449.txt",
+        "pageNo": 0,
+        "sentenceNo": 61,
+        "positions": [
+            "1164,2007,155,34:main"
+        ],
+        "articles": []
+    },
+    {
+        "tokens": [
+            "Mont",
+            "Revard"
+        ],
+        "type": "GEO",
+        "pageNames": "dkm-001_1941_001_0449.txt",
+        "pageNo": 0,
+        "sentenceNo": 66,
+        "positions": [
+            "1669,2387,79,23:main",
+            "1757,2385,111,25:main"
+        ],
+        "articles": []
+    },
+    {
+        "tokens": [
+            "France"
+        ],
+        "type": "CTR",
+        "pageNames": "dkm-001_1941_001_0449.txt",
+        "pageNo": 0,
+        "sentenceNo": 68,
+        "positions": [
+            "1416,2499,97,25:main"
+        ],
+        "articles": []
+    }
+]

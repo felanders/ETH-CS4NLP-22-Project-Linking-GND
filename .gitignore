@@ -1,0 +1,6 @@
+fasttext.vectors_vocab.npy
+fasttext.vectors_ngrams.npy
+fasttext
+cc.de.300.bin
+venv/*
+__pycache__/*
