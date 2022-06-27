@@ -93,11 +93,11 @@ def get_coords_from_candidate(candidate):
         d["coordinates"] = []
     return d
 
-def get_coords_from_entitiy(ent):
+def get_coords_from_entity(ent):
     d = {"coordinates": []}
     if "places" in ent:
         coordinates = []
-        for place in ent["Places"]:
+        for place in ent["places"]:
                 coordinates.append(get_coordinates(place))
                 d["coordinates"] = coordinates
     else:

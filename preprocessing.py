@@ -6,8 +6,9 @@ def clean_gt(gt):
             del ent["references"]
             for ref_list in references:
                 for ref in ref_list:
-                    ent.update(ref)
-                    result.append(ent)
+                    aux = ent.copy()
+                    aux.update(ref)
+                    result.append(aux)
     return result
 
 def get_main_name(dictionary):
@@ -38,7 +39,7 @@ def clean_raw(raw):
             else:
                 dictionary["lastname"] = ""
             if "firstname" in ent and ent["firstname"]:
-                dictionary["firstname"] = ent["firstname"][0]
+                dictionary["firstname"] = " ".join(ent["firstname"])
             else:
                 dictionary["firstname"] = ""
             if "abbr_firstname" in ent:
@@ -70,9 +71,18 @@ def clean_raw(raw):
                     })
                     for ref in refs:
                         if "coords" in ref:
+                            normalized_coords = set()
                             for coord in ref["coords"]:
-                                dictionary.update({"coord": coord.split(":")[0]})
-                                ent_mentions.append(dictionary)
+                                
+                                coord_clean = str(coord).split(":")[0]
+                                coord_clean = str(coord_clean).split(";")
+                                for i in coord_clean:
+                                    normalized_coords.add(i) 
+                                    
+                            for coord in normalized_coords:
+                                aux = dictionary.copy()
+                                aux.update({"coord": coord})
+                                ent_mentions.append(aux)
             result.append(ent_mentions)
     return result
 
