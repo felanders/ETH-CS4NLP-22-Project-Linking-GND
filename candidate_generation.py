@@ -106,18 +106,22 @@ def get_coords_from_entity(ent):
 
 def get_gnd_dict(id):
     # If the request times out wait a second and try again
-    try:
-        res = requests.get(f"http://lobid.org/gnd/{id}.json")
-    except:
+    if id:
         try:
-            time.sleep(1)
             res = requests.get(f"http://lobid.org/gnd/{id}.json")
         except:
-            return {}
-    try:
-        data = res.json()
-    except:
-        data = False
+            try:
+                time.sleep(1)
+                res = requests.get(f"http://lobid.org/gnd/{id}.json")
+            except:
+                return {}
+        try:
+            data = res.json()
+        except:
+            data = False
+    else:
+        # For id == "" return an "empty candidate" !
+        data = {"empty_candidate": True}
     dictionary = {}
     if data:
         dictionary.update(get_personal_info(data))
@@ -167,7 +171,15 @@ def create_metagrid_candidates(ent):
         intermediate_candidates = []
     for item in intermediate_candidates:
         dictionary = item["metadata"]
+        # Remove redundant names
+        dictionary.pop("first_name", None)
+        dictionary.pop("last_name", None)
         dictionary.update({"Gnd": item["identifier"]})
         dictionary.update(get_gnd_dict(id=dictionary["Gnd"]))
         candidates.append(dictionary)
+    # Append the empty candidate
+    dictionary = {}
+    dictionary.update({"Gnd": ""})
+    dictionary.update(get_gnd_dict(id=dictionary["Gnd"]))
+    candidates.append(dictionary)
     return candidates
