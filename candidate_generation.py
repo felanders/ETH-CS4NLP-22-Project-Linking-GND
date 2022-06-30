@@ -64,12 +64,18 @@ def get_personal_info(data):
             dictionary["LastName"].append(name["surname"][0])
     if "variantNameEntityForThePerson" in data:
         for name in data["variantNameEntityForThePerson"]:
-            if "forename" in name:
-                dictionary["FirstName"].append(name["forename"][0])
-            if "surname" in name:
-                dictionary["LastName"].append(name["surname"][0])
+            if dictionary["FirstName"] == []:
+                if "forename" in name:
+                    dictionary["FirstName"] += name["forename"]
+            if dictionary["LastName"] == []:
+                if "surname" in name:
+                    dictionary["LastName"] += name["surname"][0]
     if "biographicalOrHistoricalInformation" in data:
         dictionary["Biography"].append(data["biographicalOrHistoricalInformation"][0])
+    
+    dictionary["LastName"] = list(set(dictionary["LastName"]))
+    dictionary["FirstName"] = list(set(dictionary["FirstName"]))
+    
     return dictionary
 
 def get_coordinates(location):
@@ -106,18 +112,22 @@ def get_coords_from_entity(ent):
 
 def get_gnd_dict(id):
     # If the request times out wait a second and try again
-    try:
-        res = requests.get(f"http://lobid.org/gnd/{id}.json")
-    except:
+    if id:
         try:
-            time.sleep(1)
             res = requests.get(f"http://lobid.org/gnd/{id}.json")
         except:
-            return {}
-    try:
-        data = res.json()
-    except:
-        data = False
+            try:
+                time.sleep(1)
+                res = requests.get(f"http://lobid.org/gnd/{id}.json")
+            except:
+                return {}
+        try:
+            data = res.json()
+        except:
+            data = False
+    else:
+        # For id == "" return an "empty candidate" !
+        data = {"empty_candidate": True}
     dictionary = {}
     if data:
         dictionary.update(get_personal_info(data))
@@ -167,7 +177,17 @@ def create_metagrid_candidates(ent):
         intermediate_candidates = []
     for item in intermediate_candidates:
         dictionary = item["metadata"]
+        # Remove redundant names and dates
+        dictionary.pop("birth_date", None)
+        dictionary.pop("death_date", None)
+        dictionary.pop("first_name", None)
+        dictionary.pop("last_name", None)
         dictionary.update({"Gnd": item["identifier"]})
         dictionary.update(get_gnd_dict(id=dictionary["Gnd"]))
         candidates.append(dictionary)
+    # Append the empty candidate
+    dictionary = {}
+    dictionary.update({"Gnd": ""})
+    dictionary.update(get_gnd_dict(id=dictionary["Gnd"]))
+    candidates.append(dictionary)
     return candidates
