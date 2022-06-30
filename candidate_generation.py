@@ -70,6 +70,9 @@ def get_personal_info(data):
                 dictionary["LastName"].append(name["surname"][0])
     if "biographicalOrHistoricalInformation" in data:
         dictionary["Biography"].append(data["biographicalOrHistoricalInformation"][0])
+    # Remove duplicates
+    for key in ["FirstName", "LastName", "PrefName"]:
+        dictionary[key] = set(dictionary[key])
     return dictionary
 
 def get_coordinates(location):
@@ -171,9 +174,11 @@ def create_metagrid_candidates(ent):
         intermediate_candidates = []
     for item in intermediate_candidates:
         dictionary = item["metadata"]
-        # Remove redundant names
+        # Remove redundant keys
         dictionary.pop("first_name", None)
         dictionary.pop("last_name", None)
+        dictionary.pop("birth_date", None)
+        dictionary.pop("death_date", None)
         dictionary.update({"Gnd": item["identifier"]})
         dictionary.update(get_gnd_dict(id=dictionary["Gnd"]))
         candidates.append(dictionary)
