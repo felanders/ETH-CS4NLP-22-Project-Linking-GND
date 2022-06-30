@@ -105,9 +105,9 @@ def eval_mentions(entity, top_n=10, treshold=0.5):
     filtered_ids = filter_ids(entity["ids"], scores=entity["scores"], top_n=top_n, treshold=treshold)
     for label in entity["labels"]:
         if label in filtered_ids:
-            key = label_and_match_to_key(gt_label=entity["label"], match=True)
+            key = label_and_match_to_key(gt_label=label, match=True)
         else:
-            key = label_and_match_to_key(gt_label=entity["label"], match=False)
+            key = label_and_match_to_key(gt_label=label, match=False)
         counts[key] += 1
     return counts
 
