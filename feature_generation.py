@@ -4,12 +4,11 @@ from gensim.similarities import levenshtein
 from gensim.models.fasttext import FastTextKeyedVectors
 import numpy as np
 from thefuzz import fuzz
+from evaluation import label_and_match_to_key
+from utils import get_gnd
 
 loc = Nominatim(user_agent="GetLoc")
 ft = FastTextKeyedVectors.load("./fasttext")
-
-def get_gnd(candidate):
-        return candidate["Gnd"]
 
 def get_min_distance(pairs):
     distances = []
@@ -146,3 +145,19 @@ def create_features(m, c):
     result = get_name_similarity(m, c) + get_years(m, c) + get_profession_similarity(m, c)
     result += get_place_similarity(m, c)
     return result
+
+def compare_gnd_to_label(candidate_gnd, gt_label):
+    if candidate_gnd == gt_label:
+        match = True
+    else:
+        match = False
+    return label_and_match_to_key(gt_label=gt_label, match=match)
+
+def candidates_to_features(ent, candidates, gt_label):
+    y_list = []
+    feature_list = []
+    for candidate in candidates:
+        features = create_features(ent, candidate)
+        y_list.append(compare_gnd_to_label(candidate_gnd=get_gnd(candidate), gt_label=gt_label))
+        feature_list.append(features)
+    return {"features": feature_list, "y": y_list}
