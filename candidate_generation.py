@@ -177,11 +177,11 @@ def create_metagrid_candidates(ent):
         intermediate_candidates = []
     for item in intermediate_candidates:
         dictionary = item["metadata"]
-        # Remove redundant names and dates
-        dictionary.pop("birth_date", None)
-        dictionary.pop("death_date", None)
+        # Remove redundant keys
         dictionary.pop("first_name", None)
         dictionary.pop("last_name", None)
+        dictionary.pop("birth_date", None)
+        dictionary.pop("death_date", None)
         dictionary.update({"Gnd": item["identifier"]})
         dictionary.update(get_gnd_dict(id=dictionary["Gnd"]))
         candidates.append(dictionary)
