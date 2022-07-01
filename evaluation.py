@@ -1,7 +1,9 @@
 from collections import Counter
+from typing import final
 import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
+import math
 from utils import get_gnd
 
 class Scores:
@@ -20,6 +22,13 @@ class Scores:
 
     def update_counter(self, counts_dict):
         self.counter.update(counts_dict)
+    
+    def divide_scores_for_crossval(self, divide_by):
+        for key in ["tp", "fp", "tn", "fn"]:
+            self.counter[key] = int(self.counter[key]/divide_by)
+
+    def get_counter(self):
+        return self.counter
 
     def get_score(self, round_to=3):
         self.compute_scores()
@@ -193,7 +202,43 @@ def perform_experiment(keep_empty, do_sample, oversampling, balance, d, model, n
             print("threshold: ", threshold, "F1 Ent:", scores_entity.get_score()["F1"], "F1 Ment:", scores_mention.get_score()["F1"]) if verbose else ""
     return ent_scores, ment_scores
 
-def plot_metrics_over_threshold(thresholds, n_s, oversampling, balance, do_sample, keep_empty, model, data, results):
+def crossvalidate_experiment(d, n_fold, keep_empty, do_sample, oversampling, balance, model, n_s, tresholds, verbose=False):
+    data = d["train"] + d["eval"]
+    chunk = math.floor(len(data)/n_fold)
+    ent_scores_crossval = []
+    ment_scores_crossval = []
+    for i in range(n_fold):
+        lb = i*chunk
+        ub = (i+1)*chunk
+        train = data[:lb]+ data[ub:]
+        eval = data[lb:ub]
+        ent_scores, ment_scores = perform_experiment(
+            keep_empty=keep_empty, 
+            do_sample=do_sample, 
+            oversampling=oversampling, 
+            balance=balance, 
+            model=model, 
+            n_s=n_s, 
+            tresholds=tresholds, 
+            train=train, 
+            eval=eval, 
+            verbose=verbose)
+        ent_scores_crossval.append(ent_scores)
+        ment_scores_crossval.append(ment_scores)
+
+    mean_ent_scores = ent_scores_crossval[0]
+    mean_ment_scores = ment_scores_crossval[0]
+    for ent_scores, ment_scores in zip(ent_scores_crossval[1:], ment_scores_crossval[1:]):
+        for mean_ent_score, ent_score in zip(mean_ent_scores, ent_scores):
+            mean_ent_score["score"].update_counter(ent_score["score"].get_counter())
+        for mean_ment_score, ment_score in zip(mean_ment_scores, ment_scores):
+            mean_ment_score["score"].update_counter(ment_score["score"].get_counter())
+    for ent_score, ment_score in zip(mean_ent_scores, mean_ment_scores):
+        ent_score["score"].divide_scores_for_crossval(divide_by=n_fold)
+        ment_score["score"].divide_scores_for_crossval(divide_by=n_fold)
+    return mean_ent_scores, mean_ment_scores
+
+def plot_metrics_over_treshold(thresholds, n_s, oversampling, balance, do_sample, keep_empty, model, data, results):
 
     y = np.zeros((6, len(n_s), len(thresholds)))
 
