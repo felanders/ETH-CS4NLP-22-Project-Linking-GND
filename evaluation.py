@@ -44,10 +44,12 @@ class Scores:
 def rank_candidates(candidates, features, model):
     candidate_scores = []
     candidate_ids = []
+    
     for candidate, feature in zip(candidates, features):
         score = model.predict(np.array(feature).reshape(1,-1))[0]
         candidate_scores.append(score)
         candidate_ids.append(get_gnd(candidate))
+    
     if candidate_ids:
         candidate_ids = np.array(candidate_ids)
         indices = np.argsort(candidate_scores)
@@ -69,7 +71,7 @@ def label_and_match_to_key(gt_label, match):
         else:
            return "fn"
 
-def filter_ids(ids, scores, top_n=10, treshold=0.5):
+def filter_ids(ids, scores, top_n=10, threshold=0.5):
     """ids and scores are expected to be ordered"""
     filtered = []
     n = 0
@@ -81,7 +83,7 @@ def filter_ids(ids, scores, top_n=10, treshold=0.5):
                 return [""]
         else:
             n += 1
-            if score > treshold:
+            if score > threshold:
                 filtered.append(id)
             else:
                 break
@@ -90,25 +92,34 @@ def filter_ids(ids, scores, top_n=10, treshold=0.5):
     else:
         return [""]
 
-def eval_entity(entity, top_n=10, treshold=0.5):
-    filtered_ids = filter_ids(entity["ids"], scores=entity["scores"], top_n=top_n, treshold=treshold)
+def eval_entity(entity, top_n=10, threshold=0.5):
+    filtered_ids = filter_ids(entity["ids"], scores=entity["scores"], top_n=top_n, threshold=threshold)
     counts = {"tp": 0, "fp": 0, "tn": 0, "fn": 0}
+    
     if entity["label"] in filtered_ids:
         key = label_and_match_to_key(gt_label=entity["label"], match=True)
     else:
         key = label_and_match_to_key(gt_label=entity["label"], match=False)
     counts[key] += 1
+    
     return counts
 
-def eval_mentions(entity, top_n=10, treshold=0.5):
+def eval_mentions(entity, top_n=10, threshold=0.5):
     counts = {"tp": 0, "fp": 0, "tn": 0, "fn": 0} 
-    filtered_ids = filter_ids(entity["ids"], scores=entity["scores"], top_n=top_n, treshold=treshold)
-    for label in entity["labels"]:
+    filtered_ids = filter_ids(entity["ids"], scores=entity["scores"], top_n=top_n, threshold=threshold)
+
+    #This is because GR calls "labels" "gt_label"
+    key_helper = "labels"
+    if key_helper not in entity:
+        key_helper = "gt_label"
+
+    for label in entity[key_helper]:
         if label in filtered_ids:
-            key = label_and_match_to_key(gt_label=entity["label"], match=True)
+            key = label_and_match_to_key(gt_label=label, match=True)
         else:
-            key = label_and_match_to_key(gt_label=entity["label"], match=False)
+            key = label_and_match_to_key(gt_label=label, match=False)
         counts[key] += 1
+
     return counts
 
 def y_to_number(y):
@@ -129,7 +140,7 @@ def get_x_y(list_of_entities, keep_empty_candidate=False):
                 X.append(features)
     return X, y
 
-def perform_experiment(keep_empty, do_sample, oversampling, balance, d, model, n_s, tresholds, verbose=False):
+def perform_experiment(keep_empty, do_sample, oversampling, balance, d, model, n_s, thresholds, verbose=False):
     X_train, y_train = get_x_y(d["train"], keep_empty_candidate=keep_empty)
 
     if do_sample:
@@ -139,6 +150,7 @@ def perform_experiment(keep_empty, do_sample, oversampling, balance, d, model, n
         count = df["y"].count()
         pos_samples = df["y"].sum()
 
+        #TODO check if this sampling is correct
         def sampling_strategy(x, over_sampling, balance):
             if x.shape[0] > pos_samples:
                 if pos_samples*over_sampling*balance < count:
@@ -159,6 +171,7 @@ def perform_experiment(keep_empty, do_sample, oversampling, balance, d, model, n
     model.fit(X_sample, y_sample)
 
     for entity in d["eval"]:
+    #for entity in d["test"]:
         ranking = rank_candidates(candidates=entity["candidates"], features=entity["features"], model=model)
         entity.update(ranking)
 
@@ -167,29 +180,30 @@ def perform_experiment(keep_empty, do_sample, oversampling, balance, d, model, n
 
     for top_n in n_s:
         print("Top: ", top_n) if verbose else ""
-        for treshold in tresholds:
+        for threshold in thresholds:
             scores_entity = Scores()
             scores_mention = Scores()
             for entity in d["eval"]:
-                scores_entity.update_counter(counts_dict=eval_entity(entity, top_n=top_n, treshold=treshold))
-                scores_mention.update_counter(counts_dict=eval_mentions(entity, top_n=top_n, treshold=treshold))
+            #for entity in d["test"]:
+                scores_entity.update_counter(counts_dict=eval_entity(entity, top_n=top_n, threshold=threshold))
+                scores_mention.update_counter(counts_dict=eval_mentions(entity, top_n=top_n, threshold=threshold))
 
-            ent_scores.append({"top_n": top_n, "treshold": treshold, "score": scores_entity})
-            ment_scores.append({"top_n": top_n, "treshold": treshold, "score": scores_mention})
-            print("Treshold: ", treshold, "F1 Ent:", scores_entity.get_score()["F1"], "F1 Ment:", scores_mention.get_score()["F1"]) if verbose else ""
+            ent_scores.append({"top_n": top_n, "threshold": threshold, "score": scores_entity})
+            ment_scores.append({"top_n": top_n, "threshold": threshold, "score": scores_mention})
+            print("threshold: ", threshold, "F1 Ent:", scores_entity.get_score()["F1"], "F1 Ment:", scores_mention.get_score()["F1"]) if verbose else ""
     return ent_scores, ment_scores
 
-def plot_metrics_over_treshold(tresholds, n_s, oversampling, balance, do_sample, keep_empty, model, data, results):
+def plot_metrics_over_threshold(thresholds, n_s, oversampling, balance, do_sample, keep_empty, model, data, results):
 
-    y = np.zeros((6, len(n_s), len(tresholds)))
+    y = np.zeros((6, len(n_s), len(thresholds)))
 
-    def get_scores(di, top_n=10, treshold=0.5):
+    def get_scores(di, top_n=10, threshold=0.5):
         for scores_dict in di["ent_scores"]:
-            if scores_dict["top_n"] == top_n and scores_dict["treshold"] == treshold:
+            if scores_dict["top_n"] == top_n and scores_dict["threshold"] == threshold:
                 ent_scores = scores_dict["score"].get_score()
 
         for scores_dict in di["ment_scores"]:
-            if scores_dict["top_n"] == top_n and scores_dict["treshold"] == treshold:
+            if scores_dict["top_n"] == top_n and scores_dict["threshold"] == threshold:
                 ment_scores = scores_dict["score"].get_score()
         return ent_scores, ment_scores
 
@@ -197,8 +211,8 @@ def plot_metrics_over_treshold(tresholds, n_s, oversampling, balance, do_sample,
         # Keep only stuff that matches, do_sample, keep_empty, oversamplint, balance, model, and data
         if di["do_sample"] == do_sample and di["keep_empty"] == keep_empty and di["oversampling"] == oversampling and di["balance"] == balance and di["model"] == model and di["data"] == data:
             for n_i, n in enumerate(n_s):
-                for t_i, t in enumerate(tresholds):
-                    ent_scores, ment_scores = get_scores(di, top_n=n, treshold=t)
+                for t_i, t in enumerate(thresholds):
+                    ent_scores, ment_scores = get_scores(di, top_n=n, threshold=t)
                     for i, score in enumerate(["F1", "Recall", "Precision"]):
                         y[i, n_i, t_i ] = ent_scores[score]
                         y[i+3, n_i, t_i] = ment_scores[score]
@@ -209,7 +223,7 @@ def plot_metrics_over_treshold(tresholds, n_s, oversampling, balance, do_sample,
 
     for ax, scores, score_type in zip(axs.flat, y, ["Entity F1", "Entity Recall", "Entity Precision"] +["Mention F1", "Mention Recall", "Mention Precision"]):
         for i, score in enumerate(n_s):
-            ax.plot(tresholds, scores[i], f"{col[i]}", label=f"N: {score}")
+            ax.plot(thresholds, scores[i], f"{col[i]}", label=f"N: {score}")
             ax.set_title(f"{score_type}")
             #ax.set_ylim(0,1.1)
             ax.legend()
