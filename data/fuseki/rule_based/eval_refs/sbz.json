@@ -1,1 +1,1 @@
-{"TP": 39, "FP": 89, "FN": 48, "Precision": 0.305, "Recall": 0.448, "F1": 0.363}
+{"tp": 39, "fp": 111, "fn": 49, "tn": 0, "Precision": 0.26, "Recall": 0.443, "F1": 0.328, "Accuracy": 0.196}

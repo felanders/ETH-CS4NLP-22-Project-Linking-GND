@@ -44,7 +44,7 @@ context_pages = ["sbz-002_1895_025_0665.txt","sbz-002_1895_025_0666.txt",
 "dkm-003_2010_070_0060.txt","dkm-003_2010_070_0061.txt","dkm-003_2010_070_0062.txt",
 "dkm-003_2010_070_0063.txt","dkm-003_2010_070_0064.txt"]
 
-problematic_ref = ["dkm-003_1990_050_0396.txt349,2205,129,24"]
+#problematic_ref = ["dkm-003_1990_050_0396.txt349,2205,129,24"] #not relevant for this project
 class Paths:
     def __init__(self, conf):
         if "PATH_TO_GROUND_TRUTH" in conf and "PATH_TO_OUTFILE_FOLDER" in conf:
@@ -119,107 +119,62 @@ class Paths:
                 json.dump(doc, f)
 
 class Scores:
-    def __init__(self, counts_dict={"TP": 0, "FP": 0, "FN": 0}):
+    def __init__(self, counts_dict={"tp": 0, "fp": 0, "fn": 0, "tn": 0}):
         self.counter = Counter(counts_dict)
         self.precision = 0
         self.recall = 0
         self.f1 = 0
 
     def compute_scores(self):
-        self.precision = self.counter["TP"]/(self.counter["TP"] + self.counter["FP"]) if self.counter["TP"] + self.counter["FP"] != 0 else 0
-        self.recall = self.counter["TP"]/(self.counter["TP"] + self.counter["FN"]) if self.counter["TP"] + self.counter["FN"] != 0 else 0
-        self.f1 = 2 * self.counter["TP"]/(2*self.counter["TP"] + self.counter["FP"] + self.counter["FN"]) if self.counter["TP"] + self.counter["FP"] + self.counter["FN"] != 0 else 0
-    
+        self.precision = self.counter["tp"]/(self.counter["tp"] + self.counter["fp"]) if self.counter["tp"] + self.counter["fp"] != 0 else 0
+        self.recall = self.counter["tp"]/(self.counter["tp"] + self.counter["fn"]) if self.counter["tp"] + self.counter["fn"] != 0 else 0
+        self.f1 = 2 * self.counter["tp"]/(2*self.counter["tp"] + self.counter["fp"] + self.counter["fn"]) if self.counter["tp"] + self.counter["fp"] + self.counter["fn"] != 0 else 0
+        self.accuracy = (self.counter["tp"]+self.counter["tn"])/(self.counter["tp"]+self.counter["tn"]+self.counter["fp"]+self.counter["fn"]) if (self.counter["tp"]+self.counter["tn"]+self.counter["fp"]+self.counter["fn"])!= 0 else 0
+
     def update_counter(self, counts_dict):
         self.counter.update(counts_dict)
 
     def get_score(self, round_to=3):
         self.compute_scores()
         result = {
-            "TP": self.counter["TP"],
-            "FP": self.counter["FP"],
-            "FN": self.counter["FN"],
+            "tp": self.counter["tp"],
+            "fp": self.counter["fp"],
+            "fn": self.counter["fn"],
+            "tn": self.counter["tn"],
             "Precision": round(self.precision,round_to),
             "Recall": round(self.recall, round_to),
-            "F1": round(self.f1, round_to)
+            "F1": round(self.f1, round_to),
+            "Accuracy": round(self.accuracy, round_to)
         }
         return result
 
-def true_positive(ref, gt_ref_list):
-    for gt_ref in gt_ref_list:
-        if ref['page'] == gt_ref["page"] and ref['coord'] == gt_ref["coord"]:
-            return True
-    return False
-
-def false_negative(ref, linked_refs):
-    for linked_ref in linked_refs:
-        if ref['page'] == linked_ref["page"] and ref['coord'] == linked_ref["coord"]:
-            return False
-    return True
-
-def compare_references(linked_refs, gt_ref_list, pages):
-    tp = 0
-    fp = 0
-    fn = 0
-    sanity = []
-    for ref in linked_refs:
-        if true_positive(ref=ref, gt_ref_list=gt_ref_list):
-            sanity.append(ref["uniqueid"])
-            tp += 1
-        else:
-            fp += 1
-    # for ref in gt_ref_list:
-    #     if false_negative(ref=ref, linked_refs=linked_refs):
-    #         fn += 1
-    return [Counter({"TP": tp, "FP": fp, "FN": fn}),sanity]
-
-def flatten_linked_dict(linked_dict, convenience = False):
+""" none of this is relevant for the project
+def flatten_linked_dict(linked_dict):
     linked_gnd_dict = {}
-    if convenience:
-        for ent in linked_dict:
-            if 'type' in ent and ent['type'] == 'PER':
-                ref_list = []
-                for key in ent["references"]:
-                    if key in context_pages: continue
+    for ent in linked_dict:
+        if "gnd_ids" in ent and ent["gnd_ids"] and 'type' in ent and ent['type'] == 'PER':
+            ref_list = []
+            for key in ent["references"]:
+                if key in context_pages: continue
 
-                    normalized_coords = set()
-                    for coords in ent["references"][key][0]["coords"]:
-                        #clean them up first
-                        coords_clean = str(coords).split(":")[0]
-                        coords_clean = str(coords_clean).split(";")
-                        for i in coords_clean:
-                            normalized_coords.add(i) 
-                        #this is because sometimes the same coord could be present but with different suffixes so
-                        # "1294,473,237,23:main","1294,473,237,23:rpunc" for example
+                normalized_coords = set()
+                for coords in ent["references"][key][0]["coords"]:
+                    #clean them up first
+                    coords_clean = str(coords).split(":")[0]
+                    normalized_coords.add(coords_clean) 
+                    coords_clean = str(coords_clean).split(";")
+                    for i in coords_clean:
+                        normalized_coords.add(i) 
+                    #this is because sometimes the same coord could be present but with different suffixes so
+                    # "1294,473,237,23:main","1294,473,237,23:rpunc" for example
 
-                    for coords in normalized_coords:    
-                        ref_list.append({"page": key, "coord": coords, "uniqueid":  key+coords})
-        return ref_list
-    else:
-        for ent in linked_dict:
-            if "gnd_ids" in ent and ent["gnd_ids"] and 'type' in ent and ent['type'] == 'PER':
-                ref_list = []
-                for key in ent["references"]:
-                    if key in context_pages: continue
-
-                    normalized_coords = set()
-                    for coords in ent["references"][key][0]["coords"]:
-                        #clean them up first
-                        coords_clean = str(coords).split(":")[0]
-                        normalized_coords.add(coords_clean) 
-                        coords_clean = str(coords_clean).split(";")
-                        for i in coords_clean:
-                            normalized_coords.add(i) 
-                        #this is because sometimes the same coord could be present but with different suffixes so
-                        # "1294,473,237,23:main","1294,473,237,23:rpunc" for example
-
-                    for coords in normalized_coords:    
-                        ref_list.append({"page": key, "coord": coords, "uniqueid":  key+coords})
-                    
-                for gnd_candidate in ent["gnd_ids"]:
-                    if ref_list:
-                        linked_gnd_dict.setdefault(gnd_candidate,[]).extend(ref_list)
-        return linked_gnd_dict
+                for coords in normalized_coords:    
+                    ref_list.append({"page": key, "coord": coords, "uniqueid":  key+coords})
+                
+            for gnd_candidate in ent["gnd_ids"]:
+                if ref_list:
+                    linked_gnd_dict.setdefault(gnd_candidate,[]).extend(ref_list)
+    return linked_gnd_dict
 
 def flatten_gt_dict(gt_dict, pages):
     gt_gnd_dict = {}
@@ -330,18 +285,24 @@ def get_all_refs_linked(linked_dict):
     return all_refs_linked
 
 def eval_references(gt, linked, references_counter):
+    #TODO re-introduce the duplicates so we can compare to the new system
+    #or exclude them entirely so we can compare to the new system
+    #either way this stuff needs to be re-written... tomorrow.
+    
     #deal with inconsistent gt data
     all_refs_gt = get_all_refs_gt(gt)
     all_refs_linked = get_all_refs_linked(linked)
     all_valid_refs = set(all_refs_gt).intersection(all_refs_linked)
     
+    
     #aggregate by reference, only for entries with a gndid:
     ref_dict_gt = (agg_by_ref_gt(gt))
     ref_dict_linked = (agg_by_ref_linked(linked))
 
-    print(len(all_valid_refs.intersection(ref_dict_gt)))
+    #sanity checks:
     all_positives = all_valid_refs.intersection(ref_dict_gt)
-
+    print(len(all_positives))
+    
     #sanity check
     visited_linked = dict()
     for i in ref_dict_linked:
@@ -367,7 +328,7 @@ def eval_references(gt, linked, references_counter):
                 assert(visited_linked[uniqueid] == False)
                 visited_linked[uniqueid] = True
 
-                references_counter["TP"] += 1
+                references_counter["tp"] += 1
 
                 assert(visited_pos[uniqueid] == False)
                 visited_pos[uniqueid] = True
@@ -375,13 +336,13 @@ def eval_references(gt, linked, references_counter):
                 assert(visited_linked[uniqueid] == False)
                 visited_linked[uniqueid] = True
 
-                references_counter["FN"] += 1
+                references_counter["fn"] += 1
 
                 assert(visited_pos[uniqueid] == False)
                 visited_pos[uniqueid] = True
         if uniqueid not in ref_dict_linked:
 
-            references_counter["FN"] += 1
+            references_counter["fn"] += 1
 
             assert(visited_pos[uniqueid] == False)
             visited_pos[uniqueid] = True
@@ -390,7 +351,7 @@ def eval_references(gt, linked, references_counter):
         if uniqueid not in all_valid_refs:
             continue
         if visited_linked[uniqueid] == False:
-            references_counter["FP"] += 1
+            references_counter["fp"] += 1
             
     #sanity check
     for i in visited_pos:
@@ -436,18 +397,58 @@ def create_ent_to_uniqueids_dict(linked_dict):
 
                     for coords in normalized_coords:
                         value = {"gnds": ent["gnd_ids"], "uniqueids":[page+coords]}
-                        if ent["gnd_ids"] != []:
-                            if ent_id in ent_to_uniqueids_dict:
-                                ent_to_uniqueids_dict[ent_id]["uniqueids"].append(page+coords)
-                            else: 
-                                ent_to_uniqueids_dict.setdefault(ent_id,value)
+                        #if ent["gnd_ids"] != []:
+                        if ent_id in ent_to_uniqueids_dict:
+                            ent_to_uniqueids_dict[ent_id]["uniqueids"].append(page+coords)
+                        else: 
+                            ent_to_uniqueids_dict.setdefault(ent_id,value)
+                        #else:
             ent_id += 1
     return ent_to_uniqueids_dict
 
-def eval_entities(gt,linked_dict, entities_counter):
-    #TODO rewrite to handle that entities are not the same in gt and linked
+def eval_entities(gt,linked, entities_counter):
+    #deal with inconsistent gt data
+    all_refs_gt = get_all_refs_gt(gt)
+    all_refs_linked = get_all_refs_linked(linked)
+    all_valid_refs = set(all_refs_gt).intersection(all_refs_linked)
+    
     ent_dict_gt = agg_by_ent_gt(gt)
-    ent_dict_linked = create_ent_to_uniqueids_dict(linked_dict)
+    ent_dict_linked = create_ent_to_uniqueids_dict(linked)
+
+    #TODO write this again, prettier. 
+    for gnd_id in ent_dict_gt:
+        refs = ent_dict_gt[gnd_id]
+        for ref in refs:
+            uniqueid = ref["uniqueid"]
+            if uniqueid not in all_valid_refs:
+                continue
+            for ent in ent_dict_linked:
+                if uniqueid in ent_dict_linked[ent]["uniqueids"]:
+                    ent_dict_linked[ent].setdefault("gt_gndid",[]).append(gnd_id)
+    for uniqueid in all_refs_gt:
+        if uniqueid not in all_valid_refs:
+            continue
+        for ent in ent_dict_linked:
+            already_has_gnd = False
+            for gnd_id in ent_dict_gt:
+                for ref in ent_dict_gt[gnd_id]:
+                    if uniqueid in ref["uniqueid"]:
+                        already_has_gnd = True
+                        break
+                if already_has_gnd:
+                    break
+            if not already_has_gnd and uniqueid in ent_dict_linked[ent]["uniqueids"]:
+                ent_dict_linked[ent].setdefault("gt_gndid",[]).append("")
+  
+    #sanity check
+    mistakes_count = 0
+    for ent in ent_dict_linked:
+        if "gt_gndid" in ent_dict_linked[ent] and len(set(ent_dict_linked[ent]["gt_gndid"]))>1:
+            mistakes_count += 1
+            #print(set(ent_dict_linked[ent]["gt_gndid"]))
+    #print("ACHTUNG")
+    #print(mistakes_count)
+    #sanity checks
     visited_linked = dict()
     visited_gt = dict()
     for i in ent_dict_linked.keys():
@@ -455,142 +456,282 @@ def eval_entities(gt,linked_dict, entities_counter):
     for i in ent_dict_gt.keys():
         visited_gt.setdefault(i, False)
 
-    for gnd_id_gt in ent_dict_gt:
-        unique_ids_gt = [x["uniqueid"] for x in ent_dict_gt[gnd_id_gt]]
-        for ent in ent_dict_linked:
-            if visited_linked[ent]:
-                continue
-            
-            if ent_dict_linked[ent]["uniqueids"] == unique_ids_gt:
-                if gnd_id_gt in ent_dict_linked[ent]["gnds"]:
-                    entities_counter["TP"] += 1
+    for ent in ent_dict_linked:
+        #if visited_linked[ent]:
+        #    continue
+        not_valid = True
+        if "gt_gndid" not in ent_dict_linked[ent]:
+            for uniqueid in ent_dict_linked[ent]["uniqueids"]:
+                if uniqueid in all_valid_refs:
+                    not_valid = False
+        if not_valid:
+            continue
+        if len(set(ent_dict_linked[ent]["gt_gndid"]))>1:
+            #treat it as if we have len(set(ent_dict_linked[ent]["gt_gndid"]))
+            #entities, each with a different gt_gndid and count them seperately
+            for gt_gndid in ent_dict_linked[ent]["gt_gndid"]:
+                if gt_gndid in ent_dict_linked[ent]["gnds"]:
+                    entities_counter["tp"] += 1
                 elif ent_dict_linked[ent]["gnds"] == []:
-                    entities_counter["FN"] += 1
+                    entities_counter["fn"] += 1
                 else:
-                    entities_counter["FP"] += 1
-                visited_linked[ent] = True
-                visited_gt[gnd_id_gt] = True
+                    entities_counter["fp"] += 1
+                visited_gt[gt_gndid] = True
+            visited_linked[ent] = True
+        else:
+            gnd_id_gt = set(ent_dict_linked[ent]["gt_gndid"]).pop()
+            if gnd_id_gt in ent_dict_linked[ent]["gnds"]:
+                entities_counter["tp"] += 1
+            elif ent_dict_linked[ent]["gnds"] == []:
+                entities_counter["fn"] += 1
             else:
-                if ent_dict_linked[ent]["uniqueids"] != [] and (set(ent_dict_linked[ent]["uniqueids"]).issubset(set(unique_ids_gt))):
-                    if gnd_id_gt in ent_dict_linked[ent]["gnds"]:
-                        entities_counter["TP"] += 1
-                    elif ent_dict_linked[ent]["gnds"] == []:
-                        entities_counter["FN"] += 1
-                    else:
-                        entities_counter["FN"] += 1 #But i am not sure about this NOTE
-                    visited_linked[ent] = True
-                    visited_gt[gnd_id_gt] = True
-    #and now i still need to count the rest of the FP :
+                entities_counter["fp"] += 1
+            visited_linked[ent] = True
+            visited_gt[gnd_id_gt] = True
+
+    #and now i still need to count the rest of the fp :
     for i in visited_linked:
         if not visited_linked[i]:
             if ent_dict_linked[i]["gnds"] != []:
-                entities_counter["FP"] += 1
-    #and the rest of the FN because i don't think the line above counts them correctly:
+                entities_counter["fp"] += 1
+    #and the rest of the fn because i don't think the line above counts them correctly:
     for i in visited_gt:
         if not visited_gt[i]:
-            entities_counter["FN"] += 1
+            entities_counter["fn"] += 1
     return entities_counter
+"""
+# NOTE these are the same functions which we have in "preprocess.py" for our ML solution
+# so we can compare the results, we must process the data in the same way
+def clean_raw(raw):
+    result = []
+    for ent in raw:
+        if "type" in ent and ent["type"] == "PER":
+            ent_mentions = []
+            dictionary = {}
+            if "lastname" in ent:
+                dictionary["lastname"] = ent["lastname"]
+            else:
+                dictionary["lastname"] = ""
+            if "firstname" in ent and ent["firstname"]:
+                dictionary["firstname"] = " ".join(ent["firstname"])
+            else:
+                dictionary["firstname"] = ""
+            if "abbr_firstname" in ent:
+                dictionary["abbr_firstname"] = ent["abbr_firstname"]
+            else:
+                dictionary["abbr_firstname"] = []
+            if "other" in ent:
+                dictionary["other"] = ent["other"]
+            else:
+                dictionary["other"] = []
+            dictionary["name"] = get_main_name(dictionary=dictionary)
+            if "profession" in ent:
+                dictionary["profession"] = ent["profession"]
+            else:
+                dictionary["profession"] = []
+            places = []
+            if "places" in ent:
+                for place in ent["places"]:
+                    if "name" in place:
+                        places.append(place["name"])
+            else:
+                dictionary["places"] = []
+            dictionary["places"] = places
+            
+            #### new ####
+            dictionary["gnd_candidates"] = []
+            if "gnd_ids" in ent:
+                dictionary["gnd_candidates"] = ent["gnd_ids"]
+            #### end new ####
+
+            if "references" in ent:
+                for page, refs in ent["references"].items():
+                    dictionary.update({
+                        "page": page,
+                        "year": page.split("_")[1]
+                    })
+                    for ref in refs:
+                        if "coords" in ref:
+                            normalized_coords = set()
+                            for coord in ref["coords"]:
+                                
+                                coord_clean = str(coord).split(":")[0]
+                                coord_clean = str(coord_clean).split(";")
+                                for i in coord_clean:
+                                    normalized_coords.add(i) 
+                                    
+                            for coord in normalized_coords:
+                                aux = dictionary.copy()
+                                aux.update({"coord": coord})
+                                ent_mentions.append(aux)
+            
+
+            result.append(ent_mentions)
+    return result
+
+def get_main_name(dictionary):
+    if "lastname" in dictionary and dictionary["lastname"]:
+        if "firstname" in dictionary and dictionary["firstname"]:
+            return dictionary["firstname"] + " " + dictionary["lastname"]
+        elif "abbr_firstname" in dictionary and dictionary["abbr_firstname"]:
+            return " ".join(dictionary["abbr_firstname"]) + " " + dictionary["lastname"]
+    elif "firstname" in dictionary and dictionary["firstname"]:
+        if "abbr_firstname" in dictionary and dictionary["abbr_firstname"]:
+            return dictionary["firstname"] + " " + " ".join(dictionary["abbr_firstname"])
+    elif "abbr_firstname" in dictionary and dictionary["abbr_firstname"]:
+        return " ".join(dictionary["abbr_firstname"])
+    elif "other" in dictionary:
+        for l in dictionary["other"]:
+            return " ".join(l)
+    else:
+        return "--"
+
+def clean_gt(gt):
+    result = []
+    for ent in gt:
+        if "type" in ent and ent["type"] == "PER":
+            references = ent["references"]
+            del ent["references"]
+            for ref_list in references:
+                for ref in ref_list:
+                    aux = ent.copy()
+                    aux.update(ref)
+                    result.append(aux)
+    return result
+
+def label_entity(ent, gt):
+    page = ent["page"]
+    coord = ent["coord"]
+    for g in gt:
+        if g["page"] == page:
+            if g["coord"] == coord:
+                return g["Gnd"]
+    return ""
+
+def label_and_match_to_key(gt_label, match):
+    if match:
+        if gt_label == "":
+            return "tn"
+        else:
+            return "tp"
+    else:
+        if gt_label == "":
+            return "fp"
+        else:
+           return "fn"
+
+def eval_entity(entity):
+    counts = {"tp": 0, "fp": 0, "tn": 0, "fn": 0}
+    
+    if entity["label"] in [y for x in entity["candidates"] for y in x]:
+        key = label_and_match_to_key(gt_label=entity["label"], match=True)
+    else:
+        key = label_and_match_to_key(gt_label=entity["label"], match=False)
+    counts[key] += 1
+    
+    return counts
+
+def eval_mentions(entity):
+    counts = {"tp": 0, "fp": 0, "tn": 0, "fn": 0}
+
+    for i,label in enumerate(entity["labels"]):
+        if label in entity["candidates"][i]: #TODO maybe undo this specific way of saving candidates idk
+            key = label_and_match_to_key(gt_label=label, match=True)
+        else:
+            key = label_and_match_to_key(gt_label=label, match=False)
+        counts[key] += 1
+
+    return counts
 
 def evaluate_person(gt,linked,pages):
     #this does not work. it looks correct but it is not working correctly
-    references_counter = Counter({"TP": 0, "FP": 0, "FN": 0})
-    entities_counter = Counter({"TP": 0, "FP": 0, "FN": 0})
+    references_counter = Counter({"tp": 0, "fp": 0, "fn": 0, "tn": 0})
+    entities_counter = Counter({"tp": 0, "fp": 0, "fn": 0, "tn": 0})
+
+    #clean up data the same way we do in "linking.ipynb"
+    
+    gt_data = []
+    linked_data = []
+
+    input_linked = linked
+    gt = gt
+
+    gt = clean_gt(gt)
+    gt_data += gt
+    #here, unlike in "linking.ipynb" I also add the gnd_ids since that is the only way we have the candidates
+    input_linked = clean_raw(input_linked)
+    #print("depois")
+    #print(input_linked[1])
+
+    #due to non-determinism in the flair NER:
+    all_refs_gt = [g["page"]+g["coord"] for g in gt] 
+    all_refs_linked = [ent["page"]+ent["coord"] for l in input_linked for ent in l]
+    all_valid_refs = set(all_refs_gt).intersection(set(all_refs_linked))
+
+    for ent_variations in input_linked:
+        ent_instances = []
+        for ent in ent_variations:
+            if (ent["page"]+ent["coord"]) in all_valid_refs:
+                ent_instances.append({"ent": ent, "label": label_entity(ent, gt)})
+        if ent_instances:
+            linked_data.append(ent_instances)
+    
+    #but now linked_data is on reference level, we want to aggregate them:
+    ent_cand_label = []
+    from tqdm import tqdm
+    for entity_list in tqdm(linked_data, smoothing=0.01):
+        coord_list = []
+        label_list = []
+        candidates_list = []
+        #now i need the candidates, in the rulebased case we only have access to the gnd_ids
+        for ent_dict in entity_list:
+            ent = ent_dict["ent"]
+            coord_list.append({
+                "page": ent.pop("page", ""), 
+                "coords": ent.pop("coord", "")
+            })
+            label_list.append(ent_dict["label"])
+            candidates_list.append(ent["gnd_candidates"])
+        ent_cand_label.append({"entity": ent, "candidates": candidates_list, "occurences": coord_list, "labels": label_list})
+
     #reference-level, so aggregate by reference:
-    references_counter = eval_references(gt, linked, references_counter)
+    #references_counter = eval_references(gt, linked, references_counter)
     #entity-level, so aggregate by entity:
-    entities_counter = eval_entities(gt, linked, entities_counter)
+    #entities_counter = eval_entities(gt, linked, entities_counter)
 
-    return references_counter 
-
-def evaluate_person_AFGR(gt, linked, pages):
-    pages = [x for x in pages if x not in context_pages]
-    references_counter = Counter({"TP": 0, "FP": 0, "FN": 0})
-    entities_counter = Counter({"TP": 0, "FP": 0, "FN": 0})
-    # restructure the list of ground truth references for easier indexing
-
-
-
-    gt_gnd_dict = flatten_gt_dict(gt_dict=gt, pages=pages)
-    linked_gnd_dict = flatten_linked_dict(linked_dict=linked)
-
-    #might be worth it to just change "flatten_xx_dict"
-    inv_linked_gnd_dict = dict()
-    for k,v in linked_gnd_dict.items():
-        for refs in v:
-            inv_linked_gnd_dict.setdefault(refs["uniqueid"],[]).append(k)
-    
-    inv_gt_gnd_dict = dict()
-    for k,v in gt_gnd_dict.items():
-        for refs in v:
-            inv_gt_gnd_dict.setdefault(refs["uniqueid"],[]).append(k)
-
-    linked_gnd_dict_cleaned = linked_gnd_dict.copy()
-    #print("len(linked_gnd_dict_cleaned)")
-    #print(len(linked_gnd_dict_cleaned))
-    sanity_check_entities = dict()
-    sanity_check_references = dict()
-    sanity_check_uniqueid = []
-    for gnd_id in gt_gnd_dict:
-        sanity_check_entities.setdefault(gnd_id, False)
-        for ref in gt_gnd_dict[gnd_id]:
-            sanity_check_uniqueid.append(ref["uniqueid"])
-            sanity_check_references.setdefault(ref["uniqueid"], False)
-
-
-    for gnd_id in linked_gnd_dict:
-        if gnd_id not in linked_gnd_dict_cleaned.keys(): continue #we excluded the entity linked to this gndid earlier with another gndid
-        if gnd_id in gt_gnd_dict:
-            linked_refs = linked_gnd_dict[gnd_id]
-            [counts, sanity] = compare_references(linked_refs, gt_ref_list = gt_gnd_dict[gnd_id], pages=pages)
-            references_counter.update(counts)
-
-            for i in sanity:
-                assert(sanity_check_references[i] == False)
-                sanity_check_references[i] = True
-
-            entities_counter["TP"] += 1
-            assert(sanity_check_entities[gnd_id] == False)
-            sanity_check_entities[gnd_id] = True
-
-            # we do not want to count this entity again:
-            for refs in linked_refs:
-                for gnd_id_candidate in inv_linked_gnd_dict[refs["uniqueid"]]:
-                    if gnd_id_candidate in linked_gnd_dict_cleaned.keys():
-                        linked_gnd_dict_cleaned.pop(gnd_id_candidate)
-    
-
-    #invert linked_gnd_dict_cleaned
-    inv_linked_gnd_dict_cleaned = dict()
-    for gnd_id in linked_gnd_dict_cleaned:
-        linked_refs = linked_gnd_dict_cleaned[gnd_id]
-        for ref in linked_refs:
-            inv_linked_gnd_dict_cleaned[ref["uniqueid"]] = inv_linked_gnd_dict[ref["uniqueid"]]
-    
-    references_fp = set()
-    for gnd_id in linked_gnd_dict_cleaned:
-        if gnd_id not in gt_gnd_dict:
-            # The GND ID is not in the gt thus all found references are false positives
-            linked_refs = linked_gnd_dict[gnd_id]
-            for i in [ref["uniqueid"] for ref in linked_refs]:
-                references_fp.add(i)
-    references_counter["FP"] += (len(references_fp))
-
-    #TODO adjust evaluation for references as well, this currently does not work correctly.
-    #TODO: i made this so ugly when it was so clean and nice before, refactor it.
-
-    #print("len(inv_linked_gnd_dict_cleaned)")
-    #print(len(inv_linked_gnd_dict_cleaned))
-    entities_counter["FP"] = len(inv_linked_gnd_dict_cleaned)
-    
-    # count false negatives
-    for gnd_id in gt_gnd_dict:
-        for ref in gt_gnd_dict[gnd_id]:
-            if sanity_check_references[ref["uniqueid"]] == False:
-                # count all references in the gt that are on the same page but not in the
-                #references_counter.update({"FN": len([ref for ref in gt_gnd_dict[gnd_id] if ref["page"] in pages])})
-                references_counter["FN"] += 1
+    list_of_good_entities = []
+    list_of_problematic_entities = []
+    for ent_dict in tqdm(ent_cand_label):
+        if len(set(ent_dict["labels"])) > 1:
+            for label in set(ent_dict["labels"]):
+                ent_dict["label"] = label
+                #features = candidates_to_features(ent=ent_dict["entity"], candidates=ent_dict["candidates"], gt_label=ent_dict["label"])
+                #ent_dict.update(features)
+                list_of_problematic_entities.append(ent_dict.copy())
+        else:
+            ent_dict["label"] = set(ent_dict["labels"]).pop()
+            #features = candidates_to_features(ent=ent_dict["entity"], candidates=ent_dict["candidates"], gt_label=ent_dict["label"])
+            #ent_dict.update(features)
+            list_of_good_entities.append(ent_dict)
         
-        if gnd_id not in linked_gnd_dict: #NOTE this is a very generous choice... might change it later 
-            entities_counter["FN"] += 1 
-    return references_counter
 
+    list_of_all_entities = (list_of_good_entities + list_of_problematic_entities)
+    scores_entity = Scores()
+    scores_mention = Scores()
+    for entity in list_of_all_entities:
+        scores_entity.update_counter(counts_dict=eval_entity(entity))
+        # we have around 200 references too many. 
+        scores_mention.update_counter(counts_dict=eval_mentions(entity))
+
+    #print("F1 Ent:", scores_entity.get_score()["F1"], "F1 Ment:", scores_mention.get_score()["F1"])
+    #return ent_scores, ment_scores
+    references_counter["tp"] = scores_mention.get_score()["tp"]
+    references_counter["fp"] = scores_mention.get_score()["fp"]
+    references_counter["tn"] = scores_mention.get_score()["tn"]
+    references_counter["fn"] = scores_mention.get_score()["fn"]
+
+    entities_counter["tp"] = scores_entity.get_score()["tp"]
+    entities_counter["fp"] = scores_entity.get_score()["fp"]
+    entities_counter["tn"] = scores_entity.get_score()["tn"]
+    entities_counter["fn"] = scores_entity.get_score()["fn"]
+    return entities_counter 
