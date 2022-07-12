@@ -20,14 +20,7 @@ print('Available models:', list(gensim.downloader.info()['models'].keys()))
 class DataLoader:
     def __init__(self, raw_data_path: str) -> None:
         # 2. Create raw file mapping
-        logger.debug('Scanning raw data and finding relevant raw text for aggregated entries')
-        self.raw_data_path = raw_data_path
-        self.raw_file_map = {}
-        for root_dir, directories, files in os.walk(raw_data_path):
-            for file in files:
-                assert file not in self.raw_file_map
-                self.raw_file_map[file] = os.path.join(root_dir, file)
-
+        
         # 3. Create other variables/databases
         logger.debug('Loading glove vectors')
         self.glove_vectors = gensim.downloader.load('glove-twitter-25')
