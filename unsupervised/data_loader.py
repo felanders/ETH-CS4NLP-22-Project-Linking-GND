@@ -39,9 +39,14 @@ class DataLoader:
         """
         logger.debug('Creating context information using dnb database for candidates')
         glove_vector_length = len(self.glove_vectors['the'])
-        candidate_document_vectors = np.zeros((len(x[1]), glove_vector_length))
-        for counter, candidate in enumerate(x[1]):
-            angaben_text = get_whole_text(candidate)
+        candidate_document_vectors = np.zeros((len(x['candidates']), glove_vector_length))
+        for counter, candidate in enumerate(x['candidates']):
+            if candidate['Gnd'] == '':
+                # if no GND, just return huge distance!
+                candidate_document_vectors[counter, :] = np.zeros((glove_vector_length,)) + 1e+3
+                continue
+
+            angaben_text = get_whole_text(gnd=candidate['Gnd'])
             word_vectors = []
             for word in angaben_text:
                 try:
@@ -56,7 +61,8 @@ class DataLoader:
         # Now find the correct context information for the original vector
         word_vectors = []
         for current_mention in x['occurences']:
-            angaben_text = get_context_vectors(current_mention['page'], word2vec=self.glove_vectors, raw_data_path=self.raw_data_path)
+            # angaben_text = get_context_vectors(current_mention['page'], word2vec=self.glove_vectors, raw_data_path=self.raw_data_path)
+            angaben_text = get_context_vectors(current_mention['page'], ','.join(current_mention['coords'].split(',')[:2]), word2vec=self.glove_vectors, raw_data_path=self.raw_data_path, window_size=10)
             for word in angaben_text:
                 try:
                     word_vectors.append(self.glove_vectors[word])
