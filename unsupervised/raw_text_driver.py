@@ -60,12 +60,12 @@ def get_context_vectors(file_name, location: str, word2vec, raw_data_path, windo
     for counter, line in enumerate(lines):
         if location in line:
             # from -window_size to +window_size
-            for counter2 in range(-window_size, window_size):
+            for counter2 in range(-window_size, window_size+1):
                 line_indices.append(counter + counter2)
 
     # only 1 occurence should be present here!
-    assert len(line_indices) == 2*window_size + 1
-    
+    assert len(line_indices) == 2*window_size + 1, f'expected number of indices is {2*window_size+1} but we have {len(line_indices)} number of indices'
+
     for line_counter in line_indices:
         line = lines[line_counter]
         splitted = line.split(' ')
