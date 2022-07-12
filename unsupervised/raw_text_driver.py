@@ -63,6 +63,9 @@ def get_context_vectors(file_name, location: str, word2vec, raw_data_path, windo
             for counter2 in range(-window_size, window_size):
                 line_indices.append(counter + counter2)
 
+    # only 1 occurence should be present here!
+    assert len(line_indices) == 2*window_size + 1
+    
     for line_counter in line_indices:
         line = lines[line_counter]
         splitted = line.split(' ')
