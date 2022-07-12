@@ -11,6 +11,7 @@ DEFAULT_ID_2 = '133758982'
 
 def fetch_resource(gnd):
     """Check if the corresponding file exists! If so, use cache on the disk (the file), otherwise fetch it from the server"""
+    gnd = str(gnd)
     cache_file = os.path.join(PATH_CONTENT_DIR, gnd)
     if os.path.exists(cache_file):
         with open(cache_file, 'r') as my_file:

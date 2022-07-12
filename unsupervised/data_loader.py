@@ -56,24 +56,24 @@ class DataLoader:
                     pass
             logger.debug(f'dnb database words are in the vocabulary for {candidate} is {len(word_vectors)}/{len(angaben_text)}')
             # todo -> this is not the correct place to calculate average!
+            # print(candidate, word_vectors)
             candidate_document_vectors[counter, :] = np.array(word_vectors).mean(axis=0)
         
         # Now find the correct context information for the original vector
         word_vectors = []
         for current_mention in x['occurences']:
-            # angaben_text = get_context_vectors(current_mention['page'], word2vec=self.glove_vectors, raw_data_path=self.raw_data_path)
-            angaben_text = get_context_vectors(current_mention['page'], ','.join(current_mention['coords'].split(',')[:2]), word2vec=self.glove_vectors, raw_data_path=self.raw_data_path, window_size=10)
-            for word in angaben_text:
-                try:
-                    word_vectors.append(self.glove_vectors[word])
-                except KeyError:
-                    # maybe this is not in the vocabulary
-                    pass
-        
+            context_vectors = get_context_vectors(current_mention['page'], ','.join(current_mention['coords'].split(',')[:2]), word2vec=self.glove_vectors, raw_data_path=self.raw_data_path, window_size=10)
+            
+            for vector in context_vectors:
+                word_vectors.append(vector)
+                
+        # print('SOURCE', word_vectors)
         source_word_vec = np.array(word_vectors).mean(axis=0)
 
         distances = []
-        for counter in range(len(x[1])):
+        for counter in range(len(x['candidates'])):
+            # print('source', source_word_vec)
+            # print('other', candidate_document_vectors[counter, :])
             distances.append(np.linalg.norm(source_word_vec - candidate_document_vectors[counter, :]))
 
         return distances
