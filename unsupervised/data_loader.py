@@ -9,6 +9,8 @@ import pickle
 # from modules.linking_fuseki import get_candidates
 import copy
 
+from unsupervised.raw_text_driver import get_context_vectors
+
 # PATH_ENTITY_MAP = 'data/entity_map_lookup.pickle'
 
 different_name_for_logging.basicConfig()
@@ -20,6 +22,7 @@ print('Available models:', list(gensim.downloader.info()['models'].keys()))
 class DataLoader:
     def __init__(self, raw_data_path: str) -> None:
         # 2. Create raw file mapping
+        self.raw_data_path = raw_data_path
         
         # 3. Create other variables/databases
         logger.debug('Loading glove vectors')
@@ -52,12 +55,15 @@ class DataLoader:
         
         # Now find the correct context information for the original vector
         word_vectors = []
-        for word in angaben_text:
-            try:
-                word_vectors.append(self.glove_vectors[word])
-            except KeyError:
-                # maybe this is not in the vocabulary
-                pass
+        for current_mention in x['occurences']:
+            angaben_text = get_context_vectors(current_mention['page'], word2vec=self.glove_vectors, raw_data_path=self.raw_data_path)
+            for word in angaben_text:
+                try:
+                    word_vectors.append(self.glove_vectors[word])
+                except KeyError:
+                    # maybe this is not in the vocabulary
+                    pass
+        
         source_word_vec = np.array(word_vectors).mean(axis=0)
 
         distances = []
