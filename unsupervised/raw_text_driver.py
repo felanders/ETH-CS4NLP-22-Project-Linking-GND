@@ -67,6 +67,8 @@ def get_context_vectors(file_name, location: str, word2vec, raw_data_path, windo
     assert len(line_indices) == 2*window_size + 1, f'expected number of indices is {2*window_size+1} but we have {len(line_indices)} number of indices'
 
     for line_counter in line_indices:
+        if line_counter >= len(lines) or line_counter < 0:
+            continue
         line = lines[line_counter]
         splitted = line.split(' ')
         if len(splitted) == 1:
