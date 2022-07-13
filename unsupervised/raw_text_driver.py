@@ -64,7 +64,8 @@ def get_context_vectors(file_name, location: str, word2vec, raw_data_path, windo
                 line_indices.append(counter + counter2)
 
     # only 1 occurence should be present here!
-    assert len(line_indices) == 2*window_size + 1, f'expected number of indices is {2*window_size+1} but we have {len(line_indices)} number of indices'
+    # TODO ? ??? why 2 valid lines?
+    # assert len(line_indices) == 2*window_size + 1, f'expected number of indices is {2*window_size+1} but we have {len(line_indices)} number of indices'
 
     for line_counter in line_indices:
         if line_counter >= len(lines) or line_counter < 0:

@@ -37,9 +37,10 @@ class DataLoader:
         2. Create context vector for all of the candidates x[1]
         3. Calculate the distances between 1 and each vector in 2
         """
+        num_features = 3
         logger.debug('Creating context information using dnb database for candidates')
         glove_vector_length = len(self.glove_vectors['the'])
-        candidate_document_vectors = np.zeros((len(x['candidates']), glove_vector_length))
+        candidate_document_vectors = np.zeros((len(x['candidates']), num_features, glove_vector_length))
         for counter, candidate in enumerate(x['candidates']):
             if candidate['Gnd'] == '':
                 # if no GND, just return huge distance!
@@ -57,7 +58,12 @@ class DataLoader:
             logger.debug(f'dnb database words are in the vocabulary for {candidate} is {len(word_vectors)}/{len(angaben_text)}')
             # todo -> this is not the correct place to calculate average!
             # print(candidate, word_vectors)
-            candidate_document_vectors[counter, :] = np.array(word_vectors).mean(axis=0)
+            candidate_document_vectors[counter, :, :] = np.array([
+                np.array(word_vectors).mean(axis=0),
+                np.array(word_vectors).min(axis=0),
+                np.array(word_vectors).max(axis=0),
+            ])
+            # candidate_document_vectors[counter, :, :] = np.array(word_vectors).mean(axis=0)
         
         # Now find the correct context information for the original vector
         word_vectors = []
@@ -68,13 +74,18 @@ class DataLoader:
                 word_vectors.append(vector)
                 
         # print('SOURCE', word_vectors)
-        source_word_vec = np.array(word_vectors).mean(axis=0)
+        source_word_vec = np.array([
+            np.array(word_vectors).mean(axis=0),
+            np.array(word_vectors).min(axis=0),
+            np.array(word_vectors).max(axis=0),
+        ])
+        
 
         distances = []
         for counter in range(len(x['candidates'])):
             # print('source', source_word_vec)
             # print('other', candidate_document_vectors[counter, :])
-            distances.append(np.linalg.norm(source_word_vec - candidate_document_vectors[counter, :]))
+            distances.append([np.linalg.norm(source_word_vec - candidate_document_vectors[counter, counter2, :]) for counter2 in range(num_features)])
 
         return distances
 
