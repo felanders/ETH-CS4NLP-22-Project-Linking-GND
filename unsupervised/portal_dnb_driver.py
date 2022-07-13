@@ -2,6 +2,7 @@ import os
 import requests
 import re
 from difflib import SequenceMatcher
+import time
 
 PATH_CONTENT_DIR = 'data/website_content_cache'
 SERVER_URL = 'https://d-nb.info/gnd/'
@@ -64,8 +65,35 @@ def clean_common_text(text, gnd):
     else:
         other_text = fetch_resource(str(DEFAULT_ID_1))
     
-    match = SequenceMatcher(None, text, other_text).find_longest_match()
+    # text = 'bir iki uc'
+    # other_text = 'bir iki'
+    match = SequenceMatcher(None, text, other_text).find_longest_match(0, len(text), 0, len(other_text))
     while match.size > 50:
+        # print('current_text:', text)
+        # print('match_size', match.size)
+        # print(other_text)
+        # time.sleep(5.0)
         text = text[:match.a] + text[match.a + match.size:]
+        match = SequenceMatcher(None, text, other_text).find_longest_match(0, len(text), 0, len(other_text))
     
     return text
+
+def get_cleaned_whole_text(gnd):
+    """Return the whole text with a clean content."""
+    temp = fetch_resource(str(gnd))
+
+    clean_common_text(temp, gnd)
+    # print('cleaned text:')
+    # print(temp)
+    # asldjasdjslk
+
+    # temp = clean_common_text(temp, gnd)
+    # clean the tags!
+    cleanr = re.compile('<.*?>') 
+    temp = re.sub(cleanr, '', temp)
+    # clean stupid characters
+    temp = temp.rstrip()
+    temp = temp.lstrip()
+    temp = temp.replace('\t', '')
+
+    return temp

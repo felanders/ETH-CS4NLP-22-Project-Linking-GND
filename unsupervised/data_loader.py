@@ -2,7 +2,7 @@ import json
 import os
 import pdb
 import gensim.downloader
-from unsupervised.portal_dnb_driver import get_angaben_text, get_whole_text
+from unsupervised.portal_dnb_driver import get_angaben_text, get_cleaned_whole_text, get_whole_text
 import numpy as np
 import logging as different_name_for_logging # im always confused by the name and use logging instead of logger
 import pickle
@@ -47,7 +47,8 @@ class DataLoader:
                 candidate_document_vectors[counter, :] = np.zeros((glove_vector_length,)) + 1e+3
                 continue
 
-            angaben_text = get_whole_text(gnd=candidate['Gnd'])
+            # angaben_text = get_whole_text(gnd=candidate['Gnd'])
+            angaben_text = get_cleaned_whole_text(gnd=candidate['Gnd'])
             word_vectors = []
             for word in angaben_text:
                 try:
