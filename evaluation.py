@@ -151,6 +151,8 @@ def get_x_y(list_of_entities, keep_empty_candidate=False):
 
 def perform_experiment(keep_empty, do_sample, oversampling, balance, d, model, n_s, thresholds, verbose=False):
     X_train, y_train = get_x_y(d["train"], keep_empty_candidate=keep_empty)
+    feature_length = len(X_train[0])
+    # import pdb; pdb.set_trace()
 
     if do_sample:
         df = pd.DataFrame(X_train)
@@ -172,7 +174,7 @@ def perform_experiment(keep_empty, do_sample, oversampling, balance, d, model, n
         sample = df.groupby('y', group_keys=False).apply(lambda x: sampling_strategy(x, over_sampling=oversampling, balance=balance))
 
         y_sample = sample["y"]
-        X_sample = sample[[0, 1, 2, 3, 4, 5, 6, 7]]
+        X_sample = sample[range(feature_length)]
     else:
         y_sample = y_train
         X_sample = X_train
@@ -202,7 +204,7 @@ def perform_experiment(keep_empty, do_sample, oversampling, balance, d, model, n
             print("threshold: ", threshold, "F1 Ent:", scores_entity.get_score()["F1"], "F1 Ment:", scores_mention.get_score()["F1"]) if verbose else ""
     return ent_scores, ment_scores
 
-def crossvalidate_experiment(d, n_fold, keep_empty, do_sample, oversampling, balance, model, n_s, tresholds, verbose=False):
+def crossvalidate_experiment(d, n_fold, keep_empty, do_sample, oversampling, balance, model, n_s, thresholds, verbose=False):
     data = d["train"] + d["eval"]
     chunk = math.floor(len(data)/n_fold)
     ent_scores_crossval = []
@@ -219,7 +221,7 @@ def crossvalidate_experiment(d, n_fold, keep_empty, do_sample, oversampling, bal
             balance=balance, 
             model=model, 
             n_s=n_s, 
-            tresholds=tresholds, 
+            thresholds=thresholds, 
             train=train, 
             eval=eval, 
             verbose=verbose)
@@ -238,7 +240,7 @@ def crossvalidate_experiment(d, n_fold, keep_empty, do_sample, oversampling, bal
         ment_score["score"].divide_scores_for_crossval(divide_by=n_fold)
     return mean_ent_scores, mean_ment_scores
 
-def plot_metrics_over_treshold(thresholds, n_s, oversampling, balance, do_sample, keep_empty, model, data, results):
+def plot_metrics_over_threshold(thresholds, n_s, oversampling, balance, do_sample, keep_empty, model, data, results):
 
     y = np.zeros((6, len(n_s), len(thresholds)))
 
