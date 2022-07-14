@@ -15,8 +15,8 @@ from unsupervised.raw_text_driver import get_context_vectors
 # PATH_ENTITY_MAP = 'data/entity_map_lookup.pickle'
 
 different_name_for_logging.basicConfig()
-logger = different_name_for_logging.getLogger()
-logger.setLevel(different_name_for_logging.DEBUG)
+logger = different_name_for_logging.getLogger(__file__)
+logger.setLevel(different_name_for_logging.WARNING)
 
 print('Available models:', list(gensim.downloader.info()['models'].keys()))
 
@@ -98,9 +98,9 @@ class DataLoader:
             # print('source', source_word_vec)
             # print('other', candidate_document_vectors[counter, :])
             if similarity_measure == 'distance':
-                distances.append([np.linalg.norm(source_word_vec - candidate_document_vectors[counter, counter2, :]) for counter2 in range(num_features)])
+                distances.append([np.linalg.norm(source_word_vec[counter2, :] - candidate_document_vectors[counter, counter2, :]) for counter2 in range(num_features)])
             elif similarity_measure == 'cosine_similarity':
-                distances.append([spatial.distance.cosine(source_word_vec - candidate_document_vectors[counter, counter2, :]) for counter2 in range(num_features)])
+                distances.append([spatial.distance.cosine(source_word_vec[counter2, :], candidate_document_vectors[counter, counter2, :]) for counter2 in range(num_features)])
             else:
                 pass
 

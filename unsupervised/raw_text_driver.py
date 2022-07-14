@@ -1,9 +1,13 @@
 """
 Here I calculate the vectors for the input text.
 """
-import logging
+import logging as different_name_for_logging
 import numpy as np
 import os
+
+different_name_for_logging.basicConfig()
+logger = different_name_for_logging.getLogger(__file__)
+logger.setLevel(different_name_for_logging.WARNING)
 
 def get_file_path(file_name, raw_data_path):
     """
@@ -34,7 +38,7 @@ def get_context_vectors(file_name, word2vec, raw_data_path):
             vectors.append(word2vec[splitted[0]])
         except KeyError:
             skipped = skipped + 1
-    logging.debug(f'Number of context vectors from text {total-skipped}/{total}')
+    logger.debug(f'Number of context vectors from text {total-skipped}/{total}')
     return np.array(vectors)
 
 def get_context_vectors(file_name, location: str, word2vec, raw_data_path, window_size):
@@ -80,5 +84,5 @@ def get_context_vectors(file_name, location: str, word2vec, raw_data_path, windo
             vectors.append(word2vec[splitted[0]])
         except KeyError:
             skipped = skipped + 1
-    logging.debug(f'Number of context vectors from text {total-skipped}/{total}')
+    logger.debug(f'Number of context vectors from text {total-skipped}/{total}')
     return np.array(vectors)
