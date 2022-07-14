@@ -8,6 +8,7 @@ import logging as different_name_for_logging # im always confused by the name an
 import pickle
 # from modules.linking_fuseki import get_candidates
 import copy
+from scipy import spatial
 
 from unsupervised.raw_text_driver import get_context_vectors
 
@@ -28,8 +29,11 @@ class DataLoader:
         logger.debug('Loading glove vectors')
         self.glove_vectors = gensim.downloader.load('glove-twitter-25')
             
-    def get_context_distances(self, x):
+    def get_context_distances(self, x, similarity_measure, window_size):
         """Calculate the distances between context vectors for the given entry.
+
+        @param similarity_measure: one of these options: ['distance', 'cosine_similarity']
+        @param window_size: size of left of the center word and the right
         
         The distance is calculated as:
         
@@ -69,24 +73,36 @@ class DataLoader:
         # Now find the correct context information for the original vector
         word_vectors = []
         for current_mention in x['occurences']:
-            context_vectors = get_context_vectors(current_mention['page'], ','.join(current_mention['coords'].split(',')[:2]), word2vec=self.glove_vectors, raw_data_path=self.raw_data_path, window_size=10)
+            context_vectors = get_context_vectors(current_mention['page'], ','.join(current_mention['coords'].split(',')[:2]), word2vec=self.glove_vectors, raw_data_path=self.raw_data_path, window_size=window_size)
             
             for vector in context_vectors:
                 word_vectors.append(vector)
                 
         # print('SOURCE', word_vectors)
-        source_word_vec = np.array([
-            np.array(word_vectors).mean(axis=0),
-            np.array(word_vectors).min(axis=0),
-            np.array(word_vectors).max(axis=0),
-        ])
+        # print(len(x['occurences']))
+        # print(len(word_vectors))
+        # print(x['occurences'])
+        if len(word_vectors) == 0:
+            # since we don't know it, just create zero array
+            source_word_vec = np.zeros((num_features, glove_vector_length))
+        else:
+            source_word_vec = np.array([
+                np.array(word_vectors).mean(axis=0),
+                np.array(word_vectors).min(axis=0),
+                np.array(word_vectors).max(axis=0),
+            ])
         
 
         distances = []
         for counter in range(len(x['candidates'])):
             # print('source', source_word_vec)
             # print('other', candidate_document_vectors[counter, :])
-            distances.append([np.linalg.norm(source_word_vec - candidate_document_vectors[counter, counter2, :]) for counter2 in range(num_features)])
+            if similarity_measure == 'distance':
+                distances.append([np.linalg.norm(source_word_vec - candidate_document_vectors[counter, counter2, :]) for counter2 in range(num_features)])
+            elif similarity_measure == 'cosine_similarity':
+                distances.append([spatial.distance.cosine(source_word_vec - candidate_document_vectors[counter, counter2, :]) for counter2 in range(num_features)])
+            else:
+                pass
 
         return distances
 

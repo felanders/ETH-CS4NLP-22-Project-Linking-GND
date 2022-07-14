@@ -3,6 +3,8 @@ import requests
 import re
 from difflib import SequenceMatcher
 import time
+# from urllib.request import urlopen
+from bs4 import BeautifulSoup
 
 PATH_CONTENT_DIR = 'data/website_content_cache'
 SERVER_URL = 'https://d-nb.info/gnd/'
@@ -68,7 +70,7 @@ def clean_common_text(text, gnd):
     # text = 'bir iki uc'
     # other_text = 'bir iki'
     match = SequenceMatcher(None, text, other_text).find_longest_match(0, len(text), 0, len(other_text))
-    while match.size > 50:
+    while match.size > 40:
         # print('current_text:', text)
         # print('match_size', match.size)
         # print(other_text)
@@ -78,11 +80,32 @@ def clean_common_text(text, gnd):
     
     return text
 
+def clean_this_html(text):
+    soup = BeautifulSoup(text, features="html.parser")
+
+    # kill all script and style elements
+    for script in soup(["script", "style"]):
+        script.extract()    # rip it out
+
+    # get text
+    text = soup.get_text()
+
+    # break into lines and remove leading and trailing space on each
+    lines = (line.strip() for line in text.splitlines())
+    # break multi-headlines into a line each
+    chunks = (phrase.strip() for line in lines for phrase in line.split("  "))
+    # drop blank lines
+    text = '\n'.join(chunk for chunk in chunks if chunk)
+
+    # print(text)
+    return text
+
 def get_cleaned_whole_text(gnd):
     """Return the whole text with a clean content."""
     temp = fetch_resource(str(gnd))
+    temp = clean_this_html(temp)
 
-    clean_common_text(temp, gnd)
+    temp = clean_common_text(temp, gnd)
     # print('cleaned text:')
     # print(temp)
     # asldjasdjslk
