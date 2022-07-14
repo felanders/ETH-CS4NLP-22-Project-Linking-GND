@@ -47,7 +47,7 @@ class DataLoader:
         candidate_document_vectors = np.zeros((len(x['candidates']), num_features, glove_vector_length))
         for counter, candidate in enumerate(x['candidates']):
             if candidate['Gnd'] == '':
-                # if no GND, just return huge distance!
+                # if no GND, just return unrealistacally large vector!
                 candidate_document_vectors[counter, :] = np.zeros((glove_vector_length,)) + 1e+3
                 continue
 
