@@ -149,8 +149,8 @@ def get_x_y(list_of_entities, keep_empty_candidate=False):
                 X.append(features)
     return X, y
 
-def perform_experiment(keep_empty, do_sample, oversampling, balance, d, model, n_s, thresholds, verbose=False):
-    X_train, y_train = get_x_y(d["train"], keep_empty_candidate=keep_empty)
+def perform_experiment(keep_empty, do_sample, oversampling, balance, train, eval, model, n_s, thresholds, verbose=False):
+    X_train, y_train = get_x_y(train, keep_empty_candidate=keep_empty)
     feature_length = len(X_train[0])
     # import pdb; pdb.set_trace()
 
@@ -181,7 +181,7 @@ def perform_experiment(keep_empty, do_sample, oversampling, balance, d, model, n
 
     model.fit(X_sample, y_sample)
 
-    for entity in d["eval"]:
+    for entity in eval:
     #for entity in d["test"]:
         ranking = rank_candidates(candidates=entity["candidates"], features=entity["features"], model=model)
         entity.update(ranking)
@@ -194,7 +194,7 @@ def perform_experiment(keep_empty, do_sample, oversampling, balance, d, model, n
         for threshold in thresholds:
             scores_entity = Scores()
             scores_mention = Scores()
-            for entity in d["eval"]:
+            for entity in eval:
             #for entity in d["test"]:
                 scores_entity.update_counter(counts_dict=eval_entity(entity, top_n=top_n, threshold=threshold))
                 scores_mention.update_counter(counts_dict=eval_mentions(entity, top_n=top_n, threshold=threshold))
@@ -204,8 +204,8 @@ def perform_experiment(keep_empty, do_sample, oversampling, balance, d, model, n
             print("threshold: ", threshold, "F1 Ent:", scores_entity.get_score()["F1"], "F1 Ment:", scores_mention.get_score()["F1"]) if verbose else ""
     return ent_scores, ment_scores
 
-def crossvalidate_experiment(d, n_fold, keep_empty, do_sample, oversampling, balance, model, n_s, thresholds, verbose=False):
-    data = d["train"] + d["eval"]
+def crossvalidate_experiment(train, eval, n_fold, keep_empty, do_sample, oversampling, balance, model, n_s, thresholds, verbose=False):
+    data = train + eval
     chunk = math.floor(len(data)/n_fold)
     ent_scores_crossval = []
     ment_scores_crossval = []
