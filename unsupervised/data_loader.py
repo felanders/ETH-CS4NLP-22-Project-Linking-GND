@@ -103,7 +103,7 @@ class DataLoader:
                 distances.append([spatial.distance.cosine(source_word_vec[counter2, :], candidate_document_vectors[counter, counter2, :]) for counter2 in range(num_features)])
             else:
                 pass
-
+        
         return distances
 
         
