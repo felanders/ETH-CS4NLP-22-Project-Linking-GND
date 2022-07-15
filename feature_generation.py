@@ -7,7 +7,7 @@ from thefuzz import fuzz
 from evaluation import label_and_match_to_key
 from utils import get_gnd
 import regex as re
-from candidate_generation import get_coords_from_candidate
+from candidate_generation import get_coords_from_candidate, extract_field_by_gnd
 
 loc = Nominatim(user_agent="GetLoc")
 ft = FastTextKeyedVectors.load("./fasttext")
