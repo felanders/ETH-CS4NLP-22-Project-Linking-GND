@@ -32,7 +32,7 @@ class DataLoader:
     def get_context_distances(self, x, similarity_measure, window_size):
         """Calculate the distances between context vectors for the given entry.
 
-        @param similarity_measure: one of these options: ['distance', 'cosine_similarity']
+        @param similarity_measure: one of these options: ['l2', 'cosine_similarity']
         @param window_size: size of left of the center word and the right
         
         The distance is calculated as:
@@ -41,7 +41,7 @@ class DataLoader:
         2. Create context vector for all of the candidates x[1]
         3. Calculate the distances between 1 and each vector in 2
         """
-        num_features = 3
+        num_features = 1
         logger.debug('Creating context information using dnb database for candidates')
         glove_vector_length = len(self.glove_vectors['the'])
         candidate_document_vectors = np.zeros((len(x['candidates']), num_features, glove_vector_length))
@@ -65,8 +65,8 @@ class DataLoader:
             # print(candidate, word_vectors)
             candidate_document_vectors[counter, :, :] = np.array([
                 np.array(word_vectors).mean(axis=0),
-                np.array(word_vectors).min(axis=0),
-                np.array(word_vectors).max(axis=0),
+                # np.array(word_vectors).min(axis=0),
+                # np.array(word_vectors).max(axis=0),
             ])
             # candidate_document_vectors[counter, :, :] = np.array(word_vectors).mean(axis=0)
         
@@ -88,8 +88,8 @@ class DataLoader:
         else:
             source_word_vec = np.array([
                 np.array(word_vectors).mean(axis=0),
-                np.array(word_vectors).min(axis=0),
-                np.array(word_vectors).max(axis=0),
+                # np.array(word_vectors).min(axis=0),
+                # np.array(word_vectors).max(axis=0),
             ])
         
 
@@ -97,17 +97,20 @@ class DataLoader:
         for counter in range(len(x['candidates'])):
             # print('source', source_word_vec)
             # print('other', candidate_document_vectors[counter, :])
-            if similarity_measure == 'distance':
+            if similarity_measure == 'l2':
                 distances.append([np.linalg.norm(source_word_vec[counter2, :] - candidate_document_vectors[counter, counter2, :]) for counter2 in range(num_features)])
             elif similarity_measure == 'cosine_similarity':
+                assert source_word_vec[0, :].shape[0] == glove_vector_length, 'mismatch' + str(source_word_vec[0, :].shape[0]) + str(glove_vector_length)
+                assert candidate_document_vectors[counter, 0, :].shape[0] == glove_vector_length, 'mismatch' + str(source_word_vec[0, :].shape[0]) + str(glove_vector_length)
                 distances.append([spatial.distance.cosine(source_word_vec[counter2, :], candidate_document_vectors[counter, counter2, :]) for counter2 in range(num_features)])
             else:
+                raise Exception('undefined option' + str(similarity_measure))
                 pass
         
         return distances
 
         
-
+    ############################### OLD CODE BELOW, KEEP FOR REFERENCE IF NEEDED...
     # def __init__(self, agg_data_path: str, raw_data_path: str):
     #     """
     #     1. Scan aggregate data directory and find different magazine folders
