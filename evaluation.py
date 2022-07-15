@@ -178,11 +178,16 @@ def perform_experiment(keep_empty, do_sample, oversampling, balance, d, model, n
     else:
         y_sample = y_train
         X_sample = X_train
+    
+    # X_sample = X_sample.fillna(0)
+    # print(X_sample[X_sample.isna().any(axis=1)])
+    # adsadasddas
 
     model.fit(X_sample, y_sample)
 
     for entity in d["eval"]:
     #for entity in d["test"]:
+        # print('len features:', len(entity['features'][0]), 'len candidates:', len(entity['candidates'][0]))
         ranking = rank_candidates(candidates=entity["candidates"], features=entity["features"], model=model)
         entity.update(ranking)
 
@@ -214,6 +219,7 @@ def crossvalidate_experiment(d, n_fold, keep_empty, do_sample, oversampling, bal
         ub = (i+1)*chunk
         train = data[:lb]+ data[ub:]
         eval = data[lb:ub]
+        current_data = {'train': train, 'eval': eval}
         ent_scores, ment_scores = perform_experiment(
             keep_empty=keep_empty, 
             do_sample=do_sample, 
@@ -222,8 +228,9 @@ def crossvalidate_experiment(d, n_fold, keep_empty, do_sample, oversampling, bal
             model=model, 
             n_s=n_s, 
             thresholds=thresholds, 
-            train=train, 
-            eval=eval, 
+            # train=train, 
+            # eval=eval, 
+            d=current_data,
             verbose=verbose)
         ent_scores_crossval.append(ent_scores)
         ment_scores_crossval.append(ment_scores)
