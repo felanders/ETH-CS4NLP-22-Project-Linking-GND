@@ -53,12 +53,10 @@ class Scores:
 def rank_candidates(candidates, features, model):
     candidate_scores = []
     candidate_ids = []
-    
     for candidate, feature in zip(candidates, features):
         score = model.predict(np.array(feature).reshape(1,-1))[0]
         candidate_scores.append(score)
         candidate_ids.append(get_gnd(candidate))
-    
     if candidate_ids:
         candidate_ids = np.array(candidate_ids)
         indices = np.argsort(candidate_scores)
@@ -104,31 +102,22 @@ def filter_ids(ids, scores, top_n=10, threshold=0.5):
 def eval_entity(entity, top_n=10, threshold=0.5):
     filtered_ids = filter_ids(entity["ids"], scores=entity["scores"], top_n=top_n, threshold=threshold)
     counts = {"tp": 0, "fp": 0, "tn": 0, "fn": 0}
-    
     if entity["label"] in filtered_ids:
         key = label_and_match_to_key(gt_label=entity["label"], match=True)
     else:
         key = label_and_match_to_key(gt_label=entity["label"], match=False)
     counts[key] += 1
-    
     return counts
 
 def eval_mentions(entity, top_n=10, threshold=0.5):
     counts = {"tp": 0, "fp": 0, "tn": 0, "fn": 0} 
     filtered_ids = filter_ids(entity["ids"], scores=entity["scores"], top_n=top_n, threshold=threshold)
-
-    #This is because GR calls "labels" "gt_label"
-    key_helper = "labels"
-    if key_helper not in entity:
-        key_helper = "gt_label"
-
-    for label in entity[key_helper]:
+    for label in entity["gt_label"]:
         if label in filtered_ids:
             key = label_and_match_to_key(gt_label=label, match=True)
         else:
             key = label_and_match_to_key(gt_label=label, match=False)
         counts[key] += 1
-
     return counts
 
 def y_to_number(y):
@@ -149,8 +138,8 @@ def get_x_y(list_of_entities, keep_empty_candidate=False):
                 X.append(features)
     return X, y
 
-def perform_experiment(keep_empty, do_sample, oversampling, balance, d, model, n_s, thresholds, verbose=False):
-    X_train, y_train = get_x_y(d["train"], keep_empty_candidate=keep_empty)
+def perform_experiment(keep_empty, do_sample, oversampling, balance, model, n_s, thresholds, train, eval, verbose=False):
+    X_train, y_train = get_x_y(train, keep_empty_candidate=keep_empty)
 
     if do_sample:
         df = pd.DataFrame(X_train)
@@ -159,7 +148,6 @@ def perform_experiment(keep_empty, do_sample, oversampling, balance, d, model, n
         count = df["y"].count()
         pos_samples = df["y"].sum()
 
-        #TODO check if this sampling is correct
         def sampling_strategy(x, over_sampling, balance):
             if x.shape[0] > pos_samples:
                 if pos_samples*over_sampling*balance < count:
@@ -179,8 +167,7 @@ def perform_experiment(keep_empty, do_sample, oversampling, balance, d, model, n
 
     model.fit(X_sample, y_sample)
 
-    for entity in d["eval"]:
-    #for entity in d["test"]:
+    for entity in eval:
         ranking = rank_candidates(candidates=entity["candidates"], features=entity["features"], model=model)
         entity.update(ranking)
 
@@ -192,8 +179,7 @@ def perform_experiment(keep_empty, do_sample, oversampling, balance, d, model, n
         for threshold in thresholds:
             scores_entity = Scores()
             scores_mention = Scores()
-            for entity in d["eval"]:
-            #for entity in d["test"]:
+            for entity in eval:
                 scores_entity.update_counter(counts_dict=eval_entity(entity, top_n=top_n, threshold=threshold))
                 scores_mention.update_counter(counts_dict=eval_mentions(entity, top_n=top_n, threshold=threshold))
 
@@ -202,7 +188,7 @@ def perform_experiment(keep_empty, do_sample, oversampling, balance, d, model, n
             print("threshold: ", threshold, "F1 Ent:", scores_entity.get_score()["F1"], "F1 Ment:", scores_mention.get_score()["F1"]) if verbose else ""
     return ent_scores, ment_scores
 
-def crossvalidate_experiment(d, n_fold, keep_empty, do_sample, oversampling, balance, model, n_s, tresholds, verbose=False):
+def crossvalidate_experiment(d, n_fold, keep_empty, do_sample, oversampling, balance, model, n_s, thresholds, verbose=False):
     data = d["train"] + d["eval"]
     chunk = math.floor(len(data)/n_fold)
     ent_scores_crossval = []
@@ -219,7 +205,7 @@ def crossvalidate_experiment(d, n_fold, keep_empty, do_sample, oversampling, bal
             balance=balance, 
             model=model, 
             n_s=n_s, 
-            tresholds=tresholds, 
+            thresholds=thresholds, 
             train=train, 
             eval=eval, 
             verbose=verbose)
@@ -238,7 +224,7 @@ def crossvalidate_experiment(d, n_fold, keep_empty, do_sample, oversampling, bal
         ment_score["score"].divide_scores_for_crossval(divide_by=n_fold)
     return mean_ent_scores, mean_ment_scores
 
-def plot_metrics_over_treshold(thresholds, n_s, oversampling, balance, do_sample, keep_empty, model, data, results):
+def plot_metrics_over_threshold(thresholds, n_s, oversampling, balance, do_sample, keep_empty, model, data, results):
 
     y = np.zeros((6, len(n_s), len(thresholds)))
 
