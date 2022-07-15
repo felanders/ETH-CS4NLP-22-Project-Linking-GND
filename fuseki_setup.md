@@ -59,6 +59,6 @@ in addition to this page for further information:
 https://jena.apache.org/documentation/query/text-query.html#working-with-fuseki
 
 # Putting it all together
-If the setup worked, you can simply git clone https://github.com/rashitig/nla/ and follow the workflow description in: https://github.com/rashitig/nla/blob/GR/configs/commandline/worflow%20description . The models are not available on github, as they are too big. But the models are only used for tagging and our project is only concerned with linking, so it should work fine for the intended purpose.
+If the setup worked, you can simply git clone https://github.com/rashitig/nla/ from the GR branch, and follow the workflow description in: https://github.com/rashitig/nla/blob/GR/configs/commandline/worflow%20description . The models are not available on github, as they are too big. But the models are only used for tagging and our project is only concerned with linking, so it should work fine for the intended purpose.
 
 If anything is missing at all, or something does not work correctly, don't hesistate to contact me: rashitig@student.ethz.ch, I'm happy to help!
