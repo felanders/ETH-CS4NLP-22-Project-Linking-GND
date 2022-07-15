@@ -219,7 +219,6 @@ def crossvalidate_experiment(train, eval, n_fold, keep_empty, do_sample, oversam
         ub = (i+1)*chunk
         train = data[:lb]+ data[ub:]
         eval = data[lb:ub]
-        current_data = {'train': train, 'eval': eval}
         ent_scores, ment_scores = perform_experiment(
             keep_empty=keep_empty, 
             do_sample=do_sample, 
@@ -228,9 +227,8 @@ def crossvalidate_experiment(train, eval, n_fold, keep_empty, do_sample, oversam
             model=model, 
             n_s=n_s, 
             thresholds=thresholds, 
-            # train=train, 
-            # eval=eval, 
-            d=current_data,
+            train=train, 
+            eval=eval, 
             verbose=verbose)
         ent_scores_crossval.append(ent_scores)
         ment_scores_crossval.append(ment_scores)
