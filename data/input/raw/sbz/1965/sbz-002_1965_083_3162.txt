@@ -1,0 +1,142 @@
+1974,2850
+SULZER 97,157,570,102
+<EOS>
+<EOP>
+Einige 96,461,80,28
+Typen 184,460,82,29
+aus 275,467,47,18
+unserem 333,467,113,20
+Lieferprogramm: 460,464,217,30
+<EOS>
+<EOP>
+Plimpen 700,220,195,49
+für 914,222,66,40
+alle 994,223,83,39
+Zwecke 1091,223,183,40
+Unsere 1304,240,94,24
+Pumpen 1413,241,107,27
+sind 1533,242,53,23
+betriebssicher 1602,242,186,25
+und 1801,243,46,24
+<EOS>
+<EOP>
+wirtschaftlich. 1302,273,175,24
+<EOS>
+Standard-Ausführungen 1303,306,321,28
+innerhalb 1641,308,122,24
+eines 1777,309,71,24
+großen 1303,339,91,27
+Förderbereiches 1413,340,218,23
+sind 1647,341,53,23
+kurzfristig 1720,341,127,28
+lieferbar. 1303,371,114,24
+<EOS>
+Gebrüder 1302,434,125,24
+Sulzer, 1439,435,91,27
+Aktiengesellschaft 1543,436,239,28
+Winterthur, 1300,467,144,28
+Schweiz 1457,468,109,24
+<EOS>
+<EOP>
+NP 95,591,69,38
+HCP 699,595,105,41
+AWP 1303,599,119,39
+<EOS>
+<EOP>
+<;i 119,960,55,44
+¦v-TJ 324,947,157,63
+<EOS>
+<EOP>
+j»— 1467,890,38,9
+<EOS>
+<EOP>
+Niederdruck-Zentrifugalpumpen 93,1240,420,29
+als 91,1273,37,22
+Brauchwasserpumpen 144,1273,293,28
+für 91,1306,36,23
+die 141,1306,38,22
+verschiedensten 196,1306,215,24
+Zwecke 428,1308,102,23
+<EOS>
+<EOP>
+Hochdruck-Zentrifugalpumpen 695,1245,399,28
+für 1108,1245,35,23
+Wasser- 1153,1246,110,23
+Abwasserpumpen, 1302,1247,244,27
+automatisch 1557,1248,157,24
+gesteuert; 1724,1250,134,26
+Versorgungsanlagen 693,1278,270,27
+usw. 977,1284,58,17
+<EOS>
+für 1301,1279,37,23
+Schachtentleerungen 1345,1279,280,29
+und 1637,1281,46,24
+als 1693,1281,38,23
+Fäkalien- 1740,1282,119,23
+<EOS>
+<EOP>
+pumpen 1303,1317,105,22
+<EOS>
+<EOP>
+Verlangen 456,1953,198,45
+auch 673,1957,92,33
+Sie 785,1957,62,34
+die 867,1957,59,34
+bewährte 946,1957,179,36
+Busco-Oelfeuerung! 1146,1959,396,45
+<EOS>
+Sie 1562,1961,63,34
+werden 456,2007,141,34
+bestens 621,2007,152,36
+zufrieden 793,2009,182,35
+sein. 997,2012,88,33
+<EOS>
+Busco 1110,2012,119,34
+bietet 1251,2012,112,34
+zudem 1383,2013,126,33
+noch 1532,2013,91,34
+einen 456,2060,105,33
+Service, 573,2061,159,40
+der 744,2062,65,34
+wirklich 818,2062,146,34
+kommt! 977,2063,143,34
+<EOS>
+Busco 456,2173,120,33
+AG, 588,2173,74,39
+Oelfeuerungen, 678,2173,303,44
+Zürich 995,2176,123,34
+Telephon 454,2224,182,43
+(051) 652,2226,94,41
+28 760,2228,43,32
+03 815,2228,44,33
+17 874,2228,42,32
+Filialen 455,2276,138,35
+in 605,2278,31,32
+grösseren 649,2278,193,41
+Ortschaften 854,2279,231,34
+<EOS>
+<EOP>
+Oelfeuer 85,2440,1212,163
+u 1304,2485,159,116
+ng 1480,2482,339,152
+<EOS>
+<EOP>
+24 41,2719,28,21
+<EOS>
+<EOP>
+Schweiz. 1202,2733,87,17
+<EOS>
+Bauzeitung 1300,2733,110,21
+• 1427,2741,5,4
+83. 1448,2735,27,15
+<EOS>
+Jahrgang 1486,2734,92,20
+Heft 1590,2735,40,16
+47 1638,2736,21,16
+• 1676,2742,5,4
+25. 1698,2736,27,16
+<EOS>
+November 1737,2736,99,17
+1965 1846,2737,41,16
+<EOS>
+<EOP>
