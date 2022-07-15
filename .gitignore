@@ -4,3 +4,5 @@ fasttext
 cc.de.300.bin
 venv/*
 __pycache__/*
+linking_fuseki.ipynb
+

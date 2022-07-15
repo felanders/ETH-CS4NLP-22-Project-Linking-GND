@@ -196,6 +196,9 @@ def create_metagrid_candidates(ent):
     candidates.append(dictionary)
     return candidates
 
+    
+#### Fuseki Candidate Generation Helpers #####
+
 def remove_obsolete_abbrevs(fnames, abbr_firstname, prep_for_query=True):
     """
     Remove abbreviated firstnames, that are already covered by full firstnames.
@@ -222,9 +225,8 @@ def remove_obsolete_abbrevs(fnames, abbr_firstname, prep_for_query=True):
 def get_candidates_fuseki(person):
     """
     Call the RDF library to find candidates.
-    Note to self: Consider limiting the query to top X answers if querying times are slow.
+    This can actually only be used if a Fuseki server is running.
     """
-    #unfortunately, checks like the one below doesn't find people like "Beethoven"
     if len(person["lastname"]) == 0 or (len([c for x in " ".join(person["lastname"]) for c in x]) < 2) or (not person["firstname"] and not person["abbr_firstname"]):
         return {}
 
