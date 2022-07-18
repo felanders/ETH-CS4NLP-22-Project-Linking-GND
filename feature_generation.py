@@ -4,12 +4,13 @@ from gensim.similarities import levenshtein
 from gensim.models.fasttext import FastTextKeyedVectors
 import numpy as np
 from thefuzz import fuzz
+from evaluation import label_and_match_to_key
+from utils import get_gnd
+import regex as re
+from candidate_generation import get_coords_from_candidate, extract_field_by_gnd
 
 loc = Nominatim(user_agent="GetLoc")
 ft = FastTextKeyedVectors.load("./fasttext")
-
-def get_gnd(candidate):
-        return candidate["Gnd"]
 
 def get_min_distance(pairs):
     distances = []
@@ -146,3 +147,139 @@ def create_features(m, c):
     result = get_name_similarity(m, c) + get_years(m, c) + get_profession_similarity(m, c)
     result += get_place_similarity(m, c)
     return result
+
+def compare_gnd_to_label(candidate_gnd, gt_label):
+    if candidate_gnd == gt_label:
+        match = True
+    else:
+        match = False
+    return label_and_match_to_key(gt_label=gt_label, match=match)
+
+def candidates_to_features(ent, candidates, gt_label):
+    y_list = []
+    feature_list = []
+    for candidate in candidates:
+        features = create_features(ent, candidate)
+        y_list.append(compare_gnd_to_label(candidate_gnd=get_gnd(candidate), gt_label=gt_label))
+        feature_list.append(features)
+    return {"features": feature_list, "y": y_list}
+
+def process_fuseki_candidates(candidates):
+    """
+    fuseki candidates are given to us in the form:
+    candidates created via fuseki is a dictionary with key gnd_id and the values are sets.
+    example
+    116272295
+        "x" : {'https://d-nb.info/gn.../116272295'}
+        "gid" : {'116272295'}
+        "name" : {'b0'}
+        "prefForename": {'Otto'}
+        "prefSurname": {'Ahrens'}
+        "y": {'b1'}
+        "varForename": {'O.'}
+        "varSurname": {'Ahrens'}
+        "job": {'https://d-nb.info/gn.../4044300-0'}
+        "activeplace":{'https://d-nb.info/gn.../4749047-0'}
+        "activeperiod":{'1897'}
+        "desc":{'Verf. von Mecklenburgica'}
+        "generalArea":{'https://d-nb.info/st...code#XA-DE'}
+    and depending on the info we have even more than this (birthdate, deathdate etc)
+    """
+    candidate_list = []
+
+    for gnd_id in candidates:
+        curr_cand = dict()
+        curr_cand["Gnd"] = gnd_id
+
+        curr_cand["PrefName"] = []
+        curr_cand["FirstName"] = []
+        curr_cand["LastName"] = []
+
+        if "prefForename" in candidates[gnd_id]:
+            firstnames_list = list(candidates[gnd_id]["prefForename"])
+            curr_cand["FirstName"] += firstnames_list
+        if "prefSurname" in candidates[gnd_id]:
+            lastnames_list = list(candidates[gnd_id]["prefSurname"])
+            curr_cand["LastName"] += lastnames_list
+        
+        if  "prefForename" in candidates[gnd_id] and "prefSurname" in candidates[gnd_id]:
+            curr_cand["PrefName"] = [" ".join(curr_cand["LastName"]) + ", " + " ".join(curr_cand["FirstName"])]
+        
+        if curr_cand["FirstName"] == []:
+            if "varForename" in candidates[gnd_id]:
+                varfirstnames_list = list(candidates[gnd_id]["varForename"])
+                curr_cand["FirstName"] += varfirstnames_list
+        if curr_cand["LastName"] == []:
+            if "varSurname" in candidates[gnd_id]:
+                varlastnames_list = list(candidates[gnd_id]["varSurname"])
+                curr_cand["LastName"] += varlastnames_list
+        #we do not set prefName according to the varnames even if we have no prefnames.
+        
+        #take care of duplicates
+        curr_cand["LastName"] = list(set(curr_cand["LastName"]))
+        curr_cand["FirstName"] = list(set(curr_cand["FirstName"]))
+
+        curr_cand["Biography"] = []
+        if "desc" in candidates[gnd_id]:
+            for i in candidates[gnd_id]["desc"]:
+                curr_cand["Biography"].append(i)
+        
+        curr_cand["Places"] = []
+        if "activeplace" in candidates[gnd_id]:
+            for i in candidates[gnd_id]["activeplace"]:
+                activeplace = extract_field_by_gnd("placeOfActivity", i.split("/")[-1], False)
+                if activeplace != "":
+                    curr_cand["Places"].append(activeplace)
+        if "birthplace" in candidates[gnd_id]:
+            for i in candidates[gnd_id]["birthplace"]:
+                birthplace = extract_field_by_gnd("placeOfBirth", i.split("/")[-1], False)
+                if birthplace != "":
+                    curr_cand["Places"].append(birthplace)
+        if "deathplace" in candidates[gnd_id]:
+            for i in candidates[gnd_id]["deathplace"]:
+                deathplace = extract_field_by_gnd("placeOfDeath", i.split("/")[-1], False)
+                if deathplace != "":
+                    curr_cand["Places"] .append(deathplace)
+        if "generalArea" in candidates[gnd_id]:
+            for i in candidates[gnd_id]["generalArea"]:
+                general_area = extract_field_by_gnd("geographicAreaCode", i.split("/")[-1], False)
+                if general_area != "":
+                    curr_cand["Places"].append(general_area)
+        
+        curr_cand["Professions"] = []
+        if "job" in candidates[gnd_id]:
+            for i in candidates[gnd_id]["job"]:
+                curr_job = extract_field_by_gnd("professionOrOccupation", i.split("/")[-1], False)
+                curr_cand["Professions"].append(curr_job)
+        
+        curr_cand["Death Year"] = 0
+        if "deathdate" in candidates[gnd_id]:
+            dates = " ".join(candidates[gnd_id]["deathdate"])
+            year_regex = re.findall(r'\d{4}', dates)
+            year_regex.sort()
+            if (len(year_regex) != 0):
+                curr_cand["Death Year"] = int(year_regex[-1])
+        curr_cand["Birth Year"] = 0
+        if "birthdate" in candidates[gnd_id]:
+            dates = " ".join(candidates[gnd_id]["birthdate"])
+            year_regex = re.findall(r'\d{4}', dates)
+            year_regex.sort()
+            if (len(year_regex) != 0):
+                curr_cand["Birth Year"] = int(year_regex[0])
+                   
+        curr_cand.update(get_coords_from_candidate(curr_cand))
+
+        candidate_list.append(curr_cand)
+    #and append the empty candidate
+    empty_candidate = {'Gnd': '',
+                        'PrefName': [],
+                        'FirstName': [],
+                        'LastName': [],
+                        'Biography': [],
+                        'Places': [],
+                        'Professions': [],
+                        'Death Year': 0,
+                        'Birth Year': 0,
+                        'coordinates': []}
+    candidate_list.append(empty_candidate)
+    return candidate_list
