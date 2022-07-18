@@ -1,0 +1,1093 @@
+2229,2995
+16. 92,76,36,22
+<EOS>
+März 145,76,73,22
+1940 234,76,60,22
+SCHWEIZERISCHE 792,79,299,22
+BAUZEITUNG 1113,78,221,23
+Anzeigenseite 1802,78,196,26
+7 2021,79,14,20
+<EOS>
+<EOP>
+S.T.S. 116,168,209,41
+<EOS>
+<EOP>
+Schweizer. 350,146,170,18
+<EOS>
+Technische 528,147,175,18
+Stellenvermittlung 718,149,289,21
+Service 349,170,117,17
+Technique 485,171,164,20
+Suisse 668,171,96,17
+de 783,172,40,17
+placement 842,172,166,20
+Servizio 349,193,128,17
+Tecnico 483,193,124,18
+Svizzero 614,194,133,17
+dl 754,195,29,16
+collocamento 793,195,215,17
+Swiss 349,216,88,17
+Technical 452,217,154,17
+Service 626,217,115,17
+of 760,218,31,17
+employment 810,218,198,20
+ZURICH, 88,257,97,22
+Tiefenhöfe 197,257,115,18
+11 324,257,18,17
+— 356,268,22,2
+Telephon: 390,257,110,23
+3 513,257,11,17
+5426 530,257,51,17
+— 596,268,22,2
+Telegramme: 630,257,142,22
+INGENIEUR 786,257,136,22
+ZÜRICH. 934,254,101,24
+<EOS>
+Für 87,287,35,18
+Arbeitgeber 133,287,127,23
+kostenlos. 271,288,107,18
+<EOS>
+Für 391,288,36,18
+Stellensuchende 438,288,172,18
+Einschreibgebühr 623,288,187,22
+2 821,289,11,17
+Fr. 841,288,28,18
+<EOS>
+für 886,289,30,17
+3 926,289,12,17
+Monate. 950,289,84,17
+<EOS>
+Bewerber 86,318,99,17
+wollen 196,318,69,18
+Anmeldebogen 276,318,156,22
+verlangen. 443,319,112,21
+<EOS>
+Auskunft 566,318,102,18
+über 679,319,47,17
+offene 737,318,67,19
+Stellen 816,319,75,18
+und 903,319,38,18
+Weiter¬ 954,319,80,19
+leitung 84,341,79,23
+von 174,346,37,13
+Offerten 224,341,87,19
+erfolgt 323,342,68,22
+nur 403,347,39,13
+gegenüber 451,342,115,23
+Eingeschriebenen. 577,342,202,23
+<EOS>
+MASCHINEN-ABTEILUNG 87,380,421,19
+1037 86,411,43,17
+Maschinen-Techniker, 141,411,295,21
+in 450,411,17,17
+kleinere 479,411,81,17
+Maschinenfabrik. 573,411,181,17
+<EOS>
+Kt. 767,411,31,20
+<EOS>
+Zürich. 807,411,75,18
+<EOS>
+37 106,433,23,17
+Technicien. 140,434,151,17
+<EOS>
+Bureau 305,433,76,17
+d'ingénieur, 394,433,123,22
+Paris. 531,433,62,18
+<EOS>
+Voir 605,433,45,17
+3 661,434,12,17
+février. 681,433,75,18
+<EOS>
+39 106,456,23,17
+Ingenieur 141,457,127,21
+ayant 279,458,59,20
+des 351,456,34,17
+connaissances 397,456,152,18
+en 561,461,24,13
+.Télévision". 599,456,136,21
+<EOS>
+Paris. 748,456,62,19
+<EOS>
+Voir 823,456,45,18
+3 879,457,12,17
+février. 898,457,76,18
+<EOS>
+77 108,479,21,18
+Dipl. 141,480,57,20
+<EOS>
+Maschinen-Ingenieur 212,480,280,21
+od. 505,481,37,17
+<EOS>
+-Techniker, 555,480,151,21
+für 723,480,31,17
+ehem. 765,480,63,18
+<EOS>
+Fabrik. 842,480,73,18
+<EOS>
+Schweiz. 939,479,95,19
+<EOS>
+91 107,502,18,17
+Maschinen-Ingenieure 141,504,295,20
+od. 449,504,38,17
+<EOS>
+-Techniker. 499,504,150,17
+<EOS>
+Frankreich. 662,503,119,18
+<EOS>
+S. 794,503,22,18
+<EOS>
+17. 830,503,26,18
+<EOS>
+Febr. 867,503,53,18
+<EOS>
+135 97,525,32,17
+Radio-Techniker. 141,526,226,18
+<EOS>
+Baldigst. 379,525,93,23
+<EOS>
+Ostschweiz. 486,525,127,18
+<EOS>
+S. 626,525,21,18
+<EOS>
+9. 660,526,17,17
+<EOS>
+März. 687,526,57,18
+<EOS>
+163 97,548,33,18
+Maschinen-Techniker, 141,549,294,21
+für 448,549,30,17
+allgem. 489,549,77,21
+<EOS>
+Maschinenbau. 579,548,160,18
+<EOS>
+Baldigst. 754,549,93,22
+<EOS>
+Schweiz. 859,548,95,18
+<EOS>
+165 97,570,33,18
+Dipl. 141,572,56,20
+<EOS>
+Maschinen- 211,572,151,16
+od. 375,572,38,17
+<EOS>
+Elektro-Ingenieur, 427,572,241,21
+mit 686,572,35,16
+Konstr. 732,571,77,20
+<EOS>
+od. 827,572,32,17
+<EOS>
+Prüffeldpraxis. 877,571,158,22
+<EOS>
+<EOP>
+28 140,594,23,16
+bis 175,594,29,16
+35 216,594,23,16
+Jahre. 246,594,61,21
+<EOS>
+Schweizer. 320,594,116,17
+<EOS>
+Offizier. 449,594,86,17
+<EOS>
+Baldigst. 548,594,95,22
+<EOS>
+Schweiz. 655,594,94,18
+<EOS>
+167 97,616,32,18
+Maschinen-Techniker, 141,617,298,21
+für 455,616,30,18
+Fabrikationskontrolle, 500,616,234,22
+Lagerbuchhaltung, 749,617,202,22
+Stück' 967,616,67,19
+<EOS>
+<EOP>
+listen- 141,639,64,18
+u. 218,644,18,13
+<EOS>
+Bestellwesen. 250,639,146,18
+<EOS>
+Baldigst. 410,639,94,22
+<EOS>
+Kt. 517,639,30,20
+<EOS>
+Zürich. 557,640,76,17
+<EOS>
+169 97,662,31,18
+Dipl. 141,663,56,20
+<EOS>
+Elektro-Techniker, 211,664,247,19
+mit 471,662,34,18
+kaufm. 516,663,70,19
+<EOS>
+Kenntnissen, 599,663,134,21
+für 746,663,30,18
+Tätigkeit 784,663,93,22
+im 888,663,26,18
+Ersatzteil¬ 923,662,111,19
+<EOS>
+<EOP>
+lager 141,686,52,21
+elektr. 205,686,64,17
+<EOS>
+Serienmotoren 283,685,155,19
+u. 450,691,18,12
+<EOS>
+Zubehörteilen. 482,686,155,18
+<EOS>
+Deutsch, 650,686,93,21
+franz. 754,686,62,18
+<EOS>
+Bald. 833,686,55,18
+<EOS>
+Ostschweiz. 905,686,127,18
+<EOS>
+171 97,708,29,17
+Maschinen-Techniker, 141,710,296,20
+für 448,709,30,17
+Konstr.-Bureau. 490,709,171,18
+<EOS>
+Zentralschweiz. 674,709,168,18
+<EOS>
+173 97,731,32,17
+Chemiker, 141,732,134,20
+f. 289,732,12,16
+<EOS>
+Oel- 312,731,43,17
+u. 364,737,18,12
+<EOS>
+Kunstharz-Lacke 390,731,182,20
+usw. 579,737,48,12
+<EOS>
+Fab. 638,732,44,17
+<EOS>
+elektrotech. 692,732,125,18
+<EOS>
+Industrie. 826,732,99,17
+<EOS>
+Schweiz. 938,732,95,17
+<EOS>
+175 97,754,33,17
+Dipl. 141,755,58,21
+<EOS>
+Elektro-Ingenieur 213,755,233,21
+od. 458,756,38,17
+<EOS>
+-Techniker, 509,755,151,20
+mit 669,754,34,18
+Praxis. 710,754,75,19
+<EOS>
+Vorkenntnisse 795,754,150,18
+in 954,755,18,17
+Eng¬ 987,754,47,22
+<EOS>
+<EOP>
+lisch. 141,777,55,18
+<EOS>
+Bedingung: 211,777,122,21
+Schweizer, 346,777,117,21
+ledig. 477,777,56,23
+<EOS>
+Britisch-Indien. 547,777,165,19
+<EOS>
+177 97,800,32,17
+Kälte-Ingenieur 141,801,204,21
+od. 357,802,38,17
+<EOS>
+-Techniker, 407,802,150,20
+mit 570,800,34,18
+Praxis. 616,801,74,18
+<EOS>
+Vorkenntnisse 703,801,151,18
+im 870,800,24,18
+Englischen. 911,800,123,23
+<EOS>
+<EOP>
+Bedingung: 141,823,123,22
+Schweizer, 278,823,116,21
+ledig. 408,824,56,21
+<EOS>
+Britisch-Indien. 478,823,163,18
+<EOS>
+179 97,845,33,18
+Dipl. 141,847,57,20
+<EOS>
+Maschinen-Ingenieur, 211,848,289,19
+mit 512,846,33,18
+Erfahrung 558,846,107,22
+in 677,846,19,18
+Grossbaumaschinen 709,846,214,18
+u. 936,851,19,13
+<EOS>
+Unter¬ 967,846,67,17
+<EOS>
+<EOP>
+halt 140,869,40,17
+von 192,873,37,13
+Dieselmotoren, 243,868,157,21
+Dampfmaschinen, 411,869,189,22
+Raupentraktoren, 610,869,186,22
+Baggern, 804,869,95,22
+usw. 908,874,48,12
+<EOS>
+Frank¬ 965,869,67,17
+reich 141,891,51,17
+u. 205,896,19,12
+<EOS>
+Algerien. 236,892,96,21
+<EOS>
+Ferner: 356,892,75,17
+Chefmechaniker, 445,892,226,22
+selbständig 684,892,121,22
+in 817,892,18,17
+Reparaturen 848,892,131,22
+vor¬ 991,897,41,12
+stehender 141,914,105,17
+Maschinen. 257,914,120,18
+<EOS>
+181 97,936,28,17
+Dipl. 141,938,56,20
+<EOS>
+Maschinen-Techniker, 212,938,292,20
+mit 520,937,34,18
+Praxis 565,937,67,18
+in 645,937,18,17
+Baumaschinen 677,937,154,19
+u. 847,942,18,14
+<EOS>
+Verbrennungs- 878,937,156,22
+<EOS>
+<EOP>
+Motoren. 141,959,93,19
+<EOS>
+Bauunternehmung 246,960,196,22
+Französisch-Westafrika. 455,960,260,18
+<EOS>
+<EOP>
+183 1095,133,32,18
+Dipl. 1139,134,58,20
+<EOS>
+Elektro-Techniker, 1210,132,249,21
+mit 1471,131,34,18
+Praxis 1516,131,67,18
+in 1603,131,18,18
+elektrotechn. 1639,131,140,18
+<EOS>
+Installationen 1797,131,144,19
+u. 1960,137,19,13
+<EOS>
+Ma¬ 1996,132,40,17
+<EOS>
+<EOP>
+schinen. 1138,156,87,18
+<EOS>
+Bauunternehmung 1239,155,196,22
+in 1447,155,19,17
+Französisch-Westafrika. 1478,154,263,19
+<EOS>
+185 1095,179,32,18
+Maschinen- 1140,179,153,18
+od. 1305,179,38,17
+<EOS>
+Elektro-Ingenieur 1356,179,235,21
+od, 1604,179,37,17
+-Techniker, 1655,179,150,19
+mit 1821,177,34,18
+Praxis 1868,177,67,18
+in 1952,177,17,18
+Bau¬ 1986,177,49,19
+<EOS>
+<EOP>
+maschinen 1138,202,113,17
+u. 1263,207,18,13
+<EOS>
+Bauplatzinstallationen. 1295,201,244,23
+<EOS>
+Bauunternehmung 1553,201,194,21
+Algerien. 1759,201,95,21
+<EOS>
+Bei 1082,227,40,17
+Stellen 1135,226,92,17
+Nr. 1240,226,38,17
+<EOS>
+179 1287,226,42,17
+bis 1342,225,39,18
+185 1393,225,43,17
+gute 1454,224,44,22
+französische 1515,224,131,17
+Sprachkenntnisse 1659,223,187,23
+Bedingung. 1859,222,116,24
+<EOS>
+Be¬ 2001,223,34,17
+<EOS>
+<EOP>
+werbungen 1138,250,115,19
+in 1273,247,16,18
+Französisch 1308,247,127,18
+auf 1453,247,34,17
+Formularen 1505,246,121,18
+der 1645,247,33,17
+S.T. 1690,246,47,19
+<EOS>
+S. 1746,246,21,18
+<EOS>
+mit 1781,246,33,18
+französ. 1830,246,86,17
+<EOS>
+Vordruck. 1930,246,104,18
+<EOS>
+187 1094,271,31,18
+Ein 1141,273,40,17
+bis 1195,273,38,17
+zwei 1245,272,61,17
+Dipl. 1319,272,57,20
+<EOS>
+Elektro-Ingenieure, 1389,271,258,20
+zur 1659,274,34,13
+Einarbeitung 1706,269,137,22
+in 1859,269,18,18
+Montage 1897,269,88,22
+von 1998,273,37,14
+<EOS>
+<EOP>
+elektr. 1138,295,66,17
+<EOS>
+Maschinen 1217,294,112,18
+u. 1342,299,18,12
+<EOS>
+Transformatoren. 1373,293,186,18
+<EOS>
+Maschinenfabrik 1572,293,177,18
+Ostschweiz. 1762,292,127,18
+<EOS>
+189 1093,318,32,16
+Dipl. 1137,318,58,21
+<EOS>
+Elektro-Ingenieur, 1208,317,241,21
+für 1461,316,32,17
+Projektierung, 1504,316,150,22
+Offerten 1667,315,89,19
+u. 1769,320,17,13
+<EOS>
+Bestellung 1800,315,113,22
+im 1924,315,25,17
+Gleich¬ 1958,314,76,19
+<EOS>
+<EOP>
+richterbau. 1137,340,116,18
+<EOS>
+Deutsch, 1266,340,94,21
+französ. 1372,340,85,16
+<EOS>
+u. 1472,344,16,12
+<EOS>
+englisch. 1503,339,93,22
+<EOS>
+Baldigst. 1610,339,93,22
+<EOS>
+Ostschweiz. 1718,339,127,17
+<EOS>
+BAU-ABTEILUNG 1081,378,281,19
+94 1103,409,23,18
+Ingenieur 1137,409,125,21
+od. 1275,409,38,17
+<EOS>
+Tiefbau-Techniker. 1324,408,249,18
+<EOS>
+Ing..Bureau 1585,406,124,23
+<EOS>
+Kt. 1720,406,32,21
+<EOS>
+Zürich. 1761,406,75,18
+<EOS>
+S. 1849,406,21,18
+<EOS>
+2. 1883,407,17,16
+<EOS>
+März. 1910,406,59,18
+<EOS>
+116 1082,432,31,17
+Ingenieure 1126,433,141,20
+u. 1279,436,22,13
+<EOS>
+Techniker, 1313,432,142,18
+m. 1466,435,26,12
+<EOS>
+Erfahr, 1506,430,74,18
+im 1590,430,24,17
+Strassenbau. 1623,429,139,19
+<EOS>
+Ostmark 1776,429,90,18
+(Deutschland). 1875,429,156,23
+<EOS>
+140 1082,456,32,16
+Bahnmeister-Stellvertreter, 1126,455,370,19
+für 1509,453,29,17
+Trambahn, 1549,452,116,21
+Zentralschweiz. 1678,452,169,19
+<EOS>
+S. 1858,452,21,18
+<EOS>
+9. 1893,452,17,18
+<EOS>
+März. 1919,452,61,18
+<EOS>
+\*2 1082,478,32,16
+Bau-Techniker. 1126,478,202,17
+<EOS>
+Sofort. 1339,476,75,18
+<EOS>
+Arch.-Bureau 1427,475,146,19
+<EOS>
+Schweiz. 1585,476,95,18
+<EOS>
+146 1082,500,32,18
+Hochbau-Techniker, 1126,500,263,20
+für 1401,500,31,16
+Bureau. 1443,499,83,17
+<EOS>
+Arch.-Bureau 1538,499,143,17
+<EOS>
+Nordwest-Schweiz. 1694,498,203,18
+<EOS>
+150 1082,524,32,17
+Dipl. 1126,524,58,21
+<EOS>
+Bau-Ingenieur 1200,523,188,21
+u. 1400,527,22,13
+<EOS>
+Eisenbeton-Techniker, 1440,523,297,20
+Statiker 1754,521,86,17
+für 1860,521,31,17
+Eisenbeton¬ 1908,520,124,18
+<EOS>
+<EOP>
+arbeiten 1125,546,87,18
+u. 1223,551,18,12
+<EOS>
+Planherstellung, 1256,545,171,22
+usw. 1441,549,49,14
+<EOS>
+Baldigst. 1504,544,92,23
+<EOS>
+Ing.-Bureau 1609,544,128,22
+<EOS>
+Schweiz. 1749,544,93,17
+<EOS>
+152 1082,569,32,18
+Architekt 1125,570,124,18
+od. 1261,570,39,17
+<EOS>
+Hochbau-Techniker. 1313,569,265,17
+<EOS>
+Sofort. 1591,567,72,18
+<EOS>
+Arch.-Bureau 1677,566,146,18
+<EOS>
+Ostschweiz. 1836,566,127,18
+<EOS>
+154 1082,592,32,18
+Hochbau-Techniker. 1126,592,265,18
+<EOS>
+Sofort. 1405,590,73,18
+<EOS>
+Arch.-Bureau 1490,590,145,18
+<EOS>
+Zürich. 1648,590,75,18
+<EOS>
+158 1082,616,31,16
+Vermessungs-Ingenieur 1125,616,328,20
+od. 1465,615,38,17
+<EOS>
+Geometer, 1521,615,137,19
+für 1676,613,31,17
+Absteckung 1724,612,124,22
+u. 1865,617,20,13
+<EOS>
+Niveilierung 1904,611,128,23
+<EOS>
+<EOP>
+gr. 1125,642,26,18
+<EOS>
+gebogenen 1162,638,113,22
+Tunnels, 1288,638,90,19
+sowie 1396,637,60,17
+einige 1468,637,61,22
+Chef 1548,636,48,18
+Mineure 1605,635,84,19
+mit 1708,636,34,18
+Erfahrung. 1759,635,115,22
+<EOS>
+Französische 1892,635,139,18
+Unternehmung 1125,660,159,22
+Algier. 1295,660,71,22
+<EOS>
+160 1082,684,31,18
+Dipl. 1125,685,57,20
+<EOS>
+Bau-Ingenieure, 1195,684,210,20
+mit 1417,682,34,18
+Praxis, 1464,682,73,21
+für 1549,682,31,17
+allgem, 1592,682,76,21
+Tiefbau 1681,681,82,18
+u. 1775,686,18,13
+<EOS>
+Hafenbauten. 1807,681,143,18
+<EOS>
+Frank¬ 1964,681,66,18
+<EOS>
+<EOP>
+reich 1124,707,54,17
+u. 1190,712,20,12
+<EOS>
+Nordafrika. 1222,706,121,18
+<EOS>
+162 1082,729,32,18
+Poliere 1126,731,95,17
+für 1234,730,30,17
+allgem. 1276,729,74,22
+<EOS>
+Tiefbau 1363,728,81,18
+u. 1456,733,19,12
+<EOS>
+Eisenbeton. 1490,727,121,18
+<EOS>
+Frankreich 1625,726,112,19
+od. 1750,726,31,18
+<EOS>
+Nordafrika. 1794,726,119,18
+<EOS>
+164 1082,753,32,17
+Dipl. 1126,754,57,21
+<EOS>
+Bau-Ingenieur, 1196,754,192,20
+für 1396,752,31,17
+Eisenbahnbauten 1433,751,182,18
+; 1624,756,4,14
+Tiefbau-Techniker, 1636,750,245,20
+als 1888,749,30,18
+Bauführer 1924,748,109,19
+<EOS>
+<EOP>
+für 1125,776,30,17
+Eisenbahnbauten. 1168,775,188,18
+<EOS>
+Französ. 1369,775,90,17
+<EOS>
+Unternehmung 1472,774,155,21
+Küste 1639,773,61,19
+von 1712,777,37,14
+Westafrika. 1763,772,121,18
+<EOS>
+166 1082,798,31,18
+Dipl. 1126,800,58,20
+<EOS>
+Bau-Ingenieur, 1197,799,194,21
+Statiker 1404,797,84,17
+auf 1496,798,34,16
+Eisenbeton, 1538,797,124,20
+für 1675,797,29,17
+Studienbureau. 1712,796,163,18
+<EOS>
+Franz. 1889,795,67,18
+<EOS>
+Unter¬ 1965,795,65,18
+<EOS>
+<EOP>
+nehmung 1125,824,97,18
+in 1234,822,17,16
+Indochina; 1268,820,113,21
+Dipl. 1400,821,57,20
+<EOS>
+Bau-Ingenieur, 1471,820,193,21
+mit 1682,820,34,17
+Bauplatzerfahrungen 1734,818,223,22
+u. 1975,824,19,12
+<EOS>
+in 2013,819,17,16
+Baggerarbeiten; 1126,844,172,22
+Tiefbau-Techniker, 1311,843,247,20
+Bauführer 1572,842,105,17
+für 1684,842,31,17
+Baggerarbeiten. 1726,841,169,23
+<EOS>
+Bei 1080,868,40,17
+Stellen 1134,868,90,18
+Nr. 1237,868,38,17
+<EOS>
+158 1284,868,42,16
+bis 1339,867,39,18
+166 1389,867,43,17
+gute 1448,866,45,21
+französische 1509,865,133,17
+Sprachkenntnisse 1659,864,188,22
+Bedingung. 1861,864,115,21
+<EOS>
+Be¬ 1996,863,33,18
+<EOS>
+<EOP>
+werbungen 1124,891,116,21
+in 1259,890,18,17
+Französisch 1295,888,127,19
+auf 1441,888,34,18
+Formularen 1490,888,121,17
+S. 1624,888,21,17
+<EOS>
+T. 1653,887,20,18
+<EOS>
+S. 1682,887,21,18
+<EOS>
+mit 1716,887,33,17
+französischem 1761,886,152,18
+Vordruck. 1928,886,101,17
+<EOS>
+168 1081,912,32,18
+Bau-Techniker, 1125,914,201,19
+zur 1338,917,33,12
+Auskunft 1383,911,96,18
+in 1490,911,19,17
+Baufachausstellung. 1521,910,215,21
+<EOS>
+Maschinenschreiben, 1750,908,224,22
+Ste¬ 1988,909,43,18
+<EOS>
+<EOP>
+nographie 1124,936,105,22
+u. 1240,940,20,13
+<EOS>
+Buchhaltung 1274,935,135,20
+erwünscht. 1422,934,115,18
+<EOS>
+Eintritt 1550,933,76,18
+möglichst 1638,933,104,22
+1. 1754,932,16,19
+<EOS>
+April. 1779,933,59,22
+<EOS>
+Zürich. 1852,932,76,18
+<EOS>
+170 1081,958,33,17
+Eisenbeton-Techniker, 1125,958,299,20
+für 1436,957,30,18
+gr. 1477,961,28,18
+<EOS>
+Bauobjekte. 1518,957,125,19
+<EOS>
+Sofort. 1655,956,72,18
+<EOS>
+Basel. 1741,956,63,19
+<EOS>
+<EOP>
+ING. 515,1100,149,62
+<EOS>
+MAX 703,1102,172,60
+GREUTER 914,1100,314,60
+& 1255,1106,44,54
+CIE. 1326,1099,127,59
+<EOS>
+ZÜRICH 1494,1096,260,62
+8 1783,1105,37,52
+INJEKTIONS- 515,1190,254,37
+UND 792,1190,92,37
+GUNIT-ARBEITEN 909,1189,342,39
+INGENIEUR-BUREAU 1402,1186,417,40
+<EOS>
+<EOP>
+ISEN 670,1535,277,85
+Konstruk¬ 586,1626,357,83
+tionen 674,1718,252,78
+<EOS>
+<EOP>
+E 588,1535,75,81
+a 239,1582,63,57
+j 371,1581,58,57
+<EOS>
+<EOP>
+Gebr.Tuchschmid, 449,2082,305,34
+<EOS>
+Frauenfeld 763,2084,178,28
+Zürich, 449,2125,111,33
+Löwenstr.19,Tel. 572,2128,264,30
+<EOS>
+32301 843,2130,98,26
+MO 215,2152,25,15
+<EOS>
+<EOP>
+J 529,2243,41,64
+ÎC1 338,2339,92,56
+o 249,2367,37,60
+:r- 422,2365,36,29
+<EOS>
+<EOP>
+Anhänger 820,2285,182,52
+Motorkipper 676,2365,231,50
+liefern 573,2434,86,23
+vorteilhaft 676,2433,144,25
+NZLER 173,2490,155,31
+& 354,2490,27,31
+CO., 410,2490,95,37
+<EOS>
+ZOLLBRÜCK 540,2483,294,38
+BERN 869,2489,129,32
+Institut 124,2587,260,88
+Juventus 405,2588,322,88
+Zürich 752,2587,223,88
+Vorbereitung 100,2699,156,30
+auf 273,2699,39,24
+Maturität 326,2699,113,24
+und 456,2700,41,23
+E. 514,2700,20,23
+<EOS>
+T. 541,2700,20,23
+<EOS>
+H. 571,2700,22,23
+<EOS>
+• 626,2705,12,11
+Berufsvorbereitungs-Klasse 671,2698,330,30
+<EOS>
+<EOP>
+Handelsschule 179,2737,170,24
+mit 367,2736,39,24
+Diplomabschluss 422,2736,201,30
+• 655,2742,13,11
+Abend-Technikum 699,2736,222,25
+Abend-Gymnasium 147,2774,221,30
+• 400,2780,13,11
+50 445,2775,26,23
+Fachlehrer 488,2775,129,23
+• 649,2780,13,11
+Beste 694,2775,64,23
+Examenerfolge 775,2774,178,30
+Uraniastr. 124,2835,165,35
+<EOS>
+31/33 306,2835,84,40
+Handelshof 453,2835,185,34
+Telephon 694,2835,150,43
+5 862,2835,18,34
+77 892,2835,37,34
+93 941,2834,37,34
+<EOS>
+<EOP>
+Gesucht: 1076,1350,259,48
+<EOS>
+<EOP>
+INGENIEURE 1347,1410,676,90
+erfahren 1135,1521,119,24
+im 1274,1521,30,23
+Bau 1324,1521,52,23
+von 1392,1527,47,16
+Wasserleitungsstollen, 1457,1518,320,31
+für 1795,1519,39,23
+Bauaufsicht 1853,1516,168,26
+grosser 1135,1561,105,24
+Stollenbauten. 1256,1554,202,25
+<EOS>
+— 1470,1567,29,3
+Anmeldungen 1510,1554,199,29
+mit 1728,1553,42,23
+Zeugnissen 1786,1553,164,29
+und 1970,1551,50,24
+Gehaltsansprüchen 1135,1588,274,30
+an 1428,1594,33,17
+Kraftwerke 1074,1627,248,30
+Oberhasli 1344,1626,216,30
+A.G., 1582,1625,111,34
+<EOS>
+Innertkirchen. 1717,1623,306,31
+<EOS>
+Baufachmann 1075,1705,407,71
+(Werkführer), 1073,1795,158,21
+in 1247,1795,18,18
+der 1280,1795,37,18
+Ausführung 1331,1793,138,23
+von 1484,1797,39,14
+Maurer-, 1074,1821,103,21
+Eisenbeton-, 1196,1821,149,21
+Zimmer- 1364,1820,100,17
+und 1483,1819,39,18
+Schreinerarbeiten, 1073,1847,222,22
+wie 1313,1847,38,18
+im 1371,1847,23,17
+Zeichnen 1414,1846,108,18
+bewandert, 1073,1875,133,21
+sucht 1215,1874,64,17
+auf 1287,1874,35,17
+1. 1331,1875,14,16
+<EOS>
+M 1354,1873,17,18
+ai 1376,1874,17,17
+1940 1400,1873,44,18
+Stelle, 1452,1872,71,20
+Zeugnisse 1073,1901,121,22
+u. 1205,1905,18,13
+<EOS>
+Referenzen 1234,1900,133,19
+zu 1378,1904,24,13
+Diensten. 1413,1899,109,18
+<EOS>
+Offerten 1073,1927,95,19
+unter 1192,1927,62,18
+Chiffre 1271,1926,79,19
+6. 1367,1926,22,18
+<EOS>
+H. 1405,1925,22,18
+<EOS>
+215 1446,1926,34,17
+an 1497,1930,26,13
+Guggenbühl 1074,1953,143,23
+& 1228,1955,13,16
+Huber, 1252,1953,78,21
+Verlag, 1343,1952,83,22
+Zürich. 1440,1952,82,18
+<EOS>
+<EOP>
+Architekturbureau 1573,1701,221,19
+in 1807,1701,18,18
+Bern, 1837,1700,60,21
+sucht 1912,1699,63,19
+auf 1990,1699,34,18
+1. 1572,1729,16,18
+<EOS>
+April 1599,1728,56,22
+Techniker- 1572,1763,303,47
+<EOS>
+<EOP>
+Bauführer 1745,1826,278,46
+für 1571,1898,31,18
+Umbaupläne 1617,1898,149,23
+und 1785,1898,41,18
+Bauführung. 1842,1897,145,22
+<EOS>
+— 2001,1907,22,2
+<EOS>
+<EOP>
+Bewerbungen 1572,1925,162,22
+u, 1753,1930,19,12
+Chiffre 1787,1924,79,18
+S. 1880,1924,20,18
+<EOS>
+A. 1911,1924,23,17
+<EOS>
+3831 1944,1924,41,17
+A, 1998,1924,22,17
+an 1571,1956,27,13
+die 1616,1952,35,18
+Schweizer 1667,1951,102,18
+Annoncen 1781,1951,101,18
+A. 1897,1951,18,17
+<EOS>
+G., 1924,1950,27,21
+<EOS>
+Bern. 1969,1950,53,19
+<EOS>
+Architekten. 1237,2010,381,51
+<EOS>
+Baumeister 1644,2009,355,49
+Eintritt 1097,2094,140,24
+frei 1254,2094,64,24
+und 1491,2078,108,48
+Handwerker 1626,2077,373,49
+finden 1094,2154,76,24
+für 1182,2154,36,24
+Neubau, 1228,2155,94,29
+Umbau 1332,2154,81,24
+und 1426,2153,43,24
+Renovationen 1479,2153,159,24
+die 1648,2153,36,24
+diesbezüglichen 1693,2152,194,30
+Materia¬ 1897,2151,101,24
+lien 1095,2192,42,24
+und 1151,2194,41,22
+Baustoffe 1205,2192,114,25
+in 1332,2192,20,24
+der 1364,2192,40,24
+Dauerausstellung 1412,2191,209,30
+für 1632,2191,38,23
+zeitgemässe 1681,2190,147,31
+Bauprodukte. 1838,2189,160,30
+<EOS>
+BAU-MESSE 1097,2239,452,55
+BERN 1583,2239,201,55
+tSSTSi 1817,2238,180,62
+tili 1129,2384,143,54
+Mit 1125,2508,145,81
+na 1128,2594,140,56
+wm 1106,2673,66,21
+pap 1184,2674,67,23
+* 1262,2675,30,21
+<EOS>
+<EOP>
+Ideal-Rabitz 1485,2358,345,46
+j 1306,2430,4,31
+Der 1319,2433,40,18
+billige 1369,2433,69,23
+bestbewährte 1449,2433,162,18
+Putzmörtelträger, 1626,2432,210,23
+mit 1847,2432,34,18
+Draht- 1893,2431,72,18
+u. 1976,2436,20,13
+<EOS>
+Pflanzenfasern 1318,2460,176,18
+gezwirnt 1503,2460,101,22
+u 1613,2465,10,12
+gegen 1641,2464,71,18
+Rost 1722,2459,52,18
+u. 1782,2464,19,13
+<EOS>
+Flecken 1809,2459,89,18
+isoliert. 1908,2458,87,19
+<EOS>
+Geschmeidiges 1318,2487,181,22
+u. 1510,2492,18,12
+<EOS>
+leichtes 1540,2487,91,17
+Gewebe. 1640,2486,100,18
+<EOS>
+Geeignet 1752,2485,105,23
+für 1867,2485,32,18
+alle 1909,2485,40,18
+Ra- 1958,2484,38,18
+<EOS>
+<EOP>
+bitzkonstruktionen. 1541,2513,231,18
+<EOS>
+Weitere 1319,2551,92,19
+Spezialitäten: 1426,2550,163,23
+Drahtziegelgewebe, 1610,2549,251,23
+Streckra- 1876,2548,118,19
+bitz, 1347,2577,51,21
+Drahtgeflechte, 1414,2576,194,23
+Dülo-Lotzwiler-Dübelstein. 1623,2576,340,18
+<EOS>
+SCHWEIZ. 1319,2619,168,24
+<EOS>
+DRAHTZIEGELFABRIK 1506,2618,370,24
+A.-G. 1901,2617,93,25
+<EOS>
+<EOP>
+LOTZWIL 1379,2658,153,23
+(Bern) 1544,2658,88,28
+Tel. 1780,2656,54,24
+<EOS>
+6 1844,2658,15,22
+01 1867,2657,25,23
+73 1906,2657,30,23
+<EOS>
+<EOP>
+Bei 1171,2773,44,24
+Erteilung 1234,2772,126,30
+eines 1378,2774,76,21
+Jahresauftrages 1470,2771,233,29
+(52 1719,2770,37,29
+Anzeigen) 1768,2769,145,30
+kostet 1171,2819,87,22
+diese 1274,2818,76,23
+Fläche, 1368,2818,100,27
+Grösse 1487,2817,98,24
+1/32 1602,2816,54,29
+Seite, 1667,2816,81,26
+Fr. 1765,2814,45,26
+<EOS>
+S.SO. 1823,2814,88,26
+<EOS>
+<EOS>
+<EOP>
