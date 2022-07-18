@@ -179,16 +179,11 @@ def perform_experiment(keep_empty, do_sample, oversampling, balance, train, eval
     else:
         y_sample = y_train
         X_sample = X_train
-    
-    # X_sample = X_sample.fillna(0)
-    # print(X_sample[X_sample.isna().any(axis=1)])
-    # adsadasddas
 
     model.fit(X_sample, y_sample)
 
     for entity in eval:
     #for entity in d["test"]:
-        # print('len features:', len(entity['features'][0]), 'len candidates:', len(entity['candidates'][0]))
         ranking = rank_candidates(candidates=entity["candidates"], features=entity["features"], model=model)
         entity.update(ranking)
 
