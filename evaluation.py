@@ -117,7 +117,8 @@ def eval_mentions(entity, top_n=10, threshold=0.5):
     counts = {"tp": 0, "fp": 0, "tn": 0, "fn": 0} 
     filtered_ids = filter_ids(entity["ids"], scores=entity["scores"], top_n=top_n, threshold=threshold)
 
-    #This is because GR calls "labels" "gt_label"
+    # This is because GR calls "labels" "gt_label"
+    # UPDATE: should no longer be necessary
     key_helper = "labels"
     if key_helper not in entity:
         key_helper = "gt_label"

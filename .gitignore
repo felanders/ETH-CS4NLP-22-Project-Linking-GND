@@ -4,3 +4,4 @@ fasttext
 cc.de.300.bin
 venv/*
 __pycache__/*
+.ipynb_checkpoints
